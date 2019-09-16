@@ -1,0 +1,148 @@
+<%= render "shared/navbar" %>
+<div class="main-container">
+  <div class="page-container">
+    <div class="page-1-content">
+      <div class="text-container">
+        <div class="text-content">
+          <h1>I'm a <span>Yoda</span>.</h1>
+          <h2>Meet the new generation of electric motorbike.</h2>
+          <%= link_to root_path do %>
+            <p>Discover the bike</p>
+            <i class="fas fa-chevron-right"></i>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="media-container">
+    <div class="media-content">
+      <ul class="logo-media">
+        <li><%= image_tag('', class: "bruzz") %></li>
+        <li><%= image_tag('', class: "hln") %></li>
+        <li><%= image_tag('', class: "newmobility") %></li>
+        <li><%= image_tag('', class: "dh") %></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="page-container">
+    <div class="page-2-content">
+      <div class="left-container">
+        <div class="left-content">
+          <div class="text-container">
+            <div class="text-content">
+              <h3><span>Design</span> meets technology.</h3>
+              <p>Get around your city on a high tech motorbike.</p>
+              <%= link_to root_path do %>
+                <p class="btn-to-other-page">Discover the bike</p>
+                <i class="fas fa-chevron-right"></i>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="right-content">
+          <% image_tag('', class: "front-fork-yoda") %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-container">
+    <div class="page-3-content">
+      <div class="left-container">
+        <div class="left-content">
+          <% image_tag('', class: "handle-smartphone-yoda") %>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="right-content">
+          <div class="text-container">
+            <div class="text-content">
+              <h3>More than an <span>e-motorbike</span>.</h3>
+              <p>With live dashboard, navigation, GPS tracking<br>and ride stats, our app makes your ride more<br>than just a ride. It becomes a whole new<br>experience.</p>
+              <%= link_to root_path do %>
+                <p class="btn-to-other-page">Discover the app</p>
+                <i class="fas fa-chevron-right"></i>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-container">
+    <div class="page-4-content">
+      <div class="left-container">
+        <div class="left-content">
+          <div class="text-container">
+            <div class="text-content">
+              <h3>You’ll never <span>ride</span> alone.</h3>
+              <p>Our support team is with you every meters of the way..</p>
+              <%= link_to root_path do %>
+                <p class="btn-to-other-page">Learn more</p>
+                <i class="fas fa-chevron-right"></i>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="right-content">
+          <% image_tag('', class: "handle-smartphone-yoda") %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-container">
+    <div class="review-container">
+      <div class="review-content-top"></div>
+      <div class="review-content-middle"></div>
+      <div class="review-content-footer"></div>
+    </div>
+  </div>
+
+  <%= render "shared/footer" %>
+</div>
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.page-container').height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - height*0.96) {
+              $('.nav-container').addClass('solid-nav');
+          } else {
+              $('.nav-container').removeClass('solid-nav');
+          }
+      });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

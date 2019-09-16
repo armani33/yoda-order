@@ -1,0 +1,79 @@
+.solid-nav {
+  background-color: white;
+  transition: background-color 0.2s linear;
+}
+.nav-container{
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 1;
+  // font-family: $body;
+  height: 100px;
+  .nav-content{
+    height: 100%;
+    // background-color: blue;
+    display: flex;
+    align-items: center;
+    .nav-logo{
+      flex-basis: 15%;
+      img{
+        margin-left: 120px;
+        width: 155px;
+      }
+    }
+    .menu-container{
+      flex-basis: 55%;
+      margin-left: 130px;
+      .menu-content{
+        ul{
+          list-style: none;
+          padding: 5px;
+          margin-top: 5px;
+          li{
+            display: block;
+            float: left;
+            padding: 5px;
+            margin-left: 40px;
+            font-size: 19px;
+            height: 100%;
+            border-bottom: 2px solid transparent;
+            &:hover{
+              border-bottom: 2px solid black;
+            }
+          }
+        }
+      }
+    }
+    .btn-container{
+      height: 100%;
+      flex-basis: 30%;
+      vertical-align: center;
+      // background-color: red;
+      .btn-content{
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        .nav-btn{
+          height: 100%;
+          width: 230px;
+          font-size: 19px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .test-ride{
+          background-color: black;
+          color: white;
+        }
+        .buy{
+          background-color: green;
+          color: black;
+        }
+      }
+    }
+  }
+}
