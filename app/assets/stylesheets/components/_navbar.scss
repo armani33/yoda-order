@@ -1,7 +1,13 @@
-.solid-nav {
-  background-color: white;
-  transition: background-color 0.2s linear;
-}
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+// Define fonts for website
+$body: 'Roboto', sans-serif;
+
+// Define variables for your color scheme
+$green: #00FFB7;
+$black: #000000;
+$light-grey: #F6F6F6;
+
 .nav-container{
   margin: 0;
   padding: 0;
@@ -9,10 +15,14 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
+  background-color: white;
   z-index: 1;
   font-family: $body;
   height: 100px;
+  .solid-nav {
+    background-color: white;
+    transition: background-color 0.2s linear;
+  }
   .nav-content{
     height: 100%;
     // background-color: blue;

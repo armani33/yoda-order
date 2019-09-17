@@ -1,12 +1,13 @@
 <%= render "shared/navbar" %>
+<div class="navbar-height"></div>
 <div class="main-container">
   <div class="page-container">
     <div class="page-1-content">
       <div class="text-container">
         <div class="text-content">
-          <h1>I'm a <span>Yoda</span>.</h1>
-          <h2>Meet the new generation of electric motorbike.</h2>
-          <%= link_to root_path do %>
+          <h1><span>Lead</span>.<br>Let others follow<span>.</span></h1>
+          <h2>You'll zip through traffic like never before up to 45km/h.</h2>
+          <% link_to root_path do %>
             <p>Discover the bike</p>
             <i class="fas fa-chevron-right"></i>
           <% end %>
@@ -17,34 +18,32 @@
 
   <div class="media-container">
     <div class="media-content">
-      <ul class="logo-media">
-        <li><%= image_tag('', class: "bruzz") %></li>
-        <li><%= image_tag('', class: "hln") %></li>
-        <li><%= image_tag('', class: "newmobility") %></li>
-        <li><%= image_tag('', class: "dh") %></li>
-      </ul>
+      <div class="logo-media">
+        <%= image_tag('Medias/bruzz@2x.png', class: "bruzz") %>
+        <%= image_tag('Medias/HLN@2x.png', class: "hln") %>
+        <%= image_tag('Medias/new-mobility@2x.png', class: "newmobility") %>
+        <%= image_tag('Medias/DH@2x.png', class: "dh") %>
+      </div>
     </div>
   </div>
 
   <div class="page-container">
     <div class="page-2-content">
       <div class="left-container">
-        <div class="left-content">
-          <div class="text-container">
-            <div class="text-content">
-              <h3><span>Design</span> meets technology.</h3>
-              <p>Get around your city on a high tech motorbike.</p>
-              <%= link_to root_path do %>
-                <p class="btn-to-other-page">Discover the bike</p>
-                <i class="fas fa-chevron-right"></i>
-              <% end %>
-            </div>
+        <div class="text-container">
+          <div class="text-content">
+            <h3>Light weight<br>means<br><span> maniability</span>.</h3>
+            <p>No pedals means you won't break a sweat.</p>
+            <% link_to root_path do %>
+              <p class="btn-to-other-page">Discover the bike</p>
+              <i class="fas fa-chevron-right"></i>
+            <% end %>
           </div>
         </div>
       </div>
       <div class="right-container">
         <div class="right-content">
-          <% image_tag('', class: "front-fork-yoda") %>
+          <%= image_tag('Yoda/frontbike-crop@2x.png', class: "front-fork-yoda") %>
         </div>
       </div>
     </div>
@@ -54,20 +53,18 @@
     <div class="page-3-content">
       <div class="left-container">
         <div class="left-content">
-          <% image_tag('', class: "handle-smartphone-yoda") %>
+          <%= image_tag('Yoda/cable@2x.png', class: "handle-smartphone-yoda") %>
         </div>
       </div>
       <div class="right-container">
-        <div class="right-content">
-          <div class="text-container">
-            <div class="text-content">
-              <h3>More than an <span>e-motorbike</span>.</h3>
-              <p>With live dashboard, navigation, GPS tracking<br>and ride stats, our app makes your ride more<br>than just a ride. It becomes a whole new<br>experience.</p>
-              <%= link_to root_path do %>
-                <p class="btn-to-other-page">Discover the app</p>
-                <i class="fas fa-chevron-right"></i>
-              <% end %>
-            </div>
+        <div class="text-container">
+          <div class="text-content">
+            <h3>More than an <span>e-motorbike</span>.</h3>
+            <p>With live dashboard, navigation, GPS tracking<br>and ride stats, our app makes your ride more<br>than just a ride. It becomes a whole new<br>experience.</p>
+            <%= link_to root_path do %>
+              <p class="btn-to-other-page">Discover the app</p>
+              <i class="fas fa-chevron-right"></i>
+            <% end %>
           </div>
         </div>
       </div>
@@ -92,7 +89,7 @@
       </div>
       <div class="right-container">
         <div class="right-content">
-          <% image_tag('', class: "handle-smartphone-yoda") %>
+          <%= image_tag('', class: "handle-smartphone-yoda") %>
         </div>
       </div>
     </div>

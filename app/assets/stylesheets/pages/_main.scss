@@ -1,6 +1,219 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+// Define fonts for website
+$body: 'Roboto', sans-serif;
+
+// Define variables for your color scheme
+$green: #00FFB7;
+$black: #000000;
+$light-grey: #F6F6F6;
+$light-light-grey: #FAFAFA;
+$light-black: #0D0D0D;
+
+.navbar-height{
+  height: 5vh;
+}
 .main-container{
   font-family: $body;
   .page-container{
-    height: 100vh;
+    height: 95vh;
+    .page-1-content{
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+        margin-left: 120px;
+      .text-container{
+        margin-bottom: 70px;
+        .text-content{
+          h1{
+            font-size: 80px;
+            font-weight: 500;
+            span{
+              color: $green;
+            }
+          }
+          h2{
+            font-size: 26px;
+            font-weight: 300;
+            color: $light-black;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+  .media-container{
+    height: 38vh;
+    background-color: $green;
+    .media-content{
+      height: 100%;
+      .logo-media{
+        margin:0 45px;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .bruzz{
+          width: 250px;
+        }
+        .hln{
+          width: 180px;
+        }
+        .newmobility{
+          width: 330px;
+        }
+        .dh{
+          width: 250px;
+        }
+      }
+    }
+  }
+  .page-2-content{
+    display: flex;
+    height: 100%;
+    .left-container{
+      flex-basis: 50%;
+      background-color: white;
+      margin-left: 120px;
+      .text-container{
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .text-content{
+          h3{
+            font-size: 80px;
+            font-weight: 500;
+            span{
+              color: $green;
+            }
+          }
+          p{
+            font-size: 26px;
+            font-weight: 300;
+            color: $light-black;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    .right-container{
+      flex-basis: 50%;
+      background-color: $light-light-grey;
+      .right-content{
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .page-3-content{
+    display: flex;
+    height: 100%;
+    .left-container{
+      flex-basis: 50%;
+      background-color: $black;
+      .left-content{
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .right-container{
+      flex-basis: 50%;
+      .text-container{
+        .text-content{
+
+        }
+      }
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
