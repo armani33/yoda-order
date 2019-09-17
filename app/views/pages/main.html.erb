@@ -33,7 +33,7 @@
         <div class="text-container">
           <div class="text-content">
             <h3>Light weight<br>means<br><span> maniability</span>.</h3>
-            <p>No pedals means you won't break a sweat.</p>
+            <p>No pedals. You won't break a sweat again.</p>
             <% link_to root_path do %>
               <p class="btn-to-other-page">Discover the bike</p>
               <i class="fas fa-chevron-right"></i>
@@ -53,15 +53,15 @@
     <div class="page-3-content">
       <div class="left-container">
         <div class="left-content">
-          <%= image_tag('Yoda/cable@2x.png', class: "handle-smartphone-yoda") %>
+          <%= image_tag('Yoda/handle-smartphone-cable@2x.png', class: "handle-smartphone-yoda") %>
         </div>
       </div>
       <div class="right-container">
         <div class="text-container">
           <div class="text-content">
-            <h3>More than an <span>e-motorbike</span>.</h3>
-            <p>With live dashboard, navigation, GPS tracking<br>and ride stats, our app makes your ride more<br>than just a ride. It becomes a whole new<br>experience.</p>
-            <%= link_to root_path do %>
+            <h3>More than an<br><span>e-motorbike</span>.</h3>
+            <p>The Yoda's cockpit seamlessly integrates<br>with your phone. Navigation becomes<br>easy peasy.</p>
+            <% link_to root_path do %>
               <p class="btn-to-other-page">Discover the app</p>
               <i class="fas fa-chevron-right"></i>
             <% end %>
@@ -74,22 +74,20 @@
   <div class="page-container">
     <div class="page-4-content">
       <div class="left-container">
-        <div class="left-content">
-          <div class="text-container">
-            <div class="text-content">
-              <h3>You’ll never <span>ride</span> alone.</h3>
-              <p>Our support team is with you every meters of the way..</p>
-              <%= link_to root_path do %>
-                <p class="btn-to-other-page">Learn more</p>
-                <i class="fas fa-chevron-right"></i>
-              <% end %>
-            </div>
+        <div class="text-container">
+          <div class="text-content">
+            <h3><span>Support</span> before<br>you need it<span>.</span></h3>
+            <p>Our support team is with you every meters of the way.</p>
+            <% link_to root_path do %>
+              <p class="btn-to-other-page">Learn more</p>
+              <i class="fas fa-chevron-right"></i>
+            <% end %>
           </div>
         </div>
       </div>
       <div class="right-container">
         <div class="right-content">
-          <%= image_tag('', class: "handle-smartphone-yoda") %>
+          <%= image_tag('Yoda/Notification@2x.png', class: "handle-smartphone-yoda") %>
         </div>
       </div>
     </div>
@@ -97,9 +95,66 @@
 
   <div class="page-container">
     <div class="review-container">
-      <div class="review-content-top"></div>
-      <div class="review-content-middle"></div>
-      <div class="review-content-footer"></div>
+      <div class="review-content">
+        <div class="review-content-top">
+          <p>#NOFILTER</p>
+          <h3>They <span>saw</span> it. They <span>rode</span> it. They <span>loved</span> it.</h3>
+          <p id="community">Find out what the Yoda community thinks.</p>
+        </div>
+        <div class="review-content-middle">
+          <div class="cards-container">
+
+            <div class="card">
+              <div class="card-info">
+                <p class="name">Alexis</p>
+                <p class="location">Brussels, Belgium</p>
+              </div>
+              <div class="comment">
+                <p>I ride on motorcycles a lot...</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-info">
+                <p class="name">Alexis</p>
+                <p class="location">Brussels, Belgium</p>
+              </div>
+              <div class="comment">
+                <p>I ride on motorcycles a lot...</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-info">
+                <p class="name">Alexis</p>
+                <p class="location">Brussels, Belgium</p>
+              </div>
+              <div class="comment">
+                <p>I ride on motorcycles a lot...</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-info">
+                <p class="name">Alexis</p>
+                <p class="location">Brussels, Belgium</p>
+              </div>
+              <div class="comment">
+                <p>I ride on motorcycles a lot...</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="review-content-footer">
+          <i class="fas fa-circle"></i>
+          <i class="fas fa-circle"></i>
+          <%link_to root_path do %>
+            <p class="btn-to-other-page">See all the reviews</p>
+            <i class="fas fa-chevron-right"></i>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 

@@ -74,8 +74,8 @@ $light-black: #0D0D0D;
     .left-container{
       flex-basis: 50%;
       background-color: white;
-      margin-left: 120px;
       .text-container{
+        margin-left: 120px;
         height: 100%;
         display: flex;
         justify-content: flex-start;
@@ -120,6 +120,7 @@ $light-black: #0D0D0D;
         height: 100%;
         display: flex;
         align-items: flex-end;
+        justify-content: flex-end;
         img{
           width: 100%;
         }
@@ -128,8 +129,142 @@ $light-black: #0D0D0D;
     .right-container{
       flex-basis: 50%;
       .text-container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .text-content{
+          h3{
+            font-size: 80px;
+            font-weight: 500;
+            span{
+              color: $green;
+            }
+          }
+          p{
+            font-size: 26px;
+            font-weight: 300;
+            color: $light-black;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+  .page-4-content{
+    display: flex;
+    height: 100%;
+    .left-container{
+      flex-basis: 50%;
+      background-color: white;
+      .text-container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text-content{
+          h3{
+            font-size: 80px;
+            font-weight: 500;
+            span{
+              color: $green;
+            }
+          }
+          p{
+            font-size: 26px;
+            font-weight: 300;
+            color: $light-black;
+            margin-top: 22px;
+          }
+        }
+      }
+    }
+    .right-container{
+      flex-basis: 50%;
+      .right-content{
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
 
+  .review-container{
+    height: 90vh;
+    background-color: $light-light-grey;
+    .review-content{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin-left: 120px;
+      .review-content-top{
+        flex-basis: 25%;
+        margin-top: 80px;
+        h3{
+          font-size: 40px;
+          font-weight: 500;
+          span{
+            color: $green;
+          }
+        }
+        p{
+          font-size: 23px;
+          font-weight: 400;
+          color: $light-black;
+          margin: 20px 0;
+        }
+        #community{
+          font-weight: 300;
+        }
+      }
+      .review-content-middle{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .cards-container{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          .card{
+            width: 280px;
+            height: 175px;
+            background-color: white;
+            box-shadow: 0 0 2px $light-grey;
+            border: 1px solid $light-grey;
+            border-radius: 2px;
+            padding: 35px;
+            .card-info {
+              p.name{
+                font-weight: 500;
+                font-size: 28px;
+                color: $black;
+              }
+              p.location{
+                color: #767373;
+                font-weight: 400;
+                font-size: 17px;
+              }
+            }
+            .comment{
+              margin-top: 35px;
+              font-size: 15;
+              font-weight: 300;
+              color: #767373;
+            }
+          }
+        }
+      }
+      .review-content-footer{
+        flex-basis: 25%;
+        i{
+          margin-left: 10px;
+          font-size: 11px;
+          color: grey;
         }
       }
     }
