@@ -11,7 +11,7 @@
   right: 0;
   background-color: transparent;
   z-index: 1;
-  // font-family: $body;
+  font-family: $body;
   height: 100px;
   .nav-content{
     height: 100%;
@@ -66,12 +66,12 @@
           align-items: center;
         }
         .test-ride{
-          background-color: black;
+          background-color: $black;
           color: white;
         }
         .buy{
-          background-color: green;
-          color: black;
+          background-color: $green;
+          color: $black;
         }
       }
     }
