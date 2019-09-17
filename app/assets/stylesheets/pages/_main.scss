@@ -1,15 +1,3 @@
-// Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-// Define fonts for website
-$body: 'Roboto', sans-serif;
-
-// Define variables for your color scheme
-$green: #00FFB7;
-$black: #000000;
-$light-grey: #F6F6F6;
-$light-light-grey: #FAFAFA;
-$light-black: #0D0D0D;
-
 .navbar-height{
   height: 5vh;
 }
@@ -214,11 +202,12 @@ $light-black: #0D0D0D;
         p{
           font-size: 23px;
           font-weight: 400;
-          color: $light-black;
+          color: $black;
           margin: 20px 0;
         }
         #community{
           font-weight: 300;
+          color: $light-black;
         }
       }
       .review-content-middle{
