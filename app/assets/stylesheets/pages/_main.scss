@@ -6,11 +6,14 @@
   .page-container{
     height: 95vh;
     .page-1-content{
-        display: flex;
-        height: 100%;
-        align-items: flex-end;
-        margin-left: 120px;
+      background: image-url("Yoda/Yoda@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      height: 100%;
+      align-items: flex-end;
       .text-container{
+        margin-left: 120px;
         margin-bottom: 70px;
         .text-content{
           h1{
@@ -218,11 +221,11 @@
         .cards-container{
           width: 100%;
           // c'est 3 lignes serve a faire le scroll vertical
-          overflow-x: scroll;
-          overflow-y: hidden;
-          white-space: nowrap;
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: auto;
           .card{
-            display: inline-block;// cette ligne sert a faire le scroll vertical
+            flex: 0 0 auto;// cette ligne sert a faire le scroll vertical
             margin-right: 20px;
             width: 280px;
             height: 175px;
