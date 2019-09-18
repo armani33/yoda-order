@@ -217,13 +217,16 @@
         align-items: center;
         .cards-container{
           width: 100%;
-          display: flex;
-          justify-content: space-between;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          white-space: nowrap;
           .card{
+            display: inline-block;
+            margin-right: 20px;
             width: 280px;
             height: 175px;
             background-color: white;
-            box-shadow: 0 0 2px $light-grey;
+            box-shadow: 0 0 3px $light-grey;
             border: 1px solid $light-grey;
             border-radius: 2px;
             padding: 35px;

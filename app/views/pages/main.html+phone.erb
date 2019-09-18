@@ -1,7 +1,134 @@
 <%= render "shared/navbar-mobile" %>
 
+<div class="main-mobile-container">
+  <div class="page-mobile-container">
+    <div class="page-1-mobile-content">
+      <div class="text-container">
+        <div class="text-content">
+          <h1><span>Lead</span>.<br>Let others follow<span>.</span></h1>
+          <h2>You'll zip through traffic like never before<br>up to 45km/h.</h2>
+          <%link_to root_path do %>
+            <p>Discover the bike</p>
+            <i class="fas fa-chevron-right"></i>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="media-mobile-container">
+    <div class="media-mobile-content">
+      <div class="logo-mobile-media">
+        <%= image_tag('Medias/bruzz@2x.png', class: "bruzz") %>
+        <%= image_tag('Medias/HLN@2x.png', class: "hln") %>
+        <%= image_tag('Medias/new-mobility@2x.png', class: "newmobility") %>
+        <%= image_tag('Medias/DH@2x.png', class: "dh") %>
+      </div>
+    </div>
+  </div>
 
+  <div class="page-mobile-container">
+    <div class="page-2-mobile-content">
+      <div class="text-container">
+        <div class="text-content">
+          <h3>Light weight means<br><span> maniability</span>.</h3>
+          <p>No pedals. You won't break a sweat again.</p>
+          <% link_to root_path do %>
+            <p class="btn-to-other-page">Discover the bike</p>
+            <i class="fas fa-chevron-right"></i>
+          <% end %>
+        </div>
+      </div>
+      <%= image_tag('Yoda/frontbike-crop@2x.png', class: "front-fork-yoda") %>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-3-mobile-content">
+      <div class="text-container">
+        <div class="text-content">
+          <h3>More than an<br><span>e-motorbike</span>.</h3>
+          <p>The Yoda's cockpit seamlessly integrates<br>with your phone. Navigation becomes<br>easy peasy.</p>
+          <% link_to root_path do %>
+            <p class="btn-to-other-page">Discover the app</p>
+            <i class="fas fa-chevron-right"></i>
+          <% end %>
+        </div>
+      </div>
+      <%= image_tag('Yoda/handle-smartphone-cable@2x.png', class: "handle-smartphone-yoda") %>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-4-mobile-content">
+      <div class="text-container">
+        <div class="text-content">
+          <h3><span>Support</span> before<br>you need it.</h3>
+          <p>Our support team is with you every meters of the way.</p>
+          <% link_to root_path do %>
+            <p class="btn-to-other-page">Learn more</p>
+            <i class="fas fa-chevron-right"></i>
+          <% end %>
+        </div>
+      </div>
+      <%= image_tag('App/Notification-app@2x.png', class: "smartphone-yoda") %>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-review-mobile-content">
+      <div class="review-content-top">
+        <p>#NOFILTER</p>
+        <h3>They <span>saw</span> it.<br>They <span>rode</span> it. They <span>loved</span> it.</h3>
+        <p id="community">Find out what the Yoda community thinks.</p>
+      </div>
+      <div class="cards-wrapper">
+
+        <div class="card">
+          <div class="card-info">
+            <p class="name">Alexis</p>
+            <p class="location">Brussels, Belgium</p>
+          </div>
+          <div class="comment">
+            <p>I ride on motorcycles a lot, but <br> a Yoda requires less skills<br>+ it's really fun.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-info">
+            <p class="name">Benjamin</p>
+            <p class="location">Brussels, Belgium</p>
+          </div>
+          <div class="comment">
+            <p>I now wish my e-Mountain Bike <br>could go faster. The design is nice too.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-info">
+            <p class="name">Jessy</p>
+            <p class="location">Brussels, Belgium</p>
+          </div>
+          <div class="comment">
+            <p>That bike is beautifull !!!</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-info">
+            <p class="name">Leaticia</p>
+            <p class="location">Brussels, Belgium</p>
+          </div>
+          <div class="comment">
+            <p>The riding experience of a bicycle<br>is so enjoyable, cause it ask no<br>skills at all to ride it.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
 
@@ -15,7 +142,7 @@
 <script>
   $(document).ready(function() {
       $(window).scroll(function() {
-          var height = $('.page-1-content').height();
+          var height = $('.page-1-mobile-content').height();
           var scrollTop = $(window).scrollTop();
 
           if (scrollTop >= height - height*0.96) {
