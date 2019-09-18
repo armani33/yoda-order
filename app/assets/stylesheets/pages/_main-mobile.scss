@@ -2,13 +2,19 @@
   font-family: $body;
   .page-mobile-container{
     .page-1-mobile-content{
-      height: 95vh;
       display: flex;
-      align-items: flex-end;
+      flex-direction: column;
+      position: relative;
+      img{
+        margin-top: 300px;
+        width: 100%;
+      }
       .text-container{
-        margin-left: 40px;
-        margin-bottom: 120px;
+        position: absolute;
+        bottom: 120px;
+        left: 40px;
         .text-content{
+
           h1{
             font-size: 100px;
             font-weight: 500;
@@ -27,7 +33,7 @@
     }
   }
   .media-mobile-container{
-    height: 20vh;
+    height: 350px;
     background-color: $green;
     .media-mobile-content{
       height: 100%;
@@ -53,10 +59,8 @@
     }
   }
   .page-2-mobile-content{
-    height: 84vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     .text-container{
       display: flex;
       justify-content: flex-start;
@@ -72,7 +76,7 @@
           }
         }
         p{
-          font-size: 45px;
+          font-size: 35px;
           font-weight: 300;
           color: $light-black;
           margin-top: 20px;
@@ -84,7 +88,6 @@
     }
   }
   .page-3-mobile-content{
-    height: 88vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -105,10 +108,10 @@
           }
         }
         p{
-          font-size: 45px;
+          font-size: 35px;
           font-weight: 300;
           color: white;
-          margin-top: 20px;
+          margin-top: 30px;
         }
       }
     }
@@ -117,7 +120,6 @@
     }
   }
   .page-4-mobile-content{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -139,10 +141,10 @@
           }
         }
         p{
-          font-size: 45px;
+          font-size: 35px;
           font-weight: 300;
           color: $black;
-          margin-top: 20px;
+          margin-top: 30px;
         }
       }
     }
@@ -151,7 +153,6 @@
     }
   }
   .page-review-mobile-content{
-    height: 75vh;
     .review-content-top{
       margin: 130px 40px 0 40px;
       h3{
@@ -162,7 +163,7 @@
         }
       }
       p{
-        font-size: 45px;
+        font-size: 35px;
         font-weight: 400;
         color: $black;
         margin: 20px 0;
@@ -179,8 +180,8 @@
       overflow-x: auto;
       .card{
         flex: 0 0 auto;
-        width: 70vw;
-        height: 25vh;
+        width: 700px;
+        height: 350px;
         background-color: white;
         box-shadow: 0 0 10px #F8F8F8;
         border: 2px solid $green;
