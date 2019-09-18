@@ -1,0 +1,29 @@
+<%= render "shared/navbar-mobile" %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.page-1-content').height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - height*0.96) {
+              $('.nav-mobile-container').addClass('solid-nav');
+          } else {
+              $('.nav-mobile-container').removeClass('solid-nav');
+          }
+      });
+  });
+</script>
+

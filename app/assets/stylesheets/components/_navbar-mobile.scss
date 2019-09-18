@@ -1,0 +1,25 @@
+//**** Navbar mobile ****
+
+.nav-mobile-container{
+  padding: 10px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  .nav-mobile-content{
+    padding: 30px;
+    .nav-mobile-logo{
+      img{
+      width: 300px;
+      }
+    }
+  }
+}
+.solid-nav {
+  background-color: white;
+  transition: background-color 0.2s linear;
+}
+
+
