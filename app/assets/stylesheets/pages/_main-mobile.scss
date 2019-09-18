@@ -210,10 +210,28 @@
   }
 }
 
-@media (min-height: 700px){
-  .page-1-mobile-content{
-    height: 30vh;
-    background-color: red;
+@media only screen
+  and (device-height: 812px)
+  and (-webkit-device-pixel-ratio : 3)
+  {
+  .main-mobile-container{
+    .page-mobile-container{
+      .page-1-mobile-content{
+        height: 72vh;
+      }
+      .page-2-mobile-content{
+      height: 75vh;
+      }
+      .page-3-mobile-content{
+      height: 75vh;
+      }
+      .page-4-mobile-content{
+      height: 75vh;
+      }
+      .page-review-mobile-content{
+      height: 65vh;
+      }
+    }
   }
 }
 
