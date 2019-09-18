@@ -217,11 +217,12 @@
         align-items: center;
         .cards-container{
           width: 100%;
+          // c'est 3 lignes serve a faire le scroll vertical
           overflow-x: scroll;
           overflow-y: hidden;
           white-space: nowrap;
           .card{
-            display: inline-block;
+            display: inline-block;// cette ligne sert a faire le scroll vertical
             margin-right: 20px;
             width: 280px;
             height: 175px;

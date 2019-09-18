@@ -76,7 +76,7 @@
           }
         }
         p{
-          font-size: 35px;
+          font-size: 45px;
           font-weight: 300;
           color: $light-black;
           margin-top: 20px;
@@ -108,7 +108,7 @@
           }
         }
         p{
-          font-size: 35px;
+          font-size: 45px;
           font-weight: 300;
           color: white;
           margin-top: 30px;
@@ -141,7 +141,7 @@
           }
         }
         p{
-          font-size: 35px;
+          font-size: 45px;
           font-weight: 300;
           color: $black;
           margin-top: 30px;
@@ -163,7 +163,7 @@
         }
       }
       p{
-        font-size: 35px;
+        font-size: 45px;
         font-weight: 400;
         color: $black;
         margin: 20px 0;
@@ -175,13 +175,14 @@
     }
     .cards-wrapper{
       margin: 130px 0 ;
+      // c'est 3 lignes serve a faire le scroll vertical
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
       .card{
-        flex: 0 0 auto;
+        flex: 0 0 auto; // cette ligne sert a faire le scroll vertical
         width: 700px;
-        height: 350px;
+        height: 480px;
         background-color: white;
         box-shadow: 0 0 10px #F8F8F8;
         border: 2px solid $green;
@@ -211,32 +212,9 @@
   }
 }
 
-@media only screen
-  and (device-height: 812px)
-  and (-webkit-device-pixel-ratio : 3)
-  {
-  .main-mobile-container{
-    .page-mobile-container{
-      .page-1-mobile-content{
-        height: 72vh;
-      }
-      .page-2-mobile-content{
-      height: 75vh;
-      }
-      .page-3-mobile-content{
-      height: 75vh;
-      }
-      .page-4-mobile-content{
-      height: 75vh;
-      }
-      .page-review-mobile-content{
-      height: 65vh;
-      }
-    }
-  }
+.footer-mobile-height{
+  height: 160px;
 }
-
-
 
 
 
