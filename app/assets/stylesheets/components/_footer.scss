@@ -5,6 +5,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .top{
+      margin-left: 120px;
+      display: flex;
+      .brand{
+        img{
+          width: 180px;
+        }
+      }
+    }
     .menu{
       display: flex;
       margin: 70px 0 10px 0;
