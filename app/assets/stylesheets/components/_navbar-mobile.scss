@@ -32,8 +32,11 @@
   right: 0;
   .btn-mobile-content{
     display: flex;
-    .nav-mobile-btn{
+    a{
       flex-basis: 50%;
+      text-decoration: none;
+    }
+    .nav-mobile-btn{
       padding: 60px;
       text-align: center;
       p{

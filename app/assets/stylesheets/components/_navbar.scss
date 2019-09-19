@@ -53,6 +53,9 @@
         height: 100%;
         display: flex;
         justify-content: flex-end;
+        a{
+          text-decoration: none;
+        }
         .nav-btn{
           height: 100%;
           width: 230px;
