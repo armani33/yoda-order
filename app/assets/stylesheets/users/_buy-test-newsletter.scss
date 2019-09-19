@@ -1,0 +1,24 @@
+.newsletter-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  .newsletter-content{
+
+    p{
+      font-family: $body;
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .newsletter-container{
+    .newsletter-content{
+      p{
+        font-size: 30px;
+      }
+    }
+  }
+}
