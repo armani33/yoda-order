@@ -1,7 +1,9 @@
-<%= form_for @user, url: users_create_path, method: :post do |f| %>
-  <%= f.text_field :email, :placeholder => "Enter Email" %>
-  <%= f.submit value: "Submit" %>
-  <!-- <button type="submit" class="btn-newletter">
-      <i class="fas fa-long-arrow-right"></i>
-  </button> -->
-<% end %>
+<div class="form-container">
+  <%= form_for @user, url: users_create_path, id: "newsletter-form", method: :post do |f| %>
+    <%= f.text_field :email, id: "user-email", :placeholder => "Enter Email" %>
+    <%= f.submit value: "Submit" %>
+    <!-- <button type="submit" class="btn-newletter">
+        <i class="fas fa-long-arrow-right"></i>
+    </button> -->
+  <% end %>
+</div>
