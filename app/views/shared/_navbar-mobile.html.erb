@@ -18,11 +18,15 @@
 
 <div class="nav-footer-container">
   <div class="btn-mobile-content">
-    <div class="nav-mobile-btn test-ride">
-      <p>TEST RIDE</p>
-    </div>
-    <div class="nav-mobile-btn buy">
-      <p>BUY</p>
-    </div>
+    <%= link_to newsletter_test_path do %>
+      <div class="nav-mobile-btn test-ride">
+        <p>TEST RIDE</p>
+      </div>
+    <% end %>
+    <%= link_to newsletter_buy_path do %>
+      <div class="nav-mobile-btn buy">
+        <p>BUY</p>
+      </div>
+    <% end %>
   </div>
 </div>

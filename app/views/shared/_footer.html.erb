@@ -6,6 +6,12 @@
           <%= image_tag('Logo/Logo-white.png', class: 'logo-image') %>
         <% end %>
       </div>
+      <%= form_for @user, url: users_create_path, method: :post do |f| %>
+        <%= f.text_field :email, :placeholder => "Enter Email" %>
+        <button type="submit" class="btn-newletter">
+            <i class="fas fa-long-arrow-right"></i>
+        </button>
+      <% end %>
     </div>
     <div class="menu">
       <a href="#">TERMS OF USE</a>

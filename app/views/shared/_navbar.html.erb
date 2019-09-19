@@ -15,12 +15,16 @@
     </div>
     <div class="btn-container">
       <div class="btn-content">
-        <div class="nav-btn test-ride">
-          <p>TEST RIDE</p>
-        </div>
-        <div class="nav-btn buy">
-          <p>BUY</p>
-        </div>
+        <%= link_to newsletter_test_path do %>
+          <div class="nav-btn test-ride">
+            <p>TEST RIDE</p>
+          </div>
+        <% end %>
+        <%= link_to newsletter_buy_path do %>
+          <div class="nav-btn buy">
+            <p>BUY</p>
+          </div>
+        <% end %>
       </div>
   </div>
 </nav>
