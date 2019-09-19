@@ -12,6 +12,35 @@
           margin-left: 70px;
         }
       }
+      form.new-user{
+        background-color: black;
+
+        width: 100%;
+      }
+      input#user-email{
+        width: 94%;
+        padding: 0;
+        margin-bottom: 7px;
+        margin-right:0;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid white;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-size: 20px;
+      }
+      input[type=submit]{
+        margin-left: 0;
+        width: 95%;
+        padding: 8px;
+        color: black;
+        border: 0;
+        font-size: 20px;
+        border-radius: 3px;
+        background-color: white;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
     }
     .menu{
       width: 100%;
@@ -39,7 +68,20 @@
 }
 
 
-
+@media (max-width: 500px) {
+  .footer-container{
+    .footer-content{
+      .top{
+        input#user-email{
+          font-size: 30px;
+        }
+        input[type=submit]{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
 
 
 
