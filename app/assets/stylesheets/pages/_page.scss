@@ -1,0 +1,50 @@
+.app-page-wrapper{
+  font-family: $body;
+}
+
+.page-app-container{
+  display: flex;
+  height: 95vh;
+  .text-container{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 120px;
+    .text-content{
+      margin-top: 80px;
+      h1{
+        font-size: 115px;
+        font-weight: 500;
+        span{
+          color: $green;
+        }
+      }
+      p{
+        font-size: 26px;
+        font-weight: 300;
+        color: $light-black;
+        margin: 50px 0 70px 0;
+      }
+      }
+      .app-download-btn{
+        img{
+          margin-top: 160px;
+          width: 50%;
+        }
+      }
+    }
+  .iphone-mockup{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img{
+      margin-top: 180px;
+      width: 50%;
+      margin-right: 80px;
+    }
+  }
+}
+
