@@ -29,17 +29,21 @@
           list-style: none;
           padding: 5px;
           margin-top: 5px;
-          li{
-            display: block;
+          a{
+            text-decoration: none;
+            color: black;
             float: left;
             padding: 5px;
             margin-left: 40px;
             font-size: 19px;
             height: 100%;
             border-bottom: 2px solid transparent;
-            &:hover{
-              border-bottom: 2px solid black;
-            }
+          }
+          a:active{
+            border-bottom: 2px solid black;
+          }
+          a:hover{
+            border-bottom: 2px solid black;
           }
         }
       }
@@ -71,6 +75,10 @@
         .buy{
           background-color: $green;
           color: $black;
+          &:hover{
+            span { display : none }
+            &:before { content: "€2,990.00"}
+          }
         }
       }
     }

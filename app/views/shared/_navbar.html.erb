@@ -1,14 +1,16 @@
 <nav class="nav-container">
   <div class="nav-content">
     <div class="nav-logo">
-      <%= image_tag('Logo/Logo.png', class: "logo-nav") %>
+      <%= link_to root_path do %>
+        <%= image_tag('Logo/Logo@2x.png', class: "logo-nav") %>
+      <% end %>
     </div>
     <div class="menu-container">
       <div class="menu-content">
-        <ul>
-          <!-- <li>MOTORBIKE</li>
-          <li>APP</li>
-          <li>SUPPORT</li>
+        <ul id="navigation">
+          <a href="<%= app_path %>">BIKE</a>
+          <a href="<%= app_path %>">APP</a>
+          <!-- <li>SUPPORT</li>
           <li>REVIEW</li> -->
         </ul>
       </div>
@@ -22,7 +24,7 @@
         <% end %>
         <%= link_to newsletter_buy_path do %>
           <div class="nav-btn buy">
-            <p>BUY</p>
+            <p><span>BUY</span></p>
           </div>
         <% end %>
       </div>

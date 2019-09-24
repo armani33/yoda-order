@@ -1,7 +1,18 @@
 class PagesController < ApplicationController
-  before_action :set_variant, only: [:main]
+  before_action :set_variant, only: [:main, :app]
   def main
     @user = User.new
+
+    respond_to do |format|
+      format.html(&:phone)
+      # do |html|
+      # html.phone
+      # html.tablet
+      # end
+    end
+  end
+
+  def app
 
     respond_to do |format|
       format.html(&:phone)
