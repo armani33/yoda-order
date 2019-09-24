@@ -1,7 +1,8 @@
 <%= render "shared/navbar" %>
 
 <div class="app-page-wrapper">
-  <div class="page-app-container">
+
+  <div class="page-1-app-container">
     <div class="text-container">
       <div class="text-content">
         <h1>Be in <span>control</span>.</h1>
@@ -15,4 +16,158 @@
       <%= image_tag('App/Iphone_X_home-page@2x.png', class: "app-home-page") %>
     </div>
   </div>
+
+  <div class="all-page-app-container">
+    <div class="text-container black-bg">
+      <div class="text-content text-color-white">
+        <p class="hash-tag">APP-BASED ON/OFF</p>
+        <h1>Your Yoda,<br> <span>protected</span>.</h1>
+        <p>Handy and secure. You are the only<br>one who can activate the bike.</p>
+      </div>
+      <div class="sum-up-infos">
+        <div class="infos">
+          <%= image_tag('App/Bluetooth-circle@2x.png', class: "circle-info") %>
+          <p>Pare your bike with Bluetooth</p>
+        </div>
+        <div class="infos">
+          <%= image_tag('App/Lock-circle@2x.png', class: "circle-info") %>
+          <p>Lock / Unlock the bike</p>
+        </div>
+      </div>
+    </div>
+    <div class="iphone-mockup">
+      <%= image_tag('App/Iphone_X_Bluetooth-pairing@2x.png', class: "bluetooth-pairing") %>
+    </div>
+  </div>
+
+  <div class="all-page-app-container">
+    <div class="text-container black-bg">
+      <div class="text-content text-color-white">
+        <p class="hash-tag">LIVE DASHBOARD</p>
+        <h1><span>Data</span> at a<br>glance.</h1>
+        <p>Speed, duration, length. A live dashboard<br>keeps your informed of the status of your ride.</p>
+      </div>
+      <div class="sum-up-infos">
+        <div class="infos">
+          <%= image_tag('App/Battery@2x.png', class: "circle-info") %>
+          <p>Battery level</p>
+        </div>
+        <div class="infos">
+          <%= image_tag('App/Speed@2x.png', class: "circle-info") %>
+          <p>Speed, duration, distance</p>
+        </div>
+        <div class="infos">
+          <%= image_tag('App/Eco-mode@2x.png', class: "circle-info") %>
+          <p>Economic Mode => max speed : 30km/h</p>
+        </div>
+      </div>
+    </div>
+    <div class="iphone-mockup light-grey-bg">
+      <%= image_tag('App/Iphone_X_Dashboard@2x.png', class: "dashboard") %>
+    </div>
+  </div>
+
+  <div class="all-page-app-container">
+    <div class="text-container black-bg">
+      <div class="text-content text-color-white">
+        <p class="hash-tag">NAVIGATION</p>
+        <h1><span>Go</span> places.</h1>
+        <p>Never get lost. A visual, turn-by-turn<br>navigation service guides your ride.</p>
+      </div>
+      <div class="sum-up-infos">
+        <div class="infos">
+          <%= image_tag('App/Locations@2x.png', class: "circle-info") %>
+          <p>Search locations</p>
+        </div>
+        <div class="infos">
+          <%= image_tag('App/Gps@2x.png', class: "circle-info") %>
+          <p>Get directions</p>
+        </div>
+      </div>
+    </div>
+    <div class="iphone-mockup light-grey-bg">
+      <%= image_tag('App/Iphone_X_gps@2x.png', class: "gps-view") %>
+    </div>
+  </div>
+
+  <div class="all-page-app-container">
+    <div class="text-container white-bg">
+      <div class="text-content text-color-black">
+        <p class="hash-tag">GPS TRACKING</p>
+        <h1><span>Find</span> my<br>Yoda.</h1>
+        <p>Can’t find your bike? The YodaCity<br>App can do it for you.</p>
+      </div>
+      <div class="sum-up-infos text-color-black">
+        <div class="infos border-light">
+          <%= image_tag('App/Search@2x.png', class: "circle-info") %>
+          <p>Find my bike</p>
+        </div>
+        <div class="infos">
+          <%= image_tag('App/stolen@2x.png', class: "circle-info") %>
+          <p>Declare the bike stolen</p>
+        </div>
+      </div>
+    </div>
+    <div class="iphone-mockup light-grey-bg">
+      <%= image_tag('App/Iphone_X_track-yoda@2x.png', class: "gps-view") %>
+    </div>
+  </div>
+
+  <div class="all-page-app-container">
+    <div class="text-container white-bg">
+      <div class="text-content text-color-black">
+        <p class="hash-tag">RIDE STATS</p>
+        <h1>Stay<br><span>on top</span>.</h1>
+        <p>Starting point, destination, speed,<br> distance, and more. Keep track of all your rides.</p>
+      </div>
+      <div class="sum-up-infos text-color-black">
+        <div class="infos border-light">
+          <%= image_tag('App/Flag@2x.png', class: "circle-info") %>
+          <p>Route history</p>
+        </div>
+        <div class="infos">
+          <%= image_tag('App/Bar-chart@2x.png', class: "circle-info") %>
+          <p>Monitor and analize statistics</p>
+        </div>
+      </div>
+    </div>
+    <div class="iphone-mockup grey-bg">
+      <%= image_tag('App/Iphone_X_stat-infos@2x.png', class: "gps-view") %>
+    </div>
+  </div>
+
+  <div class="all-page-app-container">
+    <div class="text-container white-bg">
+      <div class="text-content text-color-black">
+        <p class="hash-tag">NOTIFICATION</p>
+        <h1>Stay<br><span>informed</span>.</h1>
+        <p>Our remotes diagnostics system sends<br> you notifications about your bike. For<br>example, know when your brake-pads<br>or your tires need replacing.</p>
+        <%= link_to root_path do %>
+          <p id="btn-know-more">Know more about our service support</p>
+          <i class="fas fa-chevron-right"></i>
+        <% end %>
+      </div>
+    </div>
+    <div class="iphone-mockup grey-bg">
+      <%= image_tag('App/Iphone_X_notifications@2x.png', class: "gps-view") %>
+    </div>
+  </div>
+
+  <%= render "shared/footer" %>
 </div>
+
+
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.page-1-app-container').height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - height*0.96) {
+              $('.nav-container').addClass('solid-nav');
+          } else {
+              $('.nav-container').removeClass('solid-nav');
+          }
+      });
+  });
+</script>

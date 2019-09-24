@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   end
 
   def app
-
+    @user = User.new
     respond_to do |format|
       format.html(&:phone)
       # do |html|
