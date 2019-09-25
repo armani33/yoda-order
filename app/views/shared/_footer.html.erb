@@ -1,17 +1,57 @@
 <div class="footer-container">
-  <div class="footer-content">
-    <div class="top">
-      <div class="brand">
-        <%= link_to root_path do %>
-          <%= image_tag('Logo/Logo-white.png', class: 'logo-image') %>
-        <% end %>
+  <div class="footer-container-top">
+
+    <div class="footer-content-top">
+
+      <div class="content-left">
+        <div class="brand">
+          <div class="footer-logo">
+            <%= link_to root_path do %>
+              <%= image_tag('Logo/Logo-white.png', class: 'logo-image') %>
+            <% end %>
+          </div>
+          <div class="text-content">
+            <h2>YODA BIKES</h2>
+            <p>About Us</p>
+            <p>Carreers</p>
+          </div>
+        </div>
+        <ul class="list product">
+          <li>PRODUCT</li>
+          <li>Bike</li>
+          <li>App</li>
+          <li>Reviews</li>
+          <li>Support</li>
+          <li>Warranty</li>
+        </ul>
+        <ul class="list infos">
+          <li>INFOS</li>
+          <li>FAQ</li>
+          <li>Press</li>
+          <li>Contact</li>
+          <li>Delivery</li>
+          <li>Returns</li>
+        </ul>
+        <div class="newsletter">
+          <div class="newsletter-content">
+            <p>SIGN UP TO OUR NEWSLETTER</p>
+            <form class="footer-form" action="<%= users_create_path %>" method="post">
+              <input type="text" name="email" placeholder="Type in your email">
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+          </div>
+        </div>
       </div>
-      <%= render "shared/signup-form" %>
     </div>
-    <div class="menu">
-      <a href="#">TERMS OF USE</a>
-      <a href="#">PRIVACY POLICY</a>
-      <p>© 2019 YODACITY</p>
+  </div>
+  <div class="footer-container-bottom">
+    <div class="footer-content-bottom">
+      <div class="legal-menu-footer">
+        <a href="#">TERMS OF USE</a>
+        <a href="#">PRIVACY POLICY</a>
+        <p>© 2019 YODACITY</p>
+      </div>
     </div>
   </div>
 </div>
+

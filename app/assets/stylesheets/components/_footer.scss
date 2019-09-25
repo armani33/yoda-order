@@ -1,91 +1,132 @@
 .footer-container{
-  background-color: black;
-  .footer-content{
+  font-family: $body;
+  background-color: $dark-grey;
+  .footer-container-top{
+    border-bottom: 1px solid $footer-font-grey;
+    .footer-content-top{
+      display: flex;
+      margin-left: 120px;
+      margin-right: 120px;
+      padding: 130px 0;
+      .content-left{
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .brand{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          .footer-logo{
+            img{
+              width: 190px;
+            }
+          }
+          .text-content{
+            h2{
+              margin-top: 76px;
+              margin-bottom: 18px;
+              color: white;
+              font-weight: 500;
+              font-size: 18px;
+            }
+            p{
+              margin-bottom: 10px;
+              font-size: 18px;
+              font-weight: 500;
+              color: $footer-font-grey;
+            }
+            p:last-child{
+              margin: 0;
+            }
+          }
+        }
+        .list{
+          list-style: none;
+          li{
+            padding: 10px 0;
+            font-size: 18px;
+            font-weight: 500;
+            color: $footer-font-grey;
+          }
+          li:first-child{
+            color: white;
+          }
+          li:last-child{
+            padding-bottom: 0px;
+          }
+        }
+      }
+      .newsletter{
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        .newsletter-content{
+          border-bottom: 1px solid $footer-font-grey;
+          p{
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            margin-bottom: 12px;
+            margin-right: 45px;
+            margin-left: 18px;
+          }
+          form.footer-form{
+            display: flex;
+          }
+          input[type=text]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 0;
+            background-color: transparent;
+            box-sizing: border-box;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: $body;
+            text-indent: 0px;
+            color: white;
+            font-weight: 500;
+            outline: none !important;
+          }
+          button{
+            width: 20%;
+            background-color: transparent;
+            border: 0;
+            color: $footer-font-grey;
+            font-size: 25px;
+            outline: none !important;
+          }
+        }
+      }
+    }
+  }
+  .footer-container-bottom{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    .top{
-      .brand{
-        img{
-          width: 180px;
-          margin-left: 70px;
+    .footer-content-bottom{
+      padding: 70px 0;
+      flex-basis: 40%;
+      height: 100%;
+      .legal-menu-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 15px;
+        font-weight: 500;
+        a{
+          text-decoration: none;
+          color: white;
         }
-      }
-      form.new-user{
-        background-color: black;
-
-        width: 100%;
-      }
-      input#user-email{
-        width: 94%;
-        padding: 0;
-        margin-bottom: 7px;
-        margin-right:0;
-        border: none;
-        background-color: transparent;
-        border-bottom: 1px solid white;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        font-size: 20px;
-      }
-      input[type=submit]{
-        margin-left: 0;
-        width: 95%;
-        padding: 8px;
-        color: black;
-        border: 0;
-        font-size: 20px;
-        border-radius: 3px;
-        background-color: white;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-      }
-    }
-    .menu{
-      width: 100%;
-      display: flex;
-      margin: 70px 0 20px 0;
-      justify-content: center;
-      a{
-        margin-left: 100px;
-        color: white;
-        font-family: $body;
-        font-weight: 300;
-        font-size: 16px;
-        text-decoration: none
-      }
-      p{
-        margin-left: 100px;
-        margin-bottom: 60px;
-        color: white;
-        font-family: $body;
-        font-weight: 300;
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-
-@media (max-width: 500px) {
-  .footer-container{
-    .footer-content{
-      .top{
-        input#user-email{
-          font-size: 30px;
-        }
-        input[type=submit]{
-          font-size: 30px;
+        p{
+          color: $footer-font-grey;
         }
       }
     }
   }
 }
-
-
-
-
-
 
 
