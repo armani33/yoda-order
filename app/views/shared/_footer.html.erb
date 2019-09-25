@@ -35,10 +35,10 @@
         <div class="newsletter">
           <div class="newsletter-content">
             <p>SIGN UP TO OUR NEWSLETTER</p>
-            <form class="footer-form" action="<%= users_create_path %>" method="post">
-              <input type="text" name="email" placeholder="Type in your email">
-              <button type="submit"><i class="fas fa-arrow-right"></i></button>
-            </form>
+            <%= form_for @user, url: users_create_path, class: "footer-form", method: :post do |f| %>
+              <%= f.text_field :email, :placeholder => "Type in your email" %>
+              <submit type="submit"><i class="fas fa-arrow-right"></i></submit>
+            <% end %>
           </div>
         </div>
       </div>

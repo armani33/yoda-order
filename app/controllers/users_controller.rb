@@ -26,7 +26,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      flash[:success] = "Thanks for the subscription. We'll get to you nearly"
+      flash[:success] = "Thanks for the subscription."
       redirect_to root_path
     else
       # render :new => ca c'est si on veut rediriger vers une def local

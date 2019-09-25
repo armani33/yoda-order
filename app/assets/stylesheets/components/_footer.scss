@@ -76,14 +76,13 @@
             display: flex;
           }
           input[type=text]{
-            width: 100%;
+            width: 79%;
             padding: 12px 20px;
             margin: 8px 0;
             display: inline-block;
-            border: 0;
+            border: 0px;
             background-color: transparent;
-            box-sizing: border-box;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 500;
             font-family: $body;
             text-indent: 0px;
@@ -91,13 +90,21 @@
             font-weight: 500;
             outline: none !important;
           }
-          button{
-            width: 20%;
+          input[type=submit]{
+            width: 21%;
+            height: 100%;
+            margin: 8px 0;
+            display: inline-block;
             background-color: transparent;
             border: 0;
             color: $footer-font-grey;
-            font-size: 25px;
             outline: none !important;
+            z-index: 1
+          }
+          i{
+            margin-top: 10px;
+            font-size: 25px;
+            color: $footer-font-grey;
           }
         }
       }
