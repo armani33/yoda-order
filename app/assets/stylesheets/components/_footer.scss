@@ -112,11 +112,11 @@
   }
   .footer-container-bottom{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     .footer-content-bottom{
       padding: 70px 0;
-      flex-basis: 40%;
+      width: 40%;
       height: 100%;
       .legal-menu-footer{
         display: flex;

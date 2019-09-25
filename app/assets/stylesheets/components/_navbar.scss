@@ -14,7 +14,6 @@
   height: 100px;
   .nav-content{
     height: 100%;
-    // background-color: blue;
     display: flex;
     align-items: center;
     .nav-logo{
@@ -89,6 +88,6 @@
 }
 .solid-nav {
   background-color: white;
-  transition: background-color 0.2s linear;
+  transition: background-color 0.3s linear;
 }
 
