@@ -48,6 +48,17 @@
             border-bottom: 2px solid black;
           }
         }
+        ul#navigation-text-white{
+          a{
+            color: white;
+          }
+          a:active{
+            border-bottom: 2px solid white;
+          }
+          a:hover{
+            border-bottom: 2px solid white;
+          }
+        }
       }
     }
     .btn-container{
@@ -74,6 +85,10 @@
           background-color: $black;
           color: white;
         }
+        .test-ride-white{
+          background-color: white;
+          color: $black;
+        }
         .buy{
           background-color: $green;
           color: $black;
@@ -90,4 +105,7 @@
   background-color: white;
   transition: background-color 0.3s linear;
 }
-
+.solid-nav-black{
+  background-color: black;
+  transition: background-color 0.3s linear;
+}

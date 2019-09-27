@@ -184,15 +184,15 @@
     }
   }
 
-  .review-container{
+  .review-main-container{
     height: 100%;
     background-color: $light-light-grey;
-    .review-content{
+    .review-main-content{
       display: flex;
       flex-direction: column;
       height: 100%;
       margin-left: 120px;
-      .review-content-top{
+      .review-main-content-top{
         flex-basis: 25%;
         margin-top: 80px;
         h3{
@@ -213,7 +213,7 @@
           color: $light-black;
         }
       }
-      .review-content-middle{
+      .review-main-content-middle{
         flex-basis: 50%;
         display: flex;
         justify-content: center;

@@ -1,0 +1,72 @@
+<%= render "shared/navbar-white" %>
+
+<div class="reviews-container">
+  <div class="diagonal-top-background">
+    <div class="text">
+      <h3>Customer reviews</h3>
+      <p>Ratings and reviews from real YodaCity customers. Read their feelings when it's about a Yoda.</p>
+    </div>
+  </div>
+  <div class="reviews-container">
+    <div class="reviews-content">
+      <% @reviews.each do |review| %>
+        <div class="review-card">
+
+          <div class="card-top">
+            <div class="top-left">
+              <p class="name"><%= review.name %></p>
+              <div class="rating">
+                <% review.rating.times do  %>
+                  <i class="green fas fa-star"></i>
+                <% end %>
+                <% review.blank_stars.times do %>
+                  <i class="grey fas fa-star"></i>
+                <% end %>
+              </div>
+            </div>
+            <div class="top-right">
+              <p class="city"><%= review.city %></p>
+              <p class="datum"><%= review.datum %></p>
+            </div>
+          </div>
+
+          <div class="card-comment">
+            <p class="comment"><%= review.comment %></p>
+          </div>
+
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+  <div class="diagonal-bottom-background">
+    <%= image_tag('Yoda/Yoda_profile-front-1@2x.png') %>
+  </div>
+</div>
+<%= render "shared/footer" %>
+
+
+
+
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.reviews-container').height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - height*0.96) {
+              $('.nav-container').addClass('solid-nav-black');
+          } else {
+              $('.nav-container').removeClass('solid-nav-black');
+          }
+      });
+  });
+</script>
+
+
+
+
+
+
+
+
