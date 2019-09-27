@@ -144,9 +144,11 @@
           var scrollTop = $(window).scrollTop();
 
           if (scrollTop >= height - height*0.96) {
-              $('.nav-mobile-container').addClass('solid-nav');
+              $('.nav-container').addClass('solid-nav');
+              $('.nav-container').removeClass('solid-nav-black');
           } else {
-              $('.nav-mobile-container').removeClass('solid-nav');
+              $('.nav-container').removeClass('solid-nav');
+              $('.nav-container').removeClass('solid-nav-black');
           }
       });
   });

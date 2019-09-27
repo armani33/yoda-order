@@ -171,8 +171,10 @@
 
           if (scrollTop >= height - height*0.96) {
               $('.nav-container').addClass('solid-nav');
+              $('.nav-container').removeClass('solid-nav-black');
           } else {
               $('.nav-container').removeClass('solid-nav');
+              $('.nav-container').removeClass('solid-nav-black');
           }
       });
   });

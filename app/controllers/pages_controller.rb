@@ -24,6 +24,7 @@ class PagesController < ApplicationController
   end
 
   def reviews
+
     @user = User.new
     respond_to do |format|
       format.html(&:phone)
