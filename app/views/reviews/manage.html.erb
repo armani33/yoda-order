@@ -1,13 +1,9 @@
-<%= render "shared/navbar-white" %>
-
 <div class="reviews-main-container">
-  <div class="diagonal-top-background">
-    <div class="text">
-      <h3>Customer reviews</h3>
-      <p>Ratings and reviews from real YodaCity customers. Read their feelings when it's about a Yoda.</p>
-    </div>
-  </div>
+  <%= link_to reviews_manage_new_path, id: "add-review" do %><p>Add review</p><% end %>
   <div class="reviews-container">
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>"><%= value %></div>
+    <% end %>
     <div class="reviews-content">
       <% @reviews.each do |review| %>
         <div class="review-card">
@@ -33,40 +29,17 @@
           <div class="card-comment">
             <p class="comment"><%= review.comment %></p>
           </div>
-
+          <div class="footer-btn-card">
+            <%= link_to edit_review_path(review) do %>
+              <div class="edit btnn">Edit</div>
+            <% end %>
+            <%= link_to review_path(review), method: :delete do %>
+              <div class="delete btnn">Delete</div>
+            <% end %>
+          </div>
         </div>
       <% end %>
 
     </div>
   </div>
-  <div class="diagonal-bottom-background">
-    <%= image_tag('Yoda/Yoda_profile-front-1@2x.png') %>
-  </div>
 </div>
-<%= render "shared/footer" %>
-
-
-
-
-<script>
-  $(document).ready(function() {
-      $(window).scroll(function() {
-          var height = $('.reviews-container').height();
-          var scrollTop = $(window).scrollTop();
-
-          if (scrollTop >= height - height*0.96) {
-              $('.nav-white-container').addClass('solid-nav-black');
-          } else {
-              $('.nav-white-container').removeClass('solid-nav-black');
-          }
-      });
-  });
-</script>
-
-
-
-
-
-
-
-
