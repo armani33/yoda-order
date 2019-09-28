@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   get 'newsletter/test' => 'users#new_test'
   post 'users/create' => 'users#create'
 
+  get 'reviews/new' => 'reviews#new'
+  post 'reviews/create' => 'reviews#create'
+
 end

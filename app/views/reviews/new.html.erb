@@ -1,0 +1,11 @@
+<%= form_for @review, url: reviews_create_path, class: "new-review-form", method: :post do |f| %>
+  Name: <%= f.text_field :name, :placeholder => "Name" %>
+  City: <%= f.text_field :city, :placeholder => "City" %>
+  Country: <%= f.text_field :country, :placeholder => "Country" %>
+  Comment: <%= f.text_area :comment, :placeholder => "Comment" %>
+  Rating: <%= select_tag :rating, options_for_select((0..5).step(1))%>
+  Date: <%= f.date_field :datum, :placeholder => "Date" %>
+
+
+  <submit type="submit"><i class="fas fa-arrow-right"></i></submit>
+<% end %>

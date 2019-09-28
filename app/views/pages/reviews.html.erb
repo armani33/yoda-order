@@ -7,6 +7,7 @@
       <p>Ratings and reviews from real YodaCity customers. Read their feelings when it's about a Yoda.</p>
     </div>
   </div>
+  <%= link_to reviews_new_path do %><p>Add review</p><% end %>
   <div class="reviews-container">
     <div class="reviews-content">
       <% @reviews.each do |review| %>
