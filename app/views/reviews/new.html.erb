@@ -5,13 +5,16 @@
 <% end %>
 <div class="new-reviews-form-container">
   <div class="new-reviews-form-content">
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>"><%= value %></div>
+    <% end %>
     <%= form_for @review, url: reviews_manage_create_path, autocomplete: :off, method: :post do |f| %>
       Name: <%= f.text_field :name, :placeholder => "Name" %>
       City: <%= f.text_field :city, :placeholder => "City" %>
       Country: <%= f.text_field :country, :placeholder => "Country / State" %>
       Comment: <%= f.text_area :comment, :placeholder => "Comment" %>
-      Rating: <%= select_tag :rating, options_for_select((0..5).step(1))%>
-      Date: <%= f.date_field :datum, :placeholder => "Date" %>
+      Rating: <%= f.select :rating, options_for_select([['0', 0.to_i], ['1', 1.to_i], ['2', 2.to_i], ['3', 3], ['4', 4], ['5', 5.to_i]]) %>
+      Date: <%= f.date_field :datum, value: Date.current.strftime('%Y-%m-%d'), :placeholder => "Date" %>
       <%= f.submit %>
     <% end %>
   </div>

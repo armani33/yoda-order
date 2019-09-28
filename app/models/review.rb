@@ -1,14 +1,16 @@
 class Review < ApplicationRecord
   before_create :capitalize
-  # before_create :set_datum
+
+  validates :name, presence: true, length: { maximum: 30 }
+  validates :city, presence: true
+  validates :country, presence: true
+  validates :comment, presence: true
+  validates :rating, presence: true
+  validates :datum, presence: true
 
   def blank_stars
     5 - self.rating
   end
-
-  # def set_datum
-  #   self.datum = self.created_at.to_date
-  # end
 
   def capitalize
     self.name.capitalize!

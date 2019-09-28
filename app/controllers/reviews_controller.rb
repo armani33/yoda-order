@@ -12,11 +12,11 @@ class ReviewsController < ApplicationController
 
     if @review.save
       flash[:success] = "Review added"
-      render :manage
+      redirect_to reviews_manage_path
     else
       # render :new => ca c'est si on veut rediriger vers une def local
       flash[:error] = "something went wrong"
-      render :manage
+      render :new
     end
   end
 
@@ -54,6 +54,6 @@ class ReviewsController < ApplicationController
   private
 
   def review_params
-    params.require(:review).permit(:name, :city, :country, :comment, :datum)
+    params.require(:review).permit(:name, :city, :country, :rating, :comment, :datum)
   end
 end

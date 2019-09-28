@@ -91,8 +91,19 @@
         .edit{
           color: black;
         }
-        .delete{
+        .show{
           color: red;
+        }
+      }
+      .footer-btn-card-show-page{
+        width: 100%;
+        .delete-forever{
+          background-color: red;
+          color: white;
+          width: 100%;
+          padding: 5px 0;
+          text-align: center;
+          border-radius: 3px;
         }
       }
     }

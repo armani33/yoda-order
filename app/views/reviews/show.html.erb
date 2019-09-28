@@ -1,0 +1,37 @@
+<div class="reviews-main-container">
+  <%= link_to reviews_manage_path, id: "add-review" do %><p>Back</p><% end %>
+  <div class="reviews-container">
+    <div class="reviews-content">
+      <div class="review-card">
+
+        <div class="card-top">
+          <div class="top-left">
+            <p class="name"><%= @review.name %></p>
+            <div class="rating">
+              <% @review.rating.times do  %>
+                <i class="green fas fa-star"></i>
+              <% end %>
+              <% @review.blank_stars.times do %>
+                <i class="grey fas fa-star"></i>
+              <% end %>
+            </div>
+          </div>
+          <div class="top-right">
+            <p class="city"><%= @review.city %></p>
+            <p class="datum"><%= @review.datum %></p>
+          </div>
+        </div>
+
+        <div class="card-comment">
+          <p class="comment"><%= @review.comment %></p>
+        </div>
+        <div class="footer-btn-card-show-page">
+          <%= link_to review_path(@review), method: :delete do %>
+            <div class="delete-forever btnn">Delete Forever</div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
