@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  devise_for :admins
   root to: 'pages#main'
 
   get 'app' => 'pages#app'

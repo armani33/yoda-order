@@ -17,6 +17,22 @@
       margin-left: 25px;
     }
   }
+  a#logout{
+    text-decoration: none;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    p{
+      color: grey;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 18px;
+      border-radius: 4px;
+      font-family: $body;
+      margin-top: 25px;
+      margin-left: 25px;
+    }
+  }
   .diagonal-top-background{
     top: 0;
     background-image: -webkit-linear-gradient(94deg, white 40%, $black 40%);

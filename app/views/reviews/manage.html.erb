@@ -3,6 +3,7 @@
   <% flash.each do |key, value| %>
     <div class="alert alert-<%= key %>"><%= value %></div>
   <% end %>
+  <%= link_to destroy_admin_session_path, method: :delete, id: "logout" do %><p>Log Out</p><% end %>
   <div class="reviews-container">
     <div class="reviews-content">
       <% @reviews.each do |review| %>
