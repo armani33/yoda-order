@@ -6,7 +6,7 @@
   .page-container{
     height: 95vh;
     .page-1-content{
-      background: image-url("Yoda/Yoda-main@2x.png");
+      background: image-url("Yoda/Yoda-main-side-front@2x.png");
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
@@ -90,7 +90,7 @@
     }
     .right-container{
       flex-basis: 50%;
-      background-color: $light-grey;
+      background-color: $black;
       .right-content{
         height: 100%;
         display: flex;
