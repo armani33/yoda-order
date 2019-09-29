@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
 
-  devise_for :admins
+
+  devise_for :admins, :skip => [:registrations]
+
   root to: 'pages#main'
 
   get 'app' => 'pages#app'
