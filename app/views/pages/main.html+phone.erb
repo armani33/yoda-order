@@ -40,7 +40,7 @@
           <% end %>
         </div>
       </div>
-      <%= image_tag('Yoda/frontbike-crop@2x.png', class: "front-fork-yoda") %>
+      <%= image_tag('Yoda/Zoom-front-wheel@2x.png', class: "front-fork-yoda") %>
     </div>
   </div>
 
@@ -56,7 +56,7 @@
           <% end %>
         </div>
       </div>
-      <%= image_tag('Yoda/handle-smartphone-cable@2x.png', class: "handle-smartphone-yoda") %>
+      <%= image_tag('Yoda/Handle-with-smartphone@2x.png', class: "handle-smartphone-yoda") %>
     </div>
   </div>
 
@@ -144,11 +144,10 @@
           var scrollTop = $(window).scrollTop();
 
           if (scrollTop >= height - height*0.96) {
-              $('.nav-container').addClass('solid-nav');
-              $('.nav-container').removeClass('solid-nav-black');
+            console.log("yihaaaa");
+            $('.nav-mobile-container').addClass('solid-mobile-nav');
           } else {
-              $('.nav-container').removeClass('solid-nav');
-              $('.nav-container').removeClass('solid-nav-black');
+            $('.nav-mobile-container').removeClass('solid-mobile-nav');
           }
       });
   });
