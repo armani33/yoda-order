@@ -1,8 +1,19 @@
 class PagesController < ApplicationController
-  before_action :set_variant, only: [:main, :app, :reviews]
+  before_action :set_variant, only: [:main, :bike, :app, :reviews]
   def main
     @user = User.new
 
+    respond_to do |format|
+      format.html(&:phone)
+      # do |html|
+      # html.phone
+      # html.tablet
+      # end
+    end
+  end
+
+  def bike
+    @user = User.new
     respond_to do |format|
       format.html(&:phone)
       # do |html|

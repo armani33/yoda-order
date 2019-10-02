@@ -210,5 +210,9 @@
 }
 .solid-nav-black{
   background-color: black;
-  transition: background-color 0 linear;
+  transition: background-color 0.2s linear;
+}
+.solid-nav-greyblack{
+  background-color: $bike-black;
+  transition: background-color 0.2s linear;
 }

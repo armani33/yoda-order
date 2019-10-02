@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#main'
 
+  get 'bike' => 'pages#bike'
   get 'app' => 'pages#app'
   get 'reviews' => 'pages#reviews'
 

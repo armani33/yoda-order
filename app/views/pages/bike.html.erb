@@ -1,0 +1,75 @@
+<%= render "shared/navbar-white" %>
+<div class="bike-main-container">
+
+  <div class="page-1-bike-container">
+    <div class="page-1-bike-content">
+      <div class="text-content">
+        <h1>Simplicity is a <span>lifestyle</span>.</h1>
+        <p>Enjoy the simplicity of a bicycle shape<br>in urban mobility.</p>
+      </div>
+    </div>
+  </div>
+  <div class="page-2-bike-container">
+    <div class="page-2-bike-content">
+      <p class="title">THIN AND LIGHT</p>
+      <div class="text-container">
+        <div class="text-content">
+          <h2>Navigate the<br><span>urban</span> jungle.</h2>
+          <p>Forget about traffic jam, wake up later<br>and ride safe.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="page-3-bike-container">
+    <div class="page-3-bike-content">
+      <div class="text-container">
+        <div class="text-content">
+          <p class="title">POWERFUL AND REMOVABLE</p>
+          <h2>A removable<br><span>battery</span>.</h2>
+          <p>Charge your battery anywhere.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-4-bike-container">
+    <div class="page-4-bike-content">
+      <div class="text-container">
+        <div class="text-content">
+          <p class="title">INTUITIVE RIDING EXPERIENCE</p>
+          <h2>Move at your<br><span>rhythm</span>.</h2>
+          <p>Increase the range of your bike with the<br>economic mode.</p>
+          <div class="ecomode-container">
+            <div class="ecomode-ON">
+              <%= image_tag('App/ecomode-ON@2x.png', class: "ecomode") %>
+              <p>Economic mode <span>[30km/h]</span></p>
+            </div>
+            <div class="ecomode-OFF">
+              <%= image_tag('App/ecomode-OFF@2x.png', class: "ecomode") %>
+              <p>Regular mode <span>[45km/h]</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.page-1-bike-container').height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - height*0.96) {
+              $('.nav-white-container').addClass('solid-nav-greyblack');
+          } else {
+              $('.nav-white-container').removeClass('solid-nav-greyblack');
+          }
+      });
+  });
+</script>
