@@ -1,0 +1,103 @@
+.main-mobile-app-container{
+  font-family: $body;
+  width: 100vw;
+  .page-mobile-app-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .text-content{
+      margin-top: 33%;
+      margin-left: 80px;
+      margin-bottom: 6%;
+      h1{
+        font-size: 125px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        span{
+          color: $green;
+        }
+      }
+      p{
+        font-size: 34px;
+        font-weight: 300;
+        margin-top: 40px;
+      }
+      p.title{
+        margin-bottom: 50px;
+        font-weight: 400;
+      }
+    }
+    .page-margin{
+      margin-top: 10%;
+      margin-bottom: 7%;
+    }
+    .info-bullets-container{
+      margin-left: 80px;
+      width: 70%;
+      .info-bullet{
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid #4A4A4A;
+        padding: 40px 0;
+
+        img{
+          width: 75px;
+        }
+        p.info{
+          font-size: 35px;
+          font-weight: 500;
+          margin-left: 25px;
+        }
+      }
+      .info-bullet:last-child{
+        border: none;
+      }
+      .border-light-grey{
+        border-bottom: 2px solid #D0D0D0;
+      }
+    }
+    a{
+      margin-left: 80px;
+      display: flex;
+      align-items: center;
+      color: $green;
+      margin-bottom: 40px;
+      p.link-green{
+        font-size: 45px;
+        font-weight: 500;
+      }
+      i{
+        margin-left: 25px;
+        font-size: 45px;
+      }
+    }
+    img.app-btn-download{
+      margin-left: 43px;
+      margin-bottom: 80px;
+      width: 45%;
+    }
+    .phone{
+      display: flex;
+      justify-content: center;
+      img{
+        width: 70%;
+        margin-right: 7%;
+      }
+    }
+    .phone-page{
+      display: flex;
+      justify-content: center;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .white-bg{
+    background-color: white;
+    color: black;
+  }
+  .black-bg{
+    background-color: $light-black;
+    color: $light-grey;
+  }
+}
