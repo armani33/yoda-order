@@ -18,7 +18,7 @@
         }
       }
       p{
-        font-size: 34px;
+        font-size: 45px;
         font-weight: 300;
         margin-top: 40px;
       }
@@ -72,7 +72,7 @@
       }
     }
     img.app-btn-download{
-      margin-left: 43px;
+      margin-left: 83px;
       margin-bottom: 80px;
       width: 45%;
     }
@@ -80,13 +80,13 @@
       display: flex;
       justify-content: center;
       img{
-        width: 70%;
+        width: 80%;
         margin-right: 7%;
       }
     }
     .phone-page{
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       img{
         width: 100%;
       }
