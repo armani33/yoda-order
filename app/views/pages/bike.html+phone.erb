@@ -1,0 +1,113 @@
+<%= render "shared/navbar-mobile-black" %>
+
+<div class="main-mobile-bike-container">
+  <div class="page-mobile-bike-container black-bg">
+    <div class="text-content">
+      <h1>Simplicity is a<br><span>lifestyle</span>.</h1>
+      <p>Enjoy the simplicity of a bicycle shape<br>in urban mobility. </p>
+    </div>
+    <%= image_tag('Yoda/Mobile/Main-bike-image@2x.png', class: "yoda-main-bike") %>
+  </div>
+
+  <div class="page-mobile-bike-container white-bg">
+    <div class="text-content page-margin">
+      <p class="title">THIN AND LIGHT</p>
+      <h1>Navigate the<br><span>urban</span> jungle.</h1>
+      <p>Forget about traffic jam, wake up<br>later and ride safe.</p>
+    </div>
+    <%= image_tag('Yoda/Mobile/Front-back-view-mobile@2x.png', class: "yoda-main-bike") %>
+  </div>
+
+  <div class="page-mobile-bike-container white-bg">
+    <div class="text-content page-margin">
+      <p class="title">POWERFUL AND REMOVABLE</p>
+      <h1>A removable<br><span>battery</span>.</h1>
+      <p>Charge your bike anywhere simply<br>by taking the battery with you</p>
+    </div>
+    <%= image_tag('Yoda/Mobile/Removable-battery-mobile@2x.png', class: "yoda-main-bike") %>
+  </div>
+
+  <div class="page-mobile-bike-container black-bg">
+    <div class="text-content page-margin">
+      <p class="title">INTUITIVE RIDING EXPERIENCE</p>
+      <h1>Move at your<br><span>rhythm</span>.</h1>
+      <p>Increase the range of your bike with<br>the economic mode.</p>
+      <div class="ecomode-container">
+        <div class="ecomode">
+          <%= image_tag('App/ecomode-ON@2x.png', class: "eco") %>
+          <p class="ecomode">Economic mode&nbsp;<span>[30km/h]</span></p>
+        </div>
+        <div class="ecomode">
+          <%= image_tag('App/ecomode-OFF@2x.png', class: "eco") %>
+          <p class="ecomode">Regular mode&nbsp;<span>[45km/h]</span></p>
+        </div>
+      </div>
+    </div>
+    <%= image_tag('Yoda/Mobile/Yoda-speed-mobile@2x.png', class: "yoda-main-bike") %>
+  </div>
+
+  <div class="page-mobile-bike-container white-bg">
+    <div class="text-content page-margin">
+      <p class="title">SOFT AND COMFORTABLE</p>
+      <h1>A <span>rubber</span><br>suspension.</h1>
+      <p>When comfort meets no maintenance<br>or reparation. This rear suspension<br>is unbreakable.</p>
+    </div>
+    <%= image_tag('Yoda/Mobile/Rubber-suspensions@2x.png', class: "yoda-main-bike") %>
+  </div>
+
+  <div class="page-mobile-bike-container white-bg">
+    <div class="text-content page-margin">
+      <p class="title">HIGH STANDARDS</p>
+      <h1>It's in the <span>details</span>.</h1>
+    </div>
+    <div class="details-cards-wrapper">
+      <div class="details-card details-1">
+        <p>Bike dimension</p>
+        <div class="little-border"></div>
+      </div>
+      <div class="details-card details-2">
+        <p>Hydraulic brakes</p>
+        <div class="little-border"></div>
+      </div>
+      <div class="details-card details-3">
+        <p>Battery display</p>
+        <div class="little-border"></div>
+      </div>
+      <div class="details-card details-4">
+        <p>Grips</p>
+        <div class="little-border"></div>
+      </div>
+      <div class="details-card details-5">
+        <p>Street legal</p>
+        <div class="little-border"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.page-mobile-bike-container').height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - height*0.96) {
+            $('.nav-mobile-container').addClass('solid-mobile-black-nav');
+          } else {
+            $('.nav-mobile-container').removeClass('solid-mobile-black-nav');
+          }
+      });
+  });
+</script>

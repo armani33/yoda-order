@@ -18,12 +18,15 @@
     }
   }
 }
-
 .solid-mobile-nav {
   background-color: white;
   transition: background-color 0.2s linear;
 }
 
+.solid-mobile-black-nav {
+  background-color: $light-black;
+  transition: background-color 0.2s linear;
+}
 
 .nav-footer-container{
   margin: 0;

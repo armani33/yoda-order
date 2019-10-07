@@ -1,0 +1,134 @@
+.main-mobile-bike-container{
+  font-family: $body;
+  .page-mobile-bike-container{
+    display: flex;
+    flex-direction: column;
+    .text-content{
+      margin-top: 33%;
+      margin-left: 40px;
+      margin-bottom: 10%;
+      h1{
+        font-size: 110px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        span{
+          color: $green;
+        }
+      }
+      p{
+        font-size: 34px;
+        font-weight: 300;
+        margin-top: 40px;
+      }
+      p.title{
+        font-size: 34px;
+        font-weight: 400;
+        margin-bottom: 50px;
+      }
+      .ecomode-container{
+        margin-top: 9%;
+        .ecomode{
+          display: flex;
+          align-items: center;
+          img{
+            width: 80px;
+          }
+          p.ecomode{
+            font-size: 44px;
+            font-weight: 400;
+            margin: 0;
+            margin-left: 25px;
+            span{
+              font-weight: 300;
+            }
+          }
+        }
+        .ecomode:first-child{
+          margin-bottom: 45px;
+        }
+      }
+    }
+    .details-cards-wrapper{
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      margin-bottom: 30%;
+      margin-left: 40px;
+      width: 100%;
+      .details-card{
+        flex: 0 0 auto;
+        color: black;
+        border: 2px solid #E6E5E5;
+        border-radius: 6px;
+        box-shadow: 0 0 2px rgba(20, 30, 30, 0.5);
+        margin-left: 40px;
+        width: 80%;
+        height: 550px;
+        p{
+          font-weight: 400;
+          margin-left: 25px;
+          margin-top: 25px;
+          margin-bottom: 15px;
+          font-size: 28px;
+        }
+        .little-border{
+          height: 3px;
+          width: 35px;
+          background-color: $black;
+          margin-left: 25px;
+        }
+      }
+      .details-card:first-child{
+        margin-left: 0;
+      }
+      .details-card:last-child{
+        margin-right: 40px;
+      }
+      .details-1{
+        background: image-url("Yoda/Details/Bike-dimensions@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .details-2{
+        background: image-url("Yoda/Details/Hydraulic-brakes@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .details-3{
+        background: image-url("Yoda/Details/battery-display@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .details-4{
+        background: image-url("Yoda/Details/Grips@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .details-5{
+        background: image-url("Yoda/Details/Street-legal@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    .page-margin{
+      margin-top: 15%;
+      margin-bottom: 7%;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .white-bg{
+    background-color: white;
+    color: black;
+  }
+  .black-bg{
+    background-color: $light-black;
+    color: $light-grey;
+  }
+}
