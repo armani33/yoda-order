@@ -145,8 +145,10 @@
 
           if (scrollTop >= height - height*0.96) {
             $('.nav-mobile-container').addClass('solid-mobile-nav');
+            $('.nav-mobile-container').removeClass('solid-mobile-black-nav');
           } else {
             $('.nav-mobile-container').removeClass('solid-mobile-nav');
+            $('.nav-mobile-container').removeClass('solid-mobile-black-nav');
           }
       });
   });
