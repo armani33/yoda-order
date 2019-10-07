@@ -74,11 +74,13 @@
     img.app-btn-download{
       margin-left: 83px;
       margin-bottom: 80px;
+      margin-top: 35px;
       width: 45%;
     }
     .phone{
       display: flex;
       justify-content: center;
+      align-self: center;
       img{
         width: 80%;
         margin-right: 7%;
@@ -87,6 +89,7 @@
     .phone-page{
       display: flex;
       justify-content: flex-end;
+      align-self: center;
       img{
         width: 100%;
       }
