@@ -1,55 +1,36 @@
 class PagesController < ApplicationController
   before_action :set_variant, only: [:main, :bike, :app, :reviews]
+  before_action :format, only: [:main, :bike, :app, :reviews]
   def main
     @user = User.new
-
-    respond_to do |format|
-      format.html(&:phone)
-      # do |html|
-      # html.phone
-      # html.tablet
-      # end
-    end
   end
 
   def bike
     @user = User.new
-    respond_to do |format|
-      format.html(&:phone)
-      # do |html|
-      # html.phone
-      # html.tablet
-      # end
-    end
   end
 
   def app
     @user = User.new
-    respond_to do |format|
-      format.html(&:phone)
-      # do |html|
-      # html.phone
-      # html.tablet
-      # end
-    end
   end
 
   def reviews
-
     @user = User.new
-    respond_to do |format|
-      format.html(&:phone)
-      # do |html|
-      # html.phone
-      # html.tablet
-      # end
-    end
 
     @reviews = Review.all
   end
 
 
   private
+
+  def format
+    respond_to do |format|
+      format.html(&:phone)
+      # do |html|
+      # html.phone
+      # html.tablet
+      # end
+    end
+  end
 
   def set_variant
     case request.user_agent

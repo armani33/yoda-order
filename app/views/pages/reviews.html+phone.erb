@@ -1,13 +1,13 @@
-<%= render "shared/navbar-white" %>
+<%= render "shared/navbar-mobile-black" %>
 
 <div class="reviews-main-container">
-  <div class="diagonal-top-background">
+  <div class="diagonal-top-mobile-background">
     <div class="text">
       <h3>Customer reviews</h3>
       <p>Ratings and reviews from real YodaCity customers. Read their feelings when it's about a Yoda.</p>
     </div>
   </div>
-  <div class="reviews-container">
+  <div class="reviews-mobile-container">
     <div class="reviews-content">
       <% @reviews.each do |review| %>
         <div class="review-card">
@@ -42,28 +42,24 @@
   <div class="diagonal-bottom-background">
     <%= image_tag('Yoda/Yoda_profile-front-1@2x.png') %>
   </div>
-</div>
-<%= render "shared/footer" %>
+  <%= render "shared/footer" %>
 
+</div>
 
 
 <script>
   $(document).ready(function() {
       $(window).scroll(function() {
-          var height = $('.reviews-container').height();
+          var height = $('.reviews-mobile-container').height();
           var scrollTop = $(window).scrollTop();
 
           if (scrollTop >= height - height*0.96) {
-              $('.nav-white-container').addClass('solid-nav-greyblack');
+            $('.nav-mobile-container').addClass('solid-mobile-black-nav');
+            $('.nav-mobile-container').removeClass('solid-mobile-nav');
           } else {
-              $('.nav-white-container').removeClass('solid-nav-greyblack');
+            $('.nav-mobile-container').removeClass('solid-mobile-black-nav');
+            $('.nav-mobile-container').removeClass('solid-mobile-nav');
           }
       });
   });
 </script>
-
-
-
-
-
-

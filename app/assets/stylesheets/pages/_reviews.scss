@@ -35,7 +35,7 @@
   }
   .diagonal-top-background{
     top: 0;
-    background-image: -webkit-linear-gradient(94deg, white 40%, $black 40%);
+    background: linear-gradient(176.5deg, $light-black calc(75% - 1px), transparent 75%);
     min-height: 500px;
     .text{
       position: absolute;
@@ -45,6 +45,7 @@
         font-size: 80px;
         font-weight: 500;
         color: $green;
+        margin-top: 50px;
       }
       p{
         font-size: 24px;

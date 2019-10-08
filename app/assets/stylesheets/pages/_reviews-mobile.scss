@@ -1,0 +1,98 @@
+.diagonal-top-mobile-background{
+  top: 0;
+  // background: -webkit-linear-gradient(94deg, white 20%, $black 20%);
+  background: linear-gradient(176.5deg, $light-black calc(75% - 1px), transparent 75%);
+  padding: 1px;
+  min-height: 600px;
+  .text{
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    h3{
+      font-size: 80px;
+      font-weight: 500;
+      color: $green;
+      margin-top: 100px;
+    }
+    p{
+      font-size: 24px;
+      font-weight: 300;
+      margin: 10px 0 50px 0;
+      color: #D9D9D9;
+    }
+  }
+}
+
+.reviews-mobile-container{
+    width: 70%;
+    margin: 0 auto;
+    .review-card{
+      margin-top: 48px;
+      width: 100%;
+      border-bottom: 1px solid #DDDDDD;
+      .card-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .top-left{
+          text-align: left;
+          p.name{
+            font-size: 25px;
+            font-weight: 500;
+            color: $green;
+            margin-bottom: 8px;
+          }
+          .rating{
+            margin-bottom: 45px;
+            i.green{
+              color: $green;
+            }
+            i.grey{
+              color: #DBDBDB;
+            }
+          }
+        }
+        .top-right{
+          text-align: right;
+          margin-bottom: 45px;
+          color: $black;
+          p.city{
+            margin-bottom: 8px;
+          }
+        }
+      }
+      .card-comment{
+        margin-bottom: 80px;
+        p.comment{
+          color: #707070;
+          font-weight: 300;
+          font-size: 18px;
+        }
+      }
+      .footer-btn-card{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .edit{
+          color: black;
+        }
+        .show{
+          color: red;
+        }
+      }
+      .footer-btn-card-show-page{
+        width: 100%;
+        .delete-forever{
+          background-color: red;
+          color: white;
+          width: 100%;
+          padding: 5px 0;
+          text-align: center;
+          border-radius: 3px;
+        }
+      }
+    }
+    .review-card:first-child{
+      margin-top: 0;
+    }
+  }
