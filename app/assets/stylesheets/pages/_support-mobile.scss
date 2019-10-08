@@ -1,0 +1,37 @@
+.support-main-mobile-container{
+  font-family: $body;
+  width: 100vw;
+  .page-support-mobile-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .text-content{
+      margin-top: 33%;
+      margin-left: 40px;
+      margin-bottom: 10%;
+      h1{
+        font-size: 110px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        span{
+          color: $green;
+        }
+      }
+      p{
+        font-size: 34px;
+        font-weight: 300;
+        margin-top: 40px;
+      }
+      p.title{
+        font-weight: 400;
+        margin-bottom: 50px;
+      }
+    }
+    .margin-page{
+      margin-top: 8%;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
