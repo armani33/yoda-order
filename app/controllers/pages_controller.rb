@@ -15,10 +15,12 @@ class PagesController < ApplicationController
 
   def reviews
     @user = User.new
-
     @reviews = Review.all
   end
 
+  def support
+    @user = User.new
+  end
 
   private
 

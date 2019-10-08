@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
 
-
   devise_for :admins, :skip => [:registrations]
 
   root to: 'pages#main'
@@ -9,6 +8,7 @@ Rails.application.routes.draw do
   get 'bike' => 'pages#bike'
   get 'app' => 'pages#app'
   get 'reviews' => 'pages#reviews'
+  get 'support' => 'pages#support'
 
 
   get 'newsletter/buy' => 'users#new_buy'
