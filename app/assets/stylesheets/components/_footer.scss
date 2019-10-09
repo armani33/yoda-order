@@ -1,6 +1,6 @@
 .footer-container{
   font-family: $body;
-  background-color: $dark-grey;
+  background-color: $black;
   .footer-container-top{
     border-bottom: 1px solid $footer-font-grey;
     .footer-content-top{
@@ -38,11 +38,10 @@
               i{
                 font-size: 33px;
                 font-weight: 500;
-                color: $footer-font-grey;
+                color: white;
               }
               i:last-child{
                 font-size: 35px;
-                margin-right: 0;
               }
             }
           }
