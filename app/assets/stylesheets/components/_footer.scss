@@ -28,7 +28,7 @@
               margin-top: 76px;
               margin-bottom: 18px;
               color: white;
-              font-weight: 500;
+              font-weight: 400;
               font-size: 18px;
             }
             .social-network{
@@ -51,7 +51,7 @@
           li{
             padding: 10px 0;
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 400;
             color: $footer-font-grey;
           }
           li:first-child{
@@ -70,7 +70,7 @@
           border-bottom: 1px solid $footer-font-grey;
           p{
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 400;
             color: white;
             margin-bottom: 12px;
             margin-right: 45px;
@@ -87,11 +87,10 @@
             border: 0px;
             background-color: transparent;
             font-size: 18px;
-            font-weight: 500;
             font-family: $body;
             text-indent: 0px;
             color: white;
-            font-weight: 500;
+            font-weight: 400;
             outline: none !important;
           }
           input[type=submit]{
@@ -127,7 +126,7 @@
         align-items: center;
         justify-content: space-between;
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 400;
         a{
           text-decoration: none;
           color: white;
