@@ -329,10 +329,10 @@
     }
   }
   .technical-specs-container{
-    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px 0 60px 0;
     .technical-specs-content{
       text-align: center;
       h2{
@@ -370,7 +370,7 @@
   }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1450px), (max-height: 800px){
   .bike-main-container{
     .page-1-bike-container{
       .page-1-bike-content{
@@ -382,6 +382,126 @@
           }
           p{
             font-size: 23px;
+          }
+        }
+      }
+    }
+    .page-2-bike-container{
+      .page-2-bike-content{
+        background-position: left;
+        p.title{
+          font-size: 23px;
+        }
+        .text-container{
+          .text-content{
+            h2{
+              font-size: 65px;
+            }
+            p{
+              font-size: 23px;
+            }
+          }
+        }
+      }
+    }
+    .page-3-bike-container{
+      .page-3-bike-content{
+        .text-container{
+          .text-content{
+            p.title{
+              font-size: 23px;
+            }
+            h2{
+              font-size: 65px;
+            }
+            p{
+              font-size: 23px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.bike-main-container{
+  .page-4-bike-container{
+    .page-4-bike-content{
+      background-position: bottom;
+      .text-container{
+        .text-content{
+          margin-top: 50px;
+          p.title{
+            font-size: 23px;
+          }
+          h2{
+            font-size: 65px;
+          }
+          p{
+            font-size: 23px;
+          }
+          .ecomode-container{
+            margin-top: 70px;
+            .ecomode-ON{
+              img{
+                width: 9%;
+                height: 9%;
+              }
+              p{
+                font-size: 23px;
+              }
+            }
+            .ecomode-OFF{
+              img{
+                width: 9%;
+                height: 9%;
+              }
+              p{
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .page-5-bike-container{
+    .page-5-bike-content{
+      .text-container{
+        .text-content{
+          p.title{font-size: 23px;
+          }
+          h2{
+            font-size: 65px;
+          }
+          p{
+            font-size: 23px;
+          }
+        }
+      }
+    }
+  }
+  .page-details-bike-container{
+    .page-details-bike-content{
+      .vertical-grid{
+        .cube-container:first-child{
+          .text-content{
+            p.title{
+              font-size: 23px;
+            }
+            h2{
+              font-size: 65px;
+            }
+          }
+        }
+        .cube-container{
+          .card-image{
+            p{
+              font-size: 23px;
+            }
+            .little-border{
+              height: 2px;
+              width: 30px;
+            }
           }
         }
       }
