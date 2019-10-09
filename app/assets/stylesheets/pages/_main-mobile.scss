@@ -11,7 +11,7 @@
       }
       .text-container{
         position: absolute;
-        bottom: 120px;
+        bottom: 70px;
         left: 40px;
         .text-content{
           h1{
@@ -25,7 +25,23 @@
             font-size: 45px;
             font-weight: 300;
             color: $light-black;
-            margin-top: 40px;
+            margin-top: 50px;
+          }
+          a{
+            text-decoration: none;
+            margin-top: 60px;
+            color: $green;
+            display: flex;
+            align-items: flex-end;
+            p{
+              margin: 0;
+              font-size:45px;
+              font-weight: 500;
+            }
+            i{
+              margin-left: 25px;
+              font-size: 45px;
+            }
           }
         }
       }
@@ -78,7 +94,24 @@
           font-size: 45px;
           font-weight: 300;
           color: $light-black;
-          margin-top: 20px;
+          margin-top: 50px;
+        }
+        a{
+          text-decoration: none;
+          margin-top: 60px;
+          display: flex;
+          align-items: flex-end;
+          color: $green;
+          p{
+            margin: 0;
+            font-size:45px;
+            color: $green;
+            font-weight: 500;
+          }
+          i{
+            margin-left: 25px;
+            font-size: 45px;
+          }
         }
       }
     }
@@ -111,6 +144,23 @@
           font-weight: 300;
           color: white;
           margin-top: 30px;
+        }
+        a{
+          text-decoration: none;
+          margin-top: 40px;
+          display: flex;
+          align-items: flex-end;
+          color: $green;
+          p{
+            margin: 0;
+            font-size:45px;
+            font-weight: 500;
+            color: $green;
+          }
+          i{
+            margin-left: 25px;
+            font-size: 45px;
+          }
         }
       }
     }
@@ -145,6 +195,23 @@
           color: $black;
           margin-top: 30px;
         }
+        a{
+          text-decoration: none;
+          margin-top: 40px;
+          display: flex;
+          align-items: flex-end;
+          color: $green;
+          p{
+            margin: 0;
+            font-size:45px;
+            font-weight: 500;
+            color: $green;
+          }
+          i{
+            margin-left: 25px;
+            font-size: 45px;
+          }
+        }
       }
     }
     img.smartphone-yoda{
@@ -172,8 +239,26 @@
         color: $light-black;
       }
     }
+    a{
+      text-decoration: none;
+      margin-bottom: 90px;
+      margin-left: 40px;
+      display: flex;
+      align-items: flex-end;
+      color: $green;
+      p{
+        margin: 0;
+        font-size:45px;
+        font-weight: 500;
+        color: $green;
+      }
+      i{
+        margin-left: 25px;
+        font-size: 45px;
+      }
+    }
     .cards-wrapper{
-      margin: 130px 0 ;
+      margin: 130px 0 80px 0;
       // c'est 3 lignes serve a faire le scroll vertical
       display: flex;
       flex-wrap: nowrap;
@@ -189,7 +274,10 @@
         border: 1px solid #E6E5E5;
         border-radius: 3px;
         box-shadow: 0 0 2px rgba(30, 30, 30, 0.2);
-        .card-info {
+        .card-nav-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
           p.name{
             font-weight: 500;
             font-size: 60px;
@@ -199,6 +287,17 @@
             color: #767373;
             font-weight: 300;
             font-size: 40px;
+          }
+          .rating{
+            margin-top: 10px;
+            i.green{
+              color: $green;
+              font-size: 35px;
+            }
+            i.grey{
+              color: #DBDBDB;
+              font-size: 35px;
+            }
           }
         }
         .comment{

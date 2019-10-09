@@ -8,7 +8,7 @@
         <div class="text-content">
           <h1><span>Lead</span>.<br>Let others follow<span>.</span></h1>
           <h2>You'll zip through traffic like never before <br>up to 45km/h.</h2>
-          <%link_to root_path do %>
+          <%=link_to bike_path do %>
             <p>Discover the bike</p>
             <i class="fas fa-chevron-right"></i>
           <% end %>
@@ -34,7 +34,7 @@
         <div class="text-content">
           <h3>Light weight means<br><span> maniability</span>.</h3>
           <p>No pedals. You won't break a sweat again.</p>
-          <% link_to root_path do %>
+          <%= link_to bike_path do %>
             <p class="btn-to-other-page">Discover the bike</p>
             <i class="fas fa-chevron-right"></i>
           <% end %>
@@ -50,7 +50,7 @@
         <div class="text-content">
           <h3>More than an<br><span>e-motorbike</span>.</h3>
           <p>The Yoda's cockpit seamlessly integrates with your phone. Navigation becomes easy peasy.</p>
-          <% link_to root_path do %>
+          <%= link_to app_path do %>
             <p class="btn-to-other-page">Discover the app</p>
             <i class="fas fa-chevron-right"></i>
           <% end %>
@@ -66,7 +66,7 @@
         <div class="text-content">
           <h3><span>Support</span> before<br>you need it.</h3>
           <p>Our support team is with you. Always.</p>
-          <% link_to root_path do %>
+          <%= link_to support_path do %>
             <p class="btn-to-other-page">Learn more</p>
             <i class="fas fa-chevron-right"></i>
           <% end %>
@@ -84,48 +84,34 @@
         <p id="community">Find out what the Yoda community thinks.</p>
       </div>
       <div class="cards-wrapper">
-
-        <div class="card">
-          <div class="card-info">
-            <p class="name">Alexis</p>
-            <p class="location">Brussels, Belgium</p>
+        <% @reviews.each do |review| %>
+          <div class="card">
+            <div class="card-nav-info">
+              <div class="left">
+                <p class="name"><%= review.name %></p>
+                <p class="location"><%= review.city %></p>
+              </div>
+              <div class="right">
+                <div class="rating">
+                  <% review.rating.times do  %>
+                    <i class="green fas fa-star"></i>
+                  <% end %>
+                  <% review.blank_stars.times do %>
+                    <i class="grey fas fa-star"></i>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <p><%= review.comment %></p>
+            </div>
           </div>
-          <div class="comment">
-            <p>I ride on motorcycles a lot, but <br> a Yoda requires less skills<br>+ it's really fun.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-info">
-            <p class="name">Benjamin</p>
-            <p class="location">Brussels, Belgium</p>
-          </div>
-          <div class="comment">
-            <p>I now wish my e-Mountain Bike <br>could go faster. The design is nice too.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-info">
-            <p class="name">Jessy</p>
-            <p class="location">Palo Alto, Californie</p>
-          </div>
-          <div class="comment">
-            <p>That bike is beautifull !!!</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-info">
-            <p class="name">Leaticia</p>
-            <p class="location">Brussels, Belgium</p>
-          </div>
-          <div class="comment">
-            <p>The riding experience of a bicycle<br>is so enjoyable, because it requires<br>no skills to ride.</p>
-          </div>
-        </div>
-
+        <% end %>
       </div>
+      <%=link_to reviews_path do %>
+        <p class="btn-to-other-page">See all reviews</p>
+        <i class="fas fa-chevron-right"></i>
+      <% end %>
     </div>
   </div>
 
