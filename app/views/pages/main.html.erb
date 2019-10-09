@@ -7,11 +7,13 @@
         <div class="text-content">
           <h1><span>Lead</span>.<br>Let others follow<span>.</span></h1>
           <!-- <h1>You need no<br>skills to <span>be on time</span>.</h1> -->
-          <h2>You'll zip through traffic like never before up to 45km/h.</h2>
-          <% link_to root_path do %>
-            <p>Discover the bike</p>
-            <i class="fas fa-chevron-right"></i>
-          <% end %>
+          <div class="text">
+            <h2>You'll zip through traffic like never before up to 45km/h.</h2>
+            <%= link_to bike_path do %>
+              <p>Discover the bike</p>
+              <i class="fas fa-chevron-right"></i>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
@@ -35,7 +37,7 @@
           <div class="text-content">
             <h3>Light weight<br>means<br><span> maniability</span>.</h3>
             <p>No pedals. You won't break a sweat again.</p>
-            <% link_to root_path do %>
+            <%= link_to bike_path do %>
               <p class="btn-to-other-page">Discover the bike</p>
               <i class="fas fa-chevron-right"></i>
             <% end %>
@@ -58,7 +60,7 @@
           <div class="text-content">
             <h3>More than an<br><span>e-motorbike</span>.</h3>
             <p>The Yoda's cockpit seamlessly integrates<br>with your phone. Navigation becomes<br>easy peasy.</p>
-            <% link_to root_path do %>
+            <%= link_to app_path do %>
               <p class="btn-to-other-page">Discover the app</p>
               <i class="fas fa-chevron-right"></i>
             <% end %>
@@ -75,7 +77,7 @@
           <div class="text-content">
             <h3><span>Support</span> before<br>you need it.</h3>
             <p>Our support team is with you. Always.</p>
-            <% link_to root_path do %>
+            <%= link_to support_path do %>
               <p class="btn-to-other-page">Learn more</p>
               <i class="fas fa-chevron-right"></i>
             <% end %>
@@ -126,9 +128,11 @@
           </div>
         </div>
         <div class="review-content-footer">
-          <i class="fas fa-circle"></i>
-          <i class="fas fa-circle"></i>
-          <%link_to root_path do %>
+          <div class="circle">
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+          </div>
+          <%=link_to reviews_path do %>
             <p class="btn-to-other-page">See all the reviews</p>
             <i class="fas fa-chevron-right"></i>
           <% end %>

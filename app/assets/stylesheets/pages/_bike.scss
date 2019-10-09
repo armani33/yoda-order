@@ -369,3 +369,22 @@
     }
   }
 }
+
+@media (max-width: 1450px) {
+  .bike-main-container{
+    .page-1-bike-container{
+      .page-1-bike-content{
+        background-position: left;
+        .text-content{
+          margin-top: 140px;
+          h1{
+            font-size: 65px;
+          }
+          p{
+            font-size: 23px;
+          }
+        }
+      }
+    }
+  }
+}

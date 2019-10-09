@@ -19,15 +19,36 @@
           h1{
             font-size: 80px;
             font-weight: 500;
+            line-height: 90px;
             span{
               color: $green;
             }
           }
-          h2{
-            font-size: 26px;
-            font-weight: 300;
-            color: $light-black;
+          .text{
+            display: flex;
+            align-items: flex-end;
             margin-top: 20px;
+            h2{
+              font-size: 26px;
+              font-weight: 300;
+              color: $light-black;
+            }
+            a{
+              text-decoration: none;
+              margin-left: 35px;
+              color: $green;
+              display: flex;
+              align-items: center;
+              p{
+                margin: 0;
+                font-size: 23px;
+                font-weight: 500;
+              }
+              i{
+                margin-left: 15px;
+                font-size: 23px;
+              }
+            }
           }
         }
       }
@@ -75,6 +96,7 @@
           h3{
             font-size: 80px;
             font-weight: 500;
+            line-height: 90px;
             span{
               color: $green;
             }
@@ -83,7 +105,24 @@
             font-size: 26px;
             font-weight: 300;
             color: $light-black;
-            margin-top: 20px;
+            margin-top: 50px;
+          }
+          a{
+            text-decoration: none;
+            margin-top: 60px;
+            color: $green;
+            display: flex;
+            align-items: center;
+            p{
+              margin: 0;
+              color: $green;
+              font-size: 23px;
+              font-weight: 500;
+            }
+            i{
+              margin-left: 15px;
+              font-size: 23px;
+            }
           }
         }
       }
@@ -127,6 +166,7 @@
           h3{
             font-size: 80px;
             font-weight: 500;
+            line-height: 90px;
             span{
               color: $green;
             }
@@ -135,7 +175,24 @@
             font-size: 26px;
             font-weight: 300;
             color: $light-black;
-            margin-top: 20px;
+            margin-top: 50px;
+          }
+          a{
+            text-decoration: none;
+            margin-top: 60px;
+            color: $green;
+            display: flex;
+            align-items: center;
+            p{
+              margin: 0;
+              color: $green;
+              font-size: 23px;
+              font-weight: 500;
+            }
+            i{
+              margin-left: 15px;
+              font-size: 23px;
+            }
           }
         }
       }
@@ -156,6 +213,7 @@
           h3{
             font-size: 80px;
             font-weight: 500;
+            line-height: 90px;
             span{
               color: $green;
             }
@@ -164,7 +222,24 @@
             font-size: 26px;
             font-weight: 300;
             color: $light-black;
-            margin-top: 22px;
+            margin-top: 50px;
+          }
+          a{
+            text-decoration: none;
+            margin-top: 60px;
+            color: $green;
+            display: flex;
+            align-items: center;
+            p{
+              margin: 0;
+              color: $green;
+              font-size: 23px;
+              font-weight: 500;
+            }
+            i{
+              margin-left: 15px;
+              font-size: 23px;
+            }
           }
         }
       }
@@ -193,6 +268,7 @@
         h3{
           font-size: 40px;
           font-weight: 500;
+          line-height: 90px;
           span{
             color: $green;
           }
@@ -209,7 +285,7 @@
         }
       }
       .review-main-content-middle{
-        flex-basis: 50%;
+        flex-basis: 55%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -264,11 +340,35 @@
         }
       }
       .review-content-footer{
-        flex-basis: 25%;
-        i{
-          margin-left: 10px;
-          font-size: 11px;
-          color: grey;
+        flex-basis: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .circle{
+          i{
+            margin-left: 10px;
+            font-size: 11px;
+            color: grey;
+            margin-bottom: 40px;
+          }
+        }
+        a{
+          text-decoration: none;
+          color: $green;
+          display: flex;
+          align-items: center;
+          margin-right: 120px;
+          margin-bottom: 40px;
+          p{
+            margin: 0;
+            color: $green;
+            font-size: 23px;
+            font-weight: 500;
+          }
+          i{
+            margin-left: 15px;
+            font-size: 23px;
+          }
         }
       }
     }
@@ -276,70 +376,129 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 1450px) {
+  .main-container{
+    .page-container{
+      .page-1-content{
+        background-position: left;
+        .text-container{
+          margin-bottom: 70px;
+          .text-content{
+            h1{
+              font-size: 65px;
+            }
+            .text{
+              h2{
+                font-size: 23px;
+              }
+              a{
+                p{
+                  font-size: 21px;
+                }
+                i{
+                  margin-left: 13px;
+                  font-size: 21px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .page-2-content{
+        .left-container{
+          .text-container{
+            .text-content{
+              h3{
+                font-size: 65px;
+              }
+              p{
+                font-size: 23px;
+              }
+              a{
+                p{
+                  font-size: 21px;
+                }
+                i{
+                  font-size: 21px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .page-3-content{
+        .right-container{
+          .text-container{
+            .text-content{
+              h3{
+                font-size: 65px;
+              }
+              p{
+                font-size: 23px;
+              }
+              a{
+                p{
+                  font-size: 21px;
+                }
+                i{
+                  font-size: 21px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .page-4-content{
+        .left-container{
+          .text-container{
+            .text-content{
+              h3{
+                font-size: 65px;
+              }
+              p{
+                font-size: 23px;
+              }
+              a{
+                p{
+                  font-size: 21px;
+                }
+                i{
+                  font-size: 21px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .review-main-container{
+        .review-main-content{
+          .review-main-content-top{
+          }
+          .review-main-content-middle{
+          }
+          .review-content-footer{
+            .circle{
+              i{
+                margin-left: 10px;
+                font-size: 11px;
+                color: grey;
+                margin-bottom: 40px;
+              }
+            }
+            a{
+              p{
+                font-size: 21px;
+              }
+              i{
+                font-size: 21px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 
