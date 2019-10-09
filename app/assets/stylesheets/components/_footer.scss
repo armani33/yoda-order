@@ -31,14 +31,19 @@
               font-weight: 500;
               font-size: 18px;
             }
-            p{
-              margin-bottom: 10px;
-              font-size: 18px;
-              font-weight: 500;
-              color: $footer-font-grey;
-            }
-            p:last-child{
-              margin: 0;
+            .social-network{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              i{
+                font-size: 33px;
+                font-weight: 500;
+                color: $footer-font-grey;
+              }
+              i:last-child{
+                font-size: 35px;
+                margin-right: 0;
+              }
             }
           }
         }

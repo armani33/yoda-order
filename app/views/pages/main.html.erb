@@ -43,9 +43,7 @@
         </div>
       </div>
       <div class="right-container">
-        <div class="right-content">
-          <%= image_tag('Yoda/Zoom-front-wheel@2x.png', class: "front-fork-yoda") %>
-        </div>
+        <div class="right-content"></div>
       </div>
     </div>
   </div>
@@ -53,9 +51,7 @@
   <div class="page-container">
     <div class="page-3-content">
       <div class="left-container">
-        <div class="left-content">
-          <%= image_tag('Yoda/Handle-with-smartphone@2x.png', class: "handle-smartphone-yoda") %>
-        </div>
+        <div class="left-content"></div>
       </div>
       <div class="right-container">
         <div class="text-container">
@@ -86,11 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="right-container">
-        <div class="right-content">
-          <%= image_tag('App/Notification@2x.png', class: "smartphone-yoda") %>
-        </div>
-      </div>
+      <div class="right-container"></div>
     </div>
   </div>
 
@@ -105,45 +97,31 @@
         <div class="review-main-content-middle">
           <div class="cards-container">
 
-            <div class="card">
-             <div class="card-info">
-               <p class="name">Alexis</p>
-               <p class="location">Brussels, Belgium</p>
-             </div>
-             <div class="comment">
-               <p>I ride on motorcycles a lot, but <br> a Yoda requires less skills<br>+ it's really fun.</p>
-             </div>
-           </div>
+            <% @reviews.each do |review| %>
 
-           <div class="card">
-             <div class="card-info">
-               <p class="name">Benjamin</p>
-               <p class="location">Brussels, Belgium</p>
+              <div class="card">
+               <div class="card-nav-info">
+                <div class="left">
+                  <p class="name"><%= review.name %></p>
+                  <p class="location"><%= review.city %></p>
+                </div>
+                <div class="right">
+                  <div class="rating">
+                    <% review.rating.times do  %>
+                      <i class="green fas fa-star"></i>
+                    <% end %>
+                    <% review.blank_stars.times do %>
+                      <i class="grey fas fa-star"></i>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+              <div class="comment">
+                <p>I ride on motorcycles a lot, but<br>a Yoda requires less skills<br>+ it's really fun.</p>
+              </div>
              </div>
-             <div class="comment">
-               <p>I now wish my e-Mountain Bike <br>could go faster. The design is nice too.</p>
-             </div>
-           </div>
 
-           <div class="card">
-             <div class="card-info">
-               <p class="name">Jessy</p>
-               <p class="location">Palo Alto, Californie</p>
-             </div>
-             <div class="comment">
-               <p>That bike is beautifull !!!</p>
-             </div>
-           </div>
-
-           <div class="card">
-             <div class="card-info">
-               <p class="name">Leaticia</p>
-               <p class="location">Brussels, Belgium</p>
-             </div>
-             <div class="comment">
-               <p>The riding experience of a bicycle<br>is so enjoyable, because it requires no<br>skills to ride.</p>
-             </div>
-           </div>
+            <% end %>
 
           </div>
         </div>
