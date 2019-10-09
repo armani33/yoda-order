@@ -2,14 +2,14 @@
 
 <div class="support-main-mobile-container">
   <div class="page-support-mobile-container">
-    <div class="text-content">
+    <div class="text-content text-shadow-bg">
       <h1>At your <span>service</span>.</h1>
       <p>We’ll offer you assistance before you<br>even realize you need it. And whatever<br>is going on, we’re ready to help.</p>
     </div>
     <%= image_tag('Yoda/Yoda-service-support-mobile@2x.png') %>
   </div>
   <div class="page-support-mobile-container">
-    <div class="text-content margin-page">
+    <div class="text-content padding-page">
       <p class="title">NOTIFICATION</p>
       <h1>We are here<br><span>for you</span>.</h1>
       <p>We will proactively notify you when your Yoda<br>needs maintenance, for example when your<br>brake pads need replacing, or when to check<br>your tire pressure.</p>
@@ -17,7 +17,7 @@
     <%= image_tag('App/Iphone_X-notif-support-mobile@2x.png') %>
   </div>
   <div class="page-support-mobile-container">
-    <div class="text-content margin-page">
+    <div class="text-content padding-page">
       <p class="title">SOFTWARE UPDATES</p>
       <h1>Stay<br><span>up-to-date</span>.</h1>
       <p>Performance upgrades such as an increased<br>battery lifetime, and new features such as theft detection<br> will be updated over-the-air in the future.</p>
@@ -42,7 +42,7 @@
 <script>
   $(document).ready(function() {
       $(window).scroll(function() {
-          var height = $('.page-1-support-mobile-container').height();
+          var height = $('.page-support-mobile-container').height();
           var scrollTop = $(window).scrollTop();
 
           if (scrollTop >= height - height*0.96) {

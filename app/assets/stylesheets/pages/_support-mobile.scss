@@ -6,9 +6,9 @@
     flex-direction: column;
     width: 100%;
     .text-content{
-      margin-top: 33%;
-      margin-left: 40px;
-      margin-bottom: 10%;
+      padding-top: 33%;
+      padding-left: 40px;
+      padding-bottom: 10%;
       h1{
         font-size: 110px;
         font-weight: 500;
@@ -27,8 +27,14 @@
         margin-bottom: 50px;
       }
     }
-    .margin-page{
-      margin-top: 8%;
+    .text-shadow-bg{
+      background: image-url("Yoda/Yoda-service-support-mobile-shadow-top@2x");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .padding-page{
+      padding-top: 8%;
     }
     img{
       width: 100%;

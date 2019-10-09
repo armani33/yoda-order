@@ -53,6 +53,14 @@
             font-size: 18px;
             font-weight: 400;
             color: $footer-font-grey;
+            a{
+              color: $footer-font-grey;
+              text-decoration: none;
+              &:hover{
+                color: white;
+                transition: 0.3s
+              }
+            }
           }
           li:first-child{
             color: white;
