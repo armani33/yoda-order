@@ -13,7 +13,7 @@
       margin-left: 120px;
       margin-top: 80px;
       h1{
-        font-size: 115px;
+        font-size: 100px;
         font-weight: 500;
         span{
           color: $green;
@@ -71,7 +71,7 @@
     .text-content{
       margin-left: 120px;
       h1{
-        font-size: 80px;
+        font-size: 70px;
         font-weight: 500;
         span{
           color: $green;
@@ -91,7 +91,7 @@
         text-decoration: none;
         color: $green;
         display: flex;
-        align-items: center;
+        align-items: flex-end;;
         p#btn-know-more{
           font-weight: 400;
         }
@@ -146,5 +146,101 @@
   }
   .grey-bg{
     background-color: #EBEBEB;
+  }
+}
+
+@media (max-width: 1450px), (max-height: 800px){
+  .app-page-wrapper{
+    .page-1-app-container{
+      .text-container{
+        .text-content{
+          h1{
+            font-size: 80px;
+          }
+          p{
+            font-size: 23px;
+          }
+        }
+        .app-download-btn{
+          margin-left: 120px;
+          img{
+            margin-top: 80px;
+            width: 50%;
+          }
+        }
+      }
+    }
+    .all-page-app-container{
+      .text-container{
+        .text-content{
+          h1{
+            font-size: 65px;
+          }
+          p{
+            font-size: 23px;
+            font-weight: 300;
+            margin: 30px 0 40px 0;
+          }
+          p.hash-tag{
+            font-weight: 400;
+            margin-bottom: 30px;
+            margin-top: 30px;
+          }
+          a{
+            margin-bottom: 60px;
+            p#btn-know-more{
+              font-weight: 400;
+              margin: 0;
+              margin-top: 30px;
+            }
+            i{
+              margin-left: 20px;
+              margin-bottom: px;
+              font-size: 23px;
+              margin-top: 30px;
+            }
+          }
+        }
+        .sum-up-infos{
+          .infos{
+            padding: 30px 0;
+            img{
+              width: 40px;
+            }
+            p{
+              margin-left: 20px;
+              font-size: 20px;
+            }
+          }
+          .infos:last-child{
+            border: 0;
+          }
+          .border-light{
+            border-bottom: 1px solid #D0D0D0;
+          }
+        }
+        .text-color-black{
+          color: $black;
+        }
+      }
+      .iphone-mockup{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        img{
+          margin-top: 50px;
+          width: 50%;
+          margin-right: 50px;
+        }
+      }
+      .light-grey-bg{
+        background-color: $light-grey;
+      }
+      .grey-bg{
+        background-color: #EBEBEB;
+      }
+    }
   }
 }
