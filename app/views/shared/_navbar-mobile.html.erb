@@ -5,11 +5,12 @@
     </div>
     <div class="menu-mobile-content">
       <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+        <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars dropbtn"></i></button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="#">BIKE</a>
-          <a href="#">APP</a>
-          <a href="#">CONTACT</a>
+          <%= link_to bike_path do %>BIKE<% end %>
+          <%= link_to app_path do %>APP<% end %>
+          <%= link_to support_path do %>SUPPORT<% end %>
+          <%= link_to reviews_path do %>REVIEWS<% end %>
         </div>
       </div>
     </div>

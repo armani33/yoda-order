@@ -5,14 +5,15 @@
         <%= image_tag('Logo/Logo-white@2x.png', class: "logo-nav") %>
       <% end %>
     </div>
-    <div class="menu-mobile-container">
-      <div class="menu-mobile-content">
-        <ul>
-          <!-- <li>MOTORBIKE</li>
-          <li>APP</li>
-          <li>SUPPORT</li>
-          <li>REVIEW</li> -->
-        </ul>
+    <div class="menu-mobile-content">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars dropbtn color-white"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <%= link_to bike_path do %>BIKE<% end %>
+          <%= link_to app_path do %>APP<% end %>
+          <%= link_to support_path do %>SUPPORT<% end %>
+          <%= link_to reviews_path do %>REVIEWS<% end %>
+        </div>
       </div>
     </div>
   </div>
@@ -32,3 +33,26 @@
     <% end %>
   </div>
 </div>
+
+
+<script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>

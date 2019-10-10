@@ -70,17 +70,24 @@
 
 .dropbtn {
   background-color: transparent;
-  padding: 16px;
+  padding: 10px;
   border: none;
   cursor: pointer;
+  z-index: 1;
   i{
     color: $black;
-    font-size: 55px;
+    font-size: 60px;
+    z-index : -1;
+  }
+  .color-white{
+    color: white;
   }
 }
 
 .dropbtn:hover, .dropbtn:focus {
+  outline:none;
   background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .dropdown {
@@ -91,21 +98,24 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 40px;
-  background-color: #f1f1f1;
+  right: 15px;
+  background-color: white;
   min-width: 160px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+  border-radius: 6px;
   z-index: 1;
 }
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 20px 75px;
   text-decoration: none;
   display: block;
+  font-family: $body;
+  font-size: 40px;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {background-color: transparent;}
 
 .show {display: block;}
