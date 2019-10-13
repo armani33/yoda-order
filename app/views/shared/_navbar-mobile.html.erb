@@ -1,7 +1,9 @@
 <nav class="nav-mobile-container">
   <div class="nav-mobile-content">
     <div class="nav-mobile-logo">
-      <%= image_tag('Logo/Logo@2x.png', class: "logo-nav") %>
+      <%= link_to root_path do %>
+        <%= image_tag('Logo/Logo@2x.png', class: "logo-nav") %>
+      <% end %>
     </div>
     <div class="menu-mobile-content">
       <div class="dropdown">
