@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
-  before_action :set_variant, only: [:main, :bike, :app, :reviews, :support]
-  before_action :format, only: [:main, :bike, :app, :reviews, :support]
+  before_action :set_variant, only: [:main, :bike, :app, :reviews, :support, :test_ride]
+  before_action :format, only: [:main, :bike, :app, :reviews, :support, :test_ride]
   def main
     @user = User.new
 
