@@ -14,7 +14,7 @@
       align-items: flex-end;
       .text-container{
         margin-left: 120px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
         .text-content{
           h1{
             font-size: 80px;
@@ -382,12 +382,13 @@
       .page-1-content{
         background-position: left;
         .text-container{
-          margin-bottom: 70px;
+          margin-bottom: 40px;
           .text-content{
             h1{
               font-size: 65px;
             }
             .text{
+              margin-top: 0px;
               h2{
                 font-size: 23px;
               }
@@ -413,10 +414,13 @@
               }
               p{
                 font-size: 23px;
+                margin-top: 30px;
               }
               a{
+                margin-top: 45px;
                 p{
                   font-size: 21px;
+                  margin: 0;
                 }
                 i{
                   font-size: 21px;
@@ -435,10 +439,13 @@
               }
               p{
                 font-size: 23px;
+                margin-top: 30px;
               }
               a{
+                margin-top: 45px;
                 p{
                   font-size: 21px;
+                  margin: 0;
                 }
                 i{
                   font-size: 21px;
@@ -457,10 +464,13 @@
               }
               p{
                 font-size: 23px;
+                margin-top: 30px;
               }
               a{
+                margin-top: 45px;
                 p{
                   font-size: 21px;
+                  margin: 0;
                 }
                 i{
                   font-size: 21px;
@@ -473,20 +483,26 @@
       .review-main-container{
         .review-main-content{
           .review-main-content-top{
+            flex-basis: 25%;
+            margin-top: 50px;
+            h3{
+              font-size: 37px;
+            }
+            p{
+              font-size: 21px;
+              margin: 10px 0;
+            }
           }
           .review-main-content-middle{
+            margin: 50px 0;
           }
           .review-content-footer{
-            .circle{
-              i{
-                margin-left: 10px;
-                font-size: 11px;
-                color: grey;
-                margin-bottom: 40px;
-              }
-            }
+            margin-bottom: 50px;
             a{
+              margin-right: 120px;
+
               p{
+                margin: 0;
                 font-size: 21px;
               }
               i{
@@ -497,6 +513,24 @@
         }
       }
     }
+    .media-container{
+    .media-content{
+      .logo-media{
+        .bruzz{
+          width: 200px;
+        }
+        .hln{
+          width: 130px;
+        }
+        .newmobility{
+          width: 280px;
+        }
+        .dh{
+          width: 200px;
+        }
+      }
+    }
+  }
   }
 }
 
