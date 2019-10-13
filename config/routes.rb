@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'app' => 'pages#app'
   get 'reviews' => 'pages#reviews'
   get 'support' => 'pages#support'
-
+  get 'test-ride' => 'pages#test_ride'
 
   get 'newsletter/buy' => 'users#new_buy'
   get 'newsletter/test' => 'users#new_test'

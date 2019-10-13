@@ -11,17 +11,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def new_test
-    @user = User.new
-    respond_to do |format|
-      format.html(&:phone)
-      # do |html|
-      # html.phone
-      # html.tablet
-      # end
-    end
-  end
-
   def create
     @user = User.new(user_params)
 
