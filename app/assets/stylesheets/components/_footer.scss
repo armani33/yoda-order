@@ -26,7 +26,7 @@
           .text-content{
             h2{
               margin-top: 76px;
-              margin-bottom: 18px;
+              margin-bottom: 20px;;
               color: white;
               font-weight: 400;
               font-size: 18px;
@@ -152,5 +152,88 @@
     }
   }
 }
+
+@media (max-width: 1450px) {
+  .footer-container{
+    .footer-container-top{
+      .footer-content-top{
+        .content-left{
+          .brand{
+            .footer-logo{
+              img{
+                width: 170px;
+              }
+            }
+            .text-content{
+              h2{
+                font-size: 16px;
+              }
+              .social-network{
+                i{
+                  font-size: 30px;
+                }
+                i:last-child{
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+          .list{
+            li{
+              font-size: 16px;
+            }
+          }
+        }
+        .newsletter{
+          .newsletter-content{
+            // border
+            p{
+              font-size: 16px;
+              margin-right: 5px;
+              margin-left: 0px;
+            }
+            form.footer-form{
+            }
+            input[type=text]{
+              width: 75%;
+              padding: 12px 0px;
+              padding-right: 30px;
+              font-size: 15px;
+            }
+            input[type=submit]{
+            }
+            i{
+              margin-top: 13px;
+              font-size: 23px;
+            }
+          }
+        }
+      }
+    }
+    .footer-container-bottom{
+      .footer-content-bottom{
+        .legal-menu-footer{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
