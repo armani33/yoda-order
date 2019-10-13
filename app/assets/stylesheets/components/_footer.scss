@@ -39,6 +39,9 @@
                 font-size: 33px;
                 font-weight: 500;
                 color: white;
+                &:hover{
+                  color: $green;
+                }
               }
               i:last-child{
                 font-size: 35px;
@@ -57,7 +60,7 @@
               color: $footer-font-grey;
               text-decoration: none;
               &:hover{
-                color: white;
+                color: $green;
                 transition: 0.3s
               }
             }
@@ -116,6 +119,9 @@
             margin-top: 10px;
             font-size: 25px;
             color: $footer-font-grey;
+            &:hover{
+              color: $green;
+            }
           }
         }
       }
