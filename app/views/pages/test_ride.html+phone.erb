@@ -1,7 +1,7 @@
-<%= render "shared/navbar" %>
+<%= render "shared/navbar-mobile" %>
 
-<div class="test-page-container">
-  <div class="test-page-content">
+<div class="test-mobile-page-container">
+  <div class="test-mobile-page-content">
     <div class="text-content">
       <h1>Wanna know <span>how it feel</span> ?</h1>
       <p>Book a test ride for free.</p>
@@ -11,22 +11,23 @@ style="min-width:320px;height:630px;"></div>
   </div>
 </div>
 
-<%= render "shared/footer" %>
+<%= render "shared/footer-mobile" %>
 
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 
 <script>
   $(document).ready(function() {
       $(window).scroll(function() {
-          var height = $('.page-1-content').height();
+          var height = $('.page-1-mobile-content').height();
           var scrollTop = $(window).scrollTop();
 
           if (scrollTop >= height - height*0.96) {
-              $('.nav-container').addClass('solid-nav');
+            $('.nav-mobile-container').addClass('solid-mobile-nav');
+            $('.nav-mobile-container').removeClass('solid-mobile-black-nav');
           } else {
-              $('.nav-container').removeClass('solid-nav');
+            $('.nav-mobile-container').removeClass('solid-mobile-nav');
+            $('.nav-mobile-container').removeClass('solid-mobile-black-nav');
           }
       });
   });
 </script>
-

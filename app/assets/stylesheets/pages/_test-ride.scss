@@ -1,0 +1,57 @@
+.test-page-container{
+  font-family: $body;
+  .test-page-content{
+    .text-content{
+      margin-left: 120px;
+      margin-top: 170px;
+      h1{
+        font-size: 55px;
+        font-weight: 500;
+        color: $black;
+        margin-top: 50px;
+        span{
+          color: $green;
+        }
+      }
+      p{
+        font-size: 24px;
+        font-weight: 300;
+        margin: 20px 0 10px 0;
+        color: $black;
+      }
+    }
+    .calendly-inline-widget{
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.test-mobile-page-container{
+  font-family: $body;
+  .test-mobile-page-content{
+    height: 80vh;
+    .text-content{
+      margin-left: 120px;
+      margin-top: 270px;
+      h1{
+        font-size: 55px;
+        font-weight: 500;
+        color: $black;
+        margin-top: 50px;
+        span{
+          color: $green;
+        }
+      }
+      p{
+        font-size: 24px;
+        font-weight: 300;
+        margin: 20px 0 10px 0;
+        color: $black;
+      }
+    }
+    .calendly-inline-widget{
+      height: 930px !important;
+      margin: 80px 0;
+    }
+  }
+}
