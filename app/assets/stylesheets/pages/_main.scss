@@ -380,7 +380,10 @@
   .main-container{
     .page-container{
       .page-1-content{
-        background-position: left;
+        background: image-url("Yoda/Yoda-main-side-front2@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         .text-container{
           margin-bottom: 40px;
           .text-content{
