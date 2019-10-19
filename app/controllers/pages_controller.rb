@@ -32,10 +32,6 @@ class PagesController < ApplicationController
     @user = User.new
   end
 
-  def fb_messenger_refresh
-    render :partial => "shared/fb-messenger"
-  end
-
   private
 
   def format
