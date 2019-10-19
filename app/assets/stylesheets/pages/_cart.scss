@@ -1,0 +1,74 @@
+.cart-wrapper{
+  font-family: $body;
+  .nav-checkout-container{
+    height: 15vh;
+    .nav-checkout-content{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 6px #A7A7A7;
+      background-color: $light-black;
+      a.link-back{
+        text-decoration: none;
+        color: white;
+        font-size: 35px;
+        i{
+          color: white;
+          font-size: 35px;
+          margin-left: 100px;
+        }
+      }
+      .bike-img{
+        flex-basis: 0%;
+        img{
+          height: 14vh;
+        }
+        margin-left: 220px;
+      }
+      .text{
+        flex-basis: 65%;
+        color: white;
+        margin-left: 100px;
+        i{
+          color: white;
+        }
+        p{
+          font-size: 17px;
+          letter-spacing: 1px;
+          font-weight: 300;
+          color: #CCCBCB;
+          line-height: 22px;
+          span{
+            color: $green;
+          }
+        }
+        .price{
+          font-size: 17px;
+          line-height: 35px;
+          letter-spacing: 1px;
+          color: white;
+          font-weight: 400;
+        }
+      }
+      .checkout-btn{
+        flex-basis: 35%;
+        margin-right: 100px;
+        a{
+          text-decoration: none;
+          padding: 16px 55px;
+          border-radius: 40px;
+          background-color: white;
+          color: black;
+          font-size: 15px;
+          letter-spacing: 0.5px;
+          font-weight: 500;
+          &:hover{
+            background-color: $green;
+            color: $black;
+            transition: 1s;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,80 @@
-<a href="https://yodacity.myshopify.com/cart/30774587129955:1?channel=buy_button">checkout</a>
+<div class="cart-wrapper">
+
+  <nav class="nav-checkout-container">
+    <div class="nav-checkout-content">
+      <%= link_to root_path ,class: "link-back" do%>
+        <i class="fas fa-arrow-circle-left"></i>
+      <% end %>
+      <div class="bike-img">
+        <%= image_tag('Yoda/Yoda-checkout@2x.png', class: "yoda-checkout") %>
+      </div>
+      <div class="text">
+        <p class="price">1 Yoda - 2.990€</p>
+        <p>You will be the first to ride a Yoda.<br> It will be delivered <i class="fas fa-shipping-fast"></i> at your place in <span>spring 2020</span>.</p>
+      </div>
+      <div class="checkout-btn">
+        <a href="https://yodacity.myshopify.com/cart/30774587129955:1?channel=buy_button">Continue to checkout</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button" onclick="openCheckTab('story')">STORY</button>
+    <button class="w3-bar-item w3-button" onclick="openCheckTab('faq')">FAQ</button>
+    <button class="w3-bar-item w3-button" onclick="openCheckTab('warranty')">WARRANTY</button>
+  </div>
+
+  <div id="story" class="check-tab">
+    <h2>Production</h2>
+    <p>We have begun turning the prototype into the final product. Their ability to ship the products may be affected by product development or financial challenges.</p>
+  </div>
+
+  <div id="faq" class="check-tab" style="display:none">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="warranty" class="check-tab" style="display:none">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+</div>
+
+<script>
+  function openCheckTab(tabName) {
+    var i;
+    var x = document.getElementsByClassName("check-tab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
