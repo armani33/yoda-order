@@ -28,6 +28,10 @@ class PagesController < ApplicationController
     @user = User.new
   end
 
+  def cart
+    @user = User.new
+  end
+
   private
 
   def format

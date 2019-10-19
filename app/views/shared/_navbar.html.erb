@@ -25,7 +25,7 @@
             <p>TEST RIDE</p>
           </div>
         <% end %>
-        <%= link_to newsletter_buy_path do %>
+        <%= link_to cart_path do %>
           <div class="nav-btn buy">
             <p><span>PRE-ORDER</span></p>
           </div>
@@ -33,12 +33,3 @@
       </div>
   </div>
 </nav>
-
-<script>
-  // Highlight the active link in a navigation menu
-  for (var i = 0; i < document.links.length; i++) {
-      if (document.links[i].href == document.URL) {
-          document.links[i].className = 'active';
-      }
-  }
-</script>
