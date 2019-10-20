@@ -19,16 +19,15 @@
         }
       }
       .bike-img{
-        flex-basis: 0%;
+        flex-basis: 30%;
         img{
           height: 14vh;
         }
-        margin-left: 220px;
+        margin-left: 50px;
       }
       .text{
-        flex-basis: 65%;
+        flex-basis: 45%;
         color: white;
-        margin-left: 100px;
         i{
           color: white;
         }
@@ -51,7 +50,7 @@
         }
       }
       .checkout-btn{
-        flex-basis: 35%;
+        flex-basis: 25%;
         margin-right: 100px;
         a{
           text-decoration: none;
@@ -69,6 +68,82 @@
           }
         }
       }
+    }
+  }
+  .main-wrapper{
+    display: flex;
+    .tabs-wrapper{
+      flex-basis: 45%;
+      padding-top: 70px;
+      padding-left: 210px;
+      .tabs-btn{
+        button{
+          background-color: transparent;
+          border: none;
+          color: $black;
+          padding: 7px 0px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          font-weight: 500;
+          margin: 0 15px;
+          cursor: pointer;
+          border-bottom: 3px solid transparent;
+          letter-spacing: 0.6px;
+        }
+        button:first-child{
+          margin-left: 0;
+        }
+        button:hover{
+          border-bottom: 3px solid $black;
+        }
+        button:focus{
+          border-bottom: 3px solid $black;
+          outline: none;
+        }
+      }
+      .check-tab{
+        margin-top: 30px;
+        padding: 20px;
+        border: 1px solid #C1C1C1;
+        border-radius: 2px;
+        h2{
+          margin: 10px 0 0 20px;
+          font-size: 20px;
+          font-weight: 500;
+          letter-spacing: 0.6px;
+        }
+        h3{
+          font-weight: 300;
+          font-size: 20px;
+          margin-left: 18px;
+        }
+        h5{
+          margin-top: 45px;
+          font-size: 19px;
+          font-weight: 400;
+          margin-left: 18px;
+          margin-bottom: -13px;
+        }
+        p{
+          margin-left: 15px;
+          font-size: 19px;
+          font-weight: 300;
+          color: $light-black;
+          margin-top: 25px;
+        }
+        .img-container{
+          text-align: center;
+          margin-top: 50px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    .referal-wrapper{
+
     }
   }
 }
