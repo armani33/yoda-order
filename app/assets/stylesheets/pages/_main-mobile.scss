@@ -6,41 +6,43 @@
       flex-direction: column;
       position: relative;
       img{
-        margin-top: 300px;
+        margin-top: 100px;
+        margin-bottom: 0px;
         width: 100%;
       }
       .text-container{
         position: absolute;
-        bottom: 70px;
-        left: 40px;
+        bottom: 30px;
+        left: 15px;
         .text-content{
           h1{
-            font-size: 100px;
+            font-size: 35px;
             font-weight: 500;
             span{
               color: $green;
             }
           }
           h2{
-            font-size: 45px;
+            font-size: 16px;
             font-weight: 300;
             color: $light-black;
-            margin-top: 50px;
+            margin-top: 15px;
+            margin-right: 20px;
           }
           a{
             text-decoration: none;
-            margin-top: 60px;
+            margin-top: 15px;
             color: $green;
             display: flex;
             align-items: flex-end;
             p{
               margin: 0;
-              font-size:45px;
+              font-size:17px;
               font-weight: 500;
             }
             i{
-              margin-left: 25px;
-              font-size: 45px;
+              margin-left: 15px;
+              font-size: 17px;
             }
           }
         }
@@ -48,27 +50,27 @@
     }
   }
   .media-mobile-container{
-    height: 350px;
+    height: 130px;
     background-color: $green;
     .media-mobile-content{
       height: 100%;
       .logo-mobile-media{
-        margin:0 15px;
+        margin: 0 5px;
         height: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         .bruzz{
-          width: 200px;
+          width: 64px;
         }
         .hln{
-          width: 130px;
+          width: 52px;
         }
         .newmobility{
-          width: 290px;
+          width: 90px;
         }
         .dh{
-          width: 200px;
+          width: 60px;
         }
       }
     }
@@ -81,36 +83,37 @@
       justify-content: flex-start;
       align-items: center;
       .text-content{
-        margin: 130px 40px 0 40px;
+        margin: 50px 0px 0 15px;
         width: 100%;
         h3{
-          font-size: 90px;
+          font-size: 35px;
           font-weight: 500;
           span{
             color: $green;
           }
         }
         p{
-          font-size: 45px;
+          font-size: 16px;
           font-weight: 300;
           color: $light-black;
-          margin-top: 50px;
+          margin-top: 15px;
+          margin-right: 20px;
         }
         a{
           text-decoration: none;
-          margin-top: 60px;
+          margin-top: 15px;
           display: flex;
           align-items: flex-end;
           color: $green;
           p{
             margin: 0;
-            font-size:45px;
+            font-size:17px;
             color: $green;
             font-weight: 500;
           }
           i{
-            margin-left: 25px;
-            font-size: 45px;
+            margin-left: 15px;
+            font-size: 17px;
           }
         }
       }
@@ -129,10 +132,10 @@
       justify-content: flex-start;
       align-items: center;
       .text-content{
-        margin: 130px 40px 0 40px;
+        margin: 50px 0 0 15px;
         width: 100%;
         h3{
-          font-size: 100px;
+          font-size: 35px;
           font-weight: 500;
           color: white;
           span{
@@ -140,26 +143,27 @@
           }
         }
         p{
-          font-size: 45px;
+          font-size: 16px;
           font-weight: 300;
           color: white;
-          margin-top: 50px;
+          margin-top: 15px;
+          margin-right: 20px;
         }
         a{
           text-decoration: none;
-          margin-top: 60px;
+          margin-top: 15px;
           display: flex;
           align-items: flex-end;
           color: $green;
           p{
             margin: 0;
-            font-size:45px;
+            font-size:17px;
             font-weight: 500;
             color: $green;
           }
           i{
-            margin-left: 25px;
-            font-size: 45px;
+            margin-left: 15px;
+            font-size: 17px;
           }
         }
       }
@@ -179,10 +183,10 @@
       justify-content: flex-start;
       align-items: center;
       .text-content{
-        margin: 130px 40px 0 40px;
+        margin: 50px 0 0 20px;
         width: 100%;
         h3{
-          font-size: 100px;
+          font-size: 35px;
           font-weight: 500;
           color: $black;
           span{
@@ -190,26 +194,27 @@
           }
         }
         p{
-          font-size: 45px;
+          font-size: 16px;
           font-weight: 300;
           color: $black;
-          margin-top: 50px;
+          margin-top: 15px;
+          margin-right: 20px;
         }
         a{
           text-decoration: none;
-          margin-top: 60px;
+          margin-top: 15px;
           display: flex;
           align-items: flex-end;
           color: $green;
           p{
             margin: 0;
-            font-size:45px;
+            font-size:17px;
             font-weight: 500;
             color: $green;
           }
           i{
-            margin-left: 25px;
-            font-size: 45px;
+            margin-left: 15px;
+            font-size: 17px;
           }
         }
       }
@@ -220,16 +225,16 @@
   }
   .page-review-mobile-content{
     .review-content-top{
-      margin: 130px 40px 0 40px;
+      margin: 50px 20px 0 20px;
       h3{
-        font-size: 70px;
+        font-size: 35px;
         font-weight: 500;
         span{
           color: $green;
         }
       }
       p{
-        font-size: 45px;
+        font-size: 18px;
         font-weight: 400;
         color: $black;
         margin: 20px 0;
@@ -241,68 +246,67 @@
     }
     a{
       text-decoration: none;
-      margin-bottom: 90px;
-      margin-left: 40px;
+      margin-bottom: 20px;
+      margin-left: 20px;
       display: flex;
       align-items: flex-end;
       color: $green;
       p{
         margin: 0;
-        font-size:45px;
+        font-size:18px;
         font-weight: 500;
         color: $green;
       }
       i{
-        margin-left: 25px;
-        font-size: 45px;
+        margin-left: 15px;
+        font-size: 18px;
       }
     }
     .cards-wrapper{
-      margin: 130px 0 80px 0;
+      margin: 30px 0;
       // c'est 3 lignes serve a faire le scroll vertical
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
       .card{
         flex: 0 0 auto; // cette ligne sert a faire le scroll vertical
-        width: 700px;
-        height: 480px;
+        width: 76%;
+        // height: 120px;
         background-color: white;
 
-        padding: 35px;
-        margin: 10px 0 10px 40px;
-        border: 1px solid #E6E5E5;
+        padding: 10px;
+        margin: 10px 0 10px 20px;
+        border: 1px solid #D5D5D5;
         border-radius: 3px;
-        box-shadow: 0 0 2px rgba(30, 30, 30, 0.2);
+        box-shadow: 0 0 4px #EDEDED;
         .card-nav-info {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
           p.name{
             font-weight: 500;
-            font-size: 60px;
+            font-size: 21px;
             color: $black;
           }
           p.location{
             color: #767373;
             font-weight: 300;
-            font-size: 40px;
+            font-size: 13px;
           }
           .rating{
-            margin-top: 10px;
             i.green{
               color: $green;
-              font-size: 35px;
+              font-size: 12px;
             }
             i.grey{
               color: #DBDBDB;
-              font-size: 35px;
+              font-size: 12px;
             }
           }
         }
         .comment{
-          margin-top: 85px;
-          font-size: 45px;
+          margin-top: 25px;
+          font-size: 15px;
           font-weight: 300;
           color: $light-black;
         }
@@ -311,9 +315,6 @@
   }
 }
 
-.footer-mobile-height{
-  height: 160px;
-}
 
 
 

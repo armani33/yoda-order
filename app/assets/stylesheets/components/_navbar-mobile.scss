@@ -1,7 +1,7 @@
 //**** Navbar mobile ****
 
 .nav-mobile-container{
-  padding: 10px;
+  padding: 8px 15px;
   margin: 0;
   position: fixed;
   top: 0;
@@ -10,13 +10,13 @@
   background-color: transparent;
   z-index: +1;
   .nav-mobile-content{
-    padding: 30px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     .nav-mobile-logo{
       img{
-      width: 300px;
+      width: 40%;
       }
     }
   }
@@ -45,13 +45,13 @@
       text-decoration: none;
     }
     .nav-mobile-btn{
-      padding: 60px;
+      padding: 20px;
       text-align: center;
       p{
         padding: 0;
         margin: 0;
         font-family: $body;
-        font-size: 40px;
+        font-size: 16px;
         font-weight: 400;
       }
     }
@@ -70,13 +70,13 @@
 
 .dropbtn {
   background-color: transparent;
-  padding: 10px;
+  padding: 5px;
   border: none;
   cursor: pointer;
   z-index: 1;
   i{
     color: $black;
-    font-size: 60px;
+    font-size: 23px;
     z-index : -1;
   }
   .color-white{
@@ -98,7 +98,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 15px;
+  right: 20px;
   background-color: white;
   min-width: 160px;
   overflow: auto;
@@ -109,11 +109,11 @@
 
 .dropdown-content a {
   color: black;
-  padding: 20px 75px;
+  padding: 10px 15px;
   text-decoration: none;
   display: block;
   font-family: $body;
-  font-size: 40px;
+  font-size: 18px;
 }
 
 .dropdown a:hover {background-color: transparent;}

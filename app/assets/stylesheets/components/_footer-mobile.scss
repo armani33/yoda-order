@@ -2,22 +2,22 @@
   font-family: $body;
   background-color: $black;
   .footer-top-container{
-    border-bottom: 2px solid #707070;
+    border-bottom: 1px solid #707070;
     img.logo-image{
-      width: 300px;
-      margin-top: 50px;
-      margin-left: 40px;
+      width: 120px;
+      margin-top: 20px;
+      margin-left: 15px;
     }
     .list-menu{
       margin: 0 auto;
-      margin-top: 100px;
+      margin-top: 30px;
       display: flex;
       justify-content: center;
       .list{
         list-style: none;
         li{
-          padding: 13px 0;
-          font-size: 34px;
+          padding: 6px 0;
+          font-size: 13px;
           font-weight: 400;
           color: $footer-font-grey;
         }
@@ -33,7 +33,7 @@
         }
       }
       .infos{
-        margin-left: 280px;
+        margin-left: 80px;
       }
     }
     .newsletter-container{
@@ -41,28 +41,26 @@
       align-items: flex-end;
       justify-content: center;
       height: 100%;
-      margin-top: 150px;
+      margin-top: 50px;
       .newsletter-content-mobile{
-        border-bottom: 2px solid $footer-font-grey;
+        border-bottom: 1px solid $footer-font-grey;
+        margin-right: 3px;
         p{
-          font-size: 34px;
+          font-size: 13px;
           font-weight: 400;
           color: white;
-          margin-bottom: 12px;
-          margin-left: 8px;
-          margin-left: 8px;
         }
         form.footer-form{
           display: flex;
         }
         input[type=text]{
-          width: 79%;
-          padding: 12px 20px;
+          width: 80%;
+          padding: 8px 5px 8px 5px;
           margin: 8px 0;
           display: inline-block;
           border: 0px;
           background-color: transparent;
-          font-size: 30px;
+          font-size: 14px;
           font-weight: 500;
           font-family: $body;
           text-indent: 0px;
@@ -83,23 +81,23 @@
         }
         i{
           margin-top: 10px;
-          font-size: 45px;
+          font-size: 17px;
           color: $footer-font-grey;
         }
       }
     }
     .social-links{
       text-align: center;
-      margin: 100px 0;
+      margin: 40px 0;
       .social{
         a{
           text-decoration: none;
         }
         a:last-child{
-          margin-left: 100px;
+          margin-left: 30px;
         }
         i{
-          font-size: 75px;
+          font-size: 30px;
           color: white;
         }
       }
@@ -109,19 +107,22 @@
     text-align: center;
     .legal-menu-footer{
       display: flex;
-      font-size: 33px;
+      font-size: 11px;
       font-weight: 400;
       justify-content: space-between;
-      margin: 0 40px;
+      margin: 0 15px;
       a{
         text-decoration: none;
         color: $footer-font-grey;
-        margin: 70px 0;
+        margin: 30px 0 32px;
       }
       p{
         color: $footer-font-grey;
-        margin: 70px 0;
+        margin: 30px 0 32px;
       }
     }
   }
+}
+.footer-mobile-height{
+  height: 58px;
 }
