@@ -3,19 +3,19 @@
   // background: -webkit-linear-gradient(94deg, white 20%, $black 20%);
   background: linear-gradient(176.5deg, $light-black calc(85% - 1px), transparent 85%);
   padding: 1px;
-  min-height: 650px;
+  min-height: 280px;
   .text{
     position: absolute;
-    top: 120px;
-    left: 120px;
+    top: 15px;
+    left: 25px;
     h3{
-      font-size: 90px;
+      font-size: 30px;
       font-weight: 500;
       color: $green;
-      margin-top: 100px;
+      margin-top: 90px;
     }
     p{
-      font-size: 45px;
+      font-size: 15px;
       font-weight: 300;
       margin: 10px 0 50px 0;
       color: #D9D9D9;
@@ -24,10 +24,10 @@
 }
 
 .reviews-mobile-container{
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     .review-card{
-      margin-top: 48px;
+      margin-top: 25px;
       width: 100%;
       border-bottom: 1px solid #DDDDDD;
       .card-top{
@@ -37,36 +37,41 @@
         .top-left{
           text-align: left;
           p.name{
-            font-size: 35px;
+            font-size: 13px;
             font-weight: 500;
             color: $green;
-            margin-bottom: 8px;
           }
           .rating{
-            margin-bottom: 45px;
+            margin-bottom: 20px;
             i.green{
               color: $green;
+              font-size: 8px;
             }
             i.grey{
               color: #DBDBDB;
+              font-size: 8px;
             }
           }
         }
         .top-right{
           text-align: right;
-          margin-bottom: 45px;
+          margin-bottom: 20px;
           color: $black;
           p.city{
-            margin-bottom: 8px;
+            margin-bottom: 5px;
+            font-size: 11px;
+          }
+          p.datum{
+            font-size: 11px;
           }
         }
       }
       .card-comment{
-        margin-bottom: 80px;
+        margin-bottom: 25px;
         p.comment{
           color: #707070;
           font-weight: 300;
-          font-size: 18px;
+          font-size: 12px;
         }
       }
       .footer-btn-card{
