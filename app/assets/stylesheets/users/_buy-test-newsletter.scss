@@ -39,10 +39,10 @@
     text-decoration: none;
     color: black;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 15px;
+    left: 15px;
     i{
-    font-size: 50px;
+    font-size: 25px;
     }
   }
   .newsletter-mobile-content{
@@ -51,17 +51,17 @@
     p{
       font-family: $body;
       font-weight: 400;
-      font-size: 30px;
+      font-size: 16px;
     }
     .signup-news{
       display: flex;
       flex-direction: column;
       margin-top: 30px;
       input#user-email{
-        font-size: 30px;
+        font-size: 16px;
       }
       input[type=submit]{
-        font-size: 30px;
+        font-size: 16px;
       }
     }
   }
