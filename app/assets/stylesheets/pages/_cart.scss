@@ -109,22 +109,10 @@
         border: 1px solid #C1C1C1;
         border-radius: 2px;
         h2{
-          margin: 10px 0 0 20px;
-          font-size: 20px;
+          margin: 10px 0 0 15px;
+          font-size: 24px;
           font-weight: 500;
           letter-spacing: 0.6px;
-        }
-        h3{
-          font-weight: 300;
-          font-size: 20px;
-          margin-left: 18px;
-        }
-        h5{
-          margin-top: 45px;
-          font-size: 19px;
-          font-weight: 400;
-          margin-left: 18px;
-          margin-bottom: -13px;
         }
         p{
           margin-left: 15px;
@@ -132,6 +120,44 @@
           font-weight: 300;
           color: $light-black;
           margin-top: 25px;
+        }
+        h3{
+          font-weight: 500;
+          font-size: 20px;
+          margin: 50px 0 30px 18px;
+          color: #008861;
+
+        }
+        .faq-question{
+          h5{
+            margin-top: 25px;
+            font-size: 19px;
+            font-weight: 400;
+            margin-left: 18px;
+            margin-bottom: -13px;
+          }
+          p{
+            font-size: 17px;
+            font-weight: 300;
+            color: $light-black;
+            margin-top: 25px;
+          }
+          ul{
+            list-style-type: square;
+            margin: 23px 0 0 45px;
+            li{
+              font-size: 17px;
+              font-weight: 300;
+              color: $light-black;
+            }
+          }
+          .img-bike-lanes-container{
+            text-align: center;
+            margin: 15px 0;
+            img.bike-lanes{
+              width: 90px;
+            }
+          }
         }
         .img-container{
           text-align: center;
