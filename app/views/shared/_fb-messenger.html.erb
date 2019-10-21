@@ -1,12 +1,6 @@
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>
-    // We create the DIV dynamically to work correctly with Tag Manager
-  var chatDiv = document.createElement('div');
-  chatDiv.className = 'fb-customerchat';
-  chatDiv.setAttribute('page_id', '345789982958766'); // Facebook Page ID goes here
-  document.body.appendChild(chatDiv);
-
   window.fbAsyncInit = function() {
     FB.init({
       xfbml            : true,
@@ -21,4 +15,12 @@
   js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="345789982958766"
+logged_in_greeting="Hi! How can we help you?"
+logged_out_greeting="Hi! How can we help you?">
+</div>
 
