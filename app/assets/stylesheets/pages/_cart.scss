@@ -72,6 +72,7 @@
   }
   .main-wrapper{
     display: flex;
+    min-height: 85vh;
     .tabs-wrapper{
       flex-basis: 45%;
       padding-top: 70px;
@@ -104,7 +105,7 @@
         }
       }
       .check-tab{
-        margin-top: 30px;
+        margin: 30px 0;
         padding: 20px;
         border: 1px solid #C1C1C1;
         border-radius: 2px;
@@ -144,9 +145,7 @@
           }
           ul{
             list-style-type: square;
-                h2{
-
-                }     margin: 23px 0 0 45px;
+            margin: 23px 0 0 45px;
             li{
               font-size: 17px;
               font-weight: 300;
@@ -166,6 +165,23 @@
           margin-top: 50px;
           img{
             width: 100%;
+          }
+        }
+      }
+      .warranty{
+        p{
+          font-size: 17px;
+          font-weight: 300;
+          color: $light-black;
+          margin-top: 25px;
+        }
+        ul{
+          list-style-type: square;
+          margin: 23px 0 0 45px;
+          li{
+            font-size: 17px;
+            font-weight: 300;
+            color: $light-black;
           }
         }
       }
@@ -209,7 +225,7 @@
               font-size: 40px;
             }
             a:last-child{
-              margin-left: 30px;
+              margin-left: 60px;
             }
           }
         }

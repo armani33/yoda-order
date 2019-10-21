@@ -10,7 +10,7 @@
       </div>
       <div class="text">
         <p class="price">1 Yoda - 2.990€</p>
-        <p>You will be the first to ride a Yoda.<br> It will be delivered <i class="fas fa-shipping-fast"></i> at your place in <span>spring 2020</span>.</p>
+        <p>You will be the first to ride a Yoda.<br> It will be delivered <i class="fas fa-shipping-fast"></i> in <span>spring 2020</span>.</p>
       </div>
       <div class="checkout-btn">
         <a href="https://yodacity.myshopify.com/cart/30774587129955:1?channel=buy_button">Continue to checkout</a>
@@ -24,13 +24,17 @@
       <div class="tabs-btn">
         <button class="w3-bar-item w3-button" onclick="openCheckTab('story')">STORY</button>
         <button class="w3-bar-item w3-button" onclick="openCheckTab('faq')">FAQ</button>
-        <button class="w3-bar-item w3-button" onclick="openCheckTab('shipping')">SHIPPING</button>
+        <button class="w3-bar-item w3-button" onclick="openCheckTab('delivery')">DELIVERY</button>
         <button class="w3-bar-item w3-button" onclick="openCheckTab('warranty')">WARRANTY</button>
       </div>
 
       <div id="story" class="check-tab">
-        <h2>Production</h2>
-        <p>We have begin turning the prototype into the final product. We are in control of all steps of the process.<br>It was conceptualized & designed by us in Brussels-Belgium. We itterate and build the prototypes in a garage in Brussels, and it will be assembled in Belgium as Well. Let's make things happen! Cheers.<br><br> The YodaCity Founders.</p>
+        <h2>Discover our story</h2>
+        <p>YodaCity was founded by Armand and Quentin in April 2019, with the goal of bringing a fun and efficient way for people to move in the city.<br>
+        After conceptualizing and designing what a superior bike would look like, they turned the idea into a prototype in July 2019, in a garage in Uccle, Brussels, Belgium.<br>
+        They showcased the prototype at the Bike Brussels exhibition in September 2019. The test-rider’s feedback was unanimous, most where saying: “the best thing I’ve ridden here”.<br>They are now focused on production, securing suppliers for the final product. The product will be assembled in Belgium. Help us make good things happen. Pre-order your Yoda today.
+        <br><br>
+        Armand & Quentin</p>
         <div class="img-container">
           <%= image_tag('Checkout/Progress-bar@2x.png', class: "bar-progress") %>
         </div>
@@ -101,14 +105,28 @@
 
       </div>
 
-      <div id="shipping" class="check-tab" style="display:none">
-        <h2>Shipping</h2>
-        <p>Paris is the capital of France.</p>
+      <div id="delivery" class="check-tab warranty" style="display:none">
+        <h2>Delivery</h2>
+        <p>Our prices do not include delivery. You have the option to pick up your Yoda at our main office in Brussels Belgium, free of charge, or have the Yoda delivered to you at an address in Belgium, for a fee.</p>
+        <br>
+        <p>Once your bike is ready, our delivery partner will get in touch with you to arrange for a delivery date and time. You’ll get a box and instructions and tools to finalize assembly (it will take 5 minutes and require no skills).</p>
+
       </div>
 
-      <div id="warranty" class="check-tab" style="display:none">
+      <div id="warranty" class="check-tab warranty" style="display:none">
         <h2>Warranty</h2>
-        <p>Tokyo is the capital of Japan.</p>
+        <p>As a consumer, you are legally entitled to a warranty of two years. The two years start counting once we deliver you the product.</p>
+        <p>YodaCity warrants that its bikes are sold free of defects in workmanship and materials. The warranty applies only to the original owner and is not transferable. The warranty does not apply to :</p>
+        <ul>
+          <li>Damage caused by normal wear and tear. For instance, brake pads will eventually wear out and need to be replaced after some time.</li>
+          <li>Damage caused by accident, abuse, carelessness, neglect, or use of the product other than for its intended use.</li>
+          <li>Damage caused by improper mounting of components, replacement or mounting of parts other than original YodaCity parts and products.</li>
+          <li>Attempt of reparation or modification , or mounting of accessories non-approved by YodaCity in the user manual, or in writing by YodaCity.</li>
+        </ul>
+        <p>Claims can be made by contacting us within two months of noticing the defect. Proof of purchase is required. We recommend that you keep the box if we shipped the bike to you.</p><br>
+        <p>During the warranty period, we will repair the product’s defect, or replace it free of charge. If repair or replacement is not possible, or would result in serious inconvenience to you, you have the right to request a price reduction or that the sales contract be cancelled.</p><br>
+        <p>For damages not covered by the warranty, please contact us to quote the repair of your bike.</p>
+
       </div>
     </div>
 
@@ -131,7 +149,7 @@
 
 
 </div>
-
+<%= render "shared/footer" %>
 <script>
   function openCheckTab(tabName) {
     var i;
