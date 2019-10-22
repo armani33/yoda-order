@@ -3,7 +3,7 @@ class ContactMailer < ApplicationMailer
 
   def contact_us(message)
     @message = message
-    mail(:from => %("#{@message.name}" <#{@message.email}>), to: "contact@yoda-city.com", subject: "Yodacity contact form")
+    mail(:from => @message.email, to: "contact@yoda-city.com", subject: "Yodacity contact form")
 
     @body = @message.message
   end
