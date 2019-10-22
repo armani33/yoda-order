@@ -10,8 +10,9 @@ Rails.application.routes.draw do
   get 'reviews' => 'pages#reviews'
   get 'support' => 'pages#support'
   get 'test-ride' => 'pages#test_ride'
-  get 'page/warranty' => 'pages#warranty'
   get 'cart' => 'pages#cart'
+  get 'page/warranty' => 'pages#warranty'
+  get 'page/faq' => 'pages#faq'
 
   get 'newsletter/buy' => 'users#new_buy'
   get 'newsletter/test' => 'users#new_test'

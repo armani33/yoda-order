@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
-  before_action :set_variant, only: [:main, :bike, :app, :reviews, :support, :test_ride, :warranty]
-  before_action :format, only: [:main, :bike, :app, :reviews, :support, :test_ride, :warranty]
+  before_action :set_variant, only: [:main, :bike, :app, :reviews, :support, :test_ride, :warranty, :faq]
+  before_action :format, only: [:main, :bike, :app, :reviews, :support, :test_ride, :warranty, :faq]
   def main
     @user = User.new
 
@@ -33,6 +33,10 @@ class PagesController < ApplicationController
   end
 
   def warranty
+    @user = User.new
+  end
+
+  def faq
     @user = User.new
   end
 
