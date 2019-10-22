@@ -14,6 +14,11 @@ Rails.application.routes.draw do
   get 'page/warranty' => 'pages#warranty'
   get 'page/faq' => 'pages#faq'
 
+
+  resources :contact, only: [:create]
+  get 'page/contact' => 'contact#contact'
+
+
   get 'newsletter/buy' => 'users#new_buy'
   get 'newsletter/test' => 'users#new_test'
   post 'users/create' => 'users#create'

@@ -1,0 +1,28 @@
+<%= render "shared/navbar" %>
+<div class="navbar-height"></div>
+
+<div class="contact-page-container">
+  <div class="contact-page-content">
+    <h1>Contact</h1>
+    <p>Need to tell us something? You can send us an email using this form, call us on <span>+32 472 22 22 05</span> or simply <span>chat with</span> us.</p>
+
+    <%= render "shared/contact-form" %>
+
+  </div>
+</div>
+
+<%= render "shared/footer" %>
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.page-1-content').height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - height*0.96) {
+              $('.nav-container').addClass('solid-nav');
+          } else {
+              $('.nav-container').removeClass('solid-nav');
+          }
+      });
+  });
+</script>

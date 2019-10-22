@@ -3,7 +3,6 @@ class PagesController < ApplicationController
   before_action :format, only: [:main, :bike, :app, :reviews, :support, :test_ride, :warranty, :faq]
   def main
     @user = User.new
-
     @reviews = Review.all.shuffle[0..9]
   end
 
