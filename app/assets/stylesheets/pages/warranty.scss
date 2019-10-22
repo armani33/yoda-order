@@ -3,6 +3,7 @@
   justify-content: center;
   font-family: $body;
   height: 98vh;
+  margin-bottom: 100px;
   .warranty-content{
     width: 50%;
     margin-top: 6%;
@@ -23,6 +24,40 @@
       margin: 23px 0 0 45px;
       li{
         font-size: 18px;
+        font-weight: 300;
+        color: $light-black;
+      }
+    }
+  }
+}
+
+
+
+.warranty-mobile-container{
+  display: flex;
+  justify-content: center;
+  font-family: $body;
+  margin-bottom: 60px;
+  .warranty-mobile-content{
+    margin: 0 15px;
+    margin-top: 100px;
+    h1{
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 60px;
+      color: $green;
+    }
+    p{
+      font-size: 16px;
+      font-weight: 300;
+      color: $light-black;
+      margin-top: 25px;
+    }
+    ul{
+      list-style-type: square;
+      margin: 23px 0 0 45px;
+      li{
+        font-size: 16px;
         font-weight: 300;
         color: $light-black;
       }

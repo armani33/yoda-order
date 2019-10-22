@@ -1,0 +1,39 @@
+<%= render "shared/navbar-mobile" %>
+<div class="warranty-mobile-container">
+  <div class="warranty-mobile-content">
+    <h1>Warranty</h1>
+    <br>
+    <p>As a consumer, you are legally entitled to a warranty of two years. The two years start counting once we deliver you the product.</p>
+    <p>YodaCity warrants that its bikes are sold free of defects in workmanship and materials. The warranty applies only to the original owner and is not transferable. The warranty does not apply to :</p>
+    <ul>
+      <li>Damage caused by normal wear and tear. For instance, brake pads will eventually wear out and need to be replaced after some time.</li>
+      <li>Damage caused by accident, abuse, carelessness, neglect, or use of the product other than for its intended use.</li>
+      <li>Damage caused by improper mounting of components, replacement or mounting of parts other than original YodaCity parts and products.</li>
+      <li>Attempt of reparation or modification , or mounting of accessories non-approved by YodaCity in the user manual, or in writing by YodaCity.</li>
+    </ul>
+    <p>Claims can be made by contacting us within two months of noticing the defect. Proof of purchase is required. We recommend that you keep the box if we shipped the bike to you.</p><br>
+    <p>During the warranty period, we will repair the product’s defect, or replace it free of charge. If repair or replacement is not possible, or would result in serious inconvenience to you, you have the right to request a price reduction or that the sales contract be cancelled.</p><br>
+    <p>For damages not covered by the warranty, please contact us to quote the repair of your bike.</p>
+  </div>
+</div>
+<%= render "shared/footer-mobile" %>
+<div class="footer-mobile-height"></div>
+
+
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.page-1-mobile-content').height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - height*0.96) {
+            $('.nav-mobile-container').addClass('solid-mobile-nav');
+            $('.nav-mobile-container').removeClass('solid-mobile-black-nav');
+          } else {
+            $('.nav-mobile-container').removeClass('solid-mobile-nav');
+            $('.nav-mobile-container').removeClass('solid-mobile-black-nav');
+          }
+      });
+  });
+</script>
+<%= render "shared/fb-messenger" %>
