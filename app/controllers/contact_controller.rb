@@ -12,10 +12,10 @@ class ContactController < ApplicationController
 
     if @message.valid?
       ContactMailer.contact_us(@message).deliver_now
-      render :contact
-      flash[:notice] = "We have received your message and will be in touch soon!"
+      redirect_to page_contact_path
+      flash[:notice] = "Thank you for your message. We'll get back to you soon!"
     else
-      render :contact
+      redirect_to page_contact_path
       flash[:notice] = "There was an error sending your message. Please try again."
     end
   end
