@@ -32,6 +32,10 @@ class PagesController < ApplicationController
     @user = User.new
   end
 
+  def warranty
+    @user = User.new
+  end
+
   private
 
   def format
