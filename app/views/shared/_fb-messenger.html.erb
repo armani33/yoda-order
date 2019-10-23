@@ -35,6 +35,9 @@ logged_out_greeting="Hi! How can we help you?">
       version          : 'v4.0'
     });
   };
+  FB.Event.subscribe('customerchat.load', function(){
+  FB.CustomerChat.show(shouldShowDialog: true);
+  });
 
   (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -44,7 +47,7 @@ logged_out_greeting="Hi! How can we help you?">
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-  FB.CustomerChat.show(shouldShowDialog: true);
+
 </script>
 
 <!-- Your customer chat code -->
