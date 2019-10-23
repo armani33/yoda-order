@@ -15,9 +15,13 @@
   </head>
   <body>
     <div class="text">
-      <%= @message.name %>
-      <%= @message.phone %>
-      <%= @message.message %>
+      <p><b>From: </b><%= @message.email %></p>
+      <br />
+      <p><b>Name: </b><%= @message.name %></p>
+      <br />
+      <p><b>Phone Number: </b><%= @message.phone %></p>
+      <br />
+      <p><b>Message: </b><%= @message.message %></p>
     </div>
   </body>
 </html>
