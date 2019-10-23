@@ -15,8 +15,8 @@ Rails.application.routes.draw do
   get 'page/faq' => 'pages#faq'
 
 
-  resources :contact, only: [:create]
   get 'page/contact' => 'contact#contact'
+  post 'contact' => 'contact#create'
 
 
   get 'newsletter/buy' => 'users#new_buy'
