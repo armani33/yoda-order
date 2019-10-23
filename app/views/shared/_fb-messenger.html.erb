@@ -34,6 +34,7 @@ logged_out_greeting="Hi! How can we help you?">
       xfbml            : true,
       version          : 'v4.0'
     });
+    FB.CustomerChat.show(shouldShowDialog: true);
   };
 
   (function(d, s, id) {
@@ -44,7 +45,6 @@ logged_out_greeting="Hi! How can we help you?">
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-  FB.CustomerChat.show(shouldShowDialog: boolean);
 </script>
 
 <!-- Your customer chat code -->
