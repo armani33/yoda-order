@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get 'cart' => 'pages#cart'
   get 'page/warranty' => 'pages#warranty'
   get 'page/faq' => 'pages#faq'
+  get 'page/delivery' => 'pages#delivery'
+  get 'page/returns' => 'pages#returns'
 
 
   resources :contact, only: [:create]

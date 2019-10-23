@@ -1,0 +1,30 @@
+<%= render "shared/navbar" %>
+<div class="navbar-height"></div>
+<div class="infos-page-container">
+  <div class="infos-page-content">
+    <h1>Delivery</h1>
+    <br>
+    <p>Our prices do not include delivery. You have the option to pick up your Yoda at our main office in Brussels Belgium, free of charge, or have the Yoda delivered to you at an address in Belgium, for a fee.</p>
+    <br>
+    <p>Once your bike is ready, our delivery partner will get in touch with you to arrange for a delivery date and time. You’ll get a box and instructions and tools to finalize assembly (it will take 5 minutes and require no skills).</p>
+  </div>
+</div>
+<%= render "shared/footer" %>
+
+
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.page-1-content').height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - height*0.96) {
+              $('.nav-container').addClass('solid-nav');
+          } else {
+              $('.nav-container').removeClass('solid-nav');
+          }
+      });
+  });
+</script>
+
+<%= render "shared/fb-messenger" %>
