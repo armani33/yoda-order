@@ -42,7 +42,10 @@ logged_out_greeting="Hi! How can we help you?">
   js = d.createElement(s); js.id = id;
   js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+
+  FB.CustomerChat.show(shouldShowDialog: boolean);
+</script>
 
 <!-- Your customer chat code -->
 <div class="fb-customerchat"
