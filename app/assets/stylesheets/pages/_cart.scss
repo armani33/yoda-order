@@ -234,7 +234,81 @@
   }
 }
 
-
+@media (max-width: 1450px) {
+  .cart-wrapper{
+    .nav-checkout-container{
+      height: 13vh;
+      .nav-checkout-content{
+        a.link-back{
+          i{
+            font-size: 30px;
+            margin-left: 80px;
+          }
+        }
+        .bike-img{
+          flex-basis: 25%;
+          img{
+            height: 14vh;
+          }
+          margin-left: 50px;
+        }
+        .text{
+          flex-basis: 45%;
+          p{
+            font-size: 16px;
+          }
+        }
+        .checkout-btn{
+          flex-basis: 30%;
+          margin-right: 70px;
+          a{
+            padding: 14px 45px;
+          }
+        }
+      }
+    }
+    .main-wrapper{
+      display: flex;
+      min-height: 86vh;
+      .tabs-wrapper{
+        flex-basis: 60%;
+        padding-top: 70px;
+        padding-left: 160px;
+        .tabs-btn{
+          button{
+            font-size: 19px;
+          }
+          button:first-child{
+            margin-left: 0;
+          }
+        }
+      }
+      .referal-wrapper{
+        flex-basis: 42%;
+        padding-top: 170px;
+        display: flex;
+        justify-content: center;
+        .refer-friends{
+          position: fixed;
+          .text-part-referal{
+            text-align: center;
+            h2{
+              font-size: 35px;
+            }
+            h3{
+              font-size: 17px;
+            }
+            .social-links{
+              a{
+                font-size: 38px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 
