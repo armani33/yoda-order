@@ -71,6 +71,11 @@
           border-radius: 30px;
           -webkit-appearance: none;
           -moz-appearance: none;
+          &:hover{
+            background-color: $green;
+            transition: 0.3s;
+            border-color: transparent;
+          }
         }
       }
     }
