@@ -1,0 +1,228 @@
+.cart-wrapper-mobile{
+  font-family: $body;
+  .nav-checkout-mobile-container{
+    box-shadow: 0 2px 6px #A7A7A7;
+    background-color: $light-black;
+    a.link-back{
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      text-decoration: none;
+      color: white;
+      font-size: 25px;
+      i{
+        color: white;
+        font-size: 25px;
+      }
+    }
+    .nav-checkout-mobile-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .bike-img{
+        margin-top: 30px;
+        img{
+          height: 120px;
+        }
+      }
+      .text{
+        color: white;
+        text-align: center;
+        i{
+          color: white;
+        }
+        p{
+          font-size: 15px;
+          letter-spacing: 1px;
+          font-weight: 300;
+          color: #CCCBCB;
+          line-height: 22px;
+          span{
+            color: $green;
+          }
+        }
+        .price{
+          font-size: 15px;
+          line-height: 35px;
+          letter-spacing: 1px;
+          color: white;
+          font-weight: 400;
+        }
+      }
+      .checkout-btn{
+        margin: 30px 0;
+        a{
+          text-decoration: none;
+          padding: 12px 34px;
+          border-radius: 40px;
+          background-color: white;
+          color: black;
+          font-size: 14px;
+          letter-spacing: 0.5px;
+          font-weight: 500;
+          &:hover{
+            background-color: $green;
+            color: $black;
+            transition: 1s;
+          }
+        }
+      }
+    }
+  }
+    .referal-mobile-wrapper{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    .refer-mobile-friends{
+      .text-part-referal{
+        text-align: center;
+        h2{
+          margin-bottom:23px;
+          padding:0;
+          font-weight: 500;
+          font-size: 25px;
+          text-align: center;
+          letter-spacing: 2px;
+        }
+        h3{
+          margin:0;
+          padding:0;
+          font-weight: 500;
+          font-size: 15px;
+          color: $dark-grey;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 20px;
+          letter-spacing: 2px;
+          span{
+            color: $green;
+          }
+        }
+        .social-links{
+          display: flex;
+          justify-content: center;
+          margin-top: 25px;
+          a{
+            font-size: 37px;
+          }
+          a:last-child{
+            margin-left: 60px;
+          }
+        }
+      }
+    }
+  }
+  .tabs-mobile-wrapper{
+    margin: 20px 15px;
+    text-align: center;
+    .tabs-mobile-btn{
+      button{
+        background-color: transparent;
+        border: none;
+        color: $black;
+        padding: 7px 0px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0 5px;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        letter-spacing: 0.6px;
+      }
+      button:first-child{
+        margin-left: 0;
+      }
+      button:hover{
+        border-bottom: 2px solid $black;
+      }
+      button:focus{
+        border-bottom: 2px solid $black;
+        outline: none;
+      }
+    }
+    .check-tab-mobile{
+      margin: 20px 0;
+      padding: 5px;
+      border: 1px solid #C1C1C1;
+      border-radius: 2px;
+      text-align: left;
+      h2{
+        margin: 5px 0 0 5px;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+      }
+      p{
+        margin-left: 5px;
+        font-size: 15px;
+        font-weight: 300;
+        color: $light-black;
+        margin-top: 25px;
+      }
+      h3{
+        font-weight: 500;
+        font-size: 18px;
+        margin: 35px 0 30px 5px;
+        color: #008861;
+
+      }
+      .faq-question{
+        h5{
+          margin-top: 18px;
+          font-size: 15px;
+          font-weight: 400;
+          margin-left: 5px;
+          margin-bottom: -13px;
+        }
+        p{
+          font-size: 15px;
+          font-weight: 300;
+          color: $light-black;
+          margin-top: 25px;
+        }
+        ul{
+          list-style-type: square;
+          margin: 23px 0 0 25px;
+          li{
+            font-size: 15px;
+            font-weight: 300;
+            color: $light-black;
+          }
+        }
+        .img-bike-lanes-container{
+          text-align: center;
+          margin: 15px 0;
+          img.bike-lanes{
+            width: 75px;
+          }
+        }
+      }
+      .img-container{
+        text-align: center;
+        margin-top: 30px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .warranty{
+      p{
+        font-size: 15px;
+        font-weight: 300;
+        color: $light-black;
+        margin-top: 25px;
+      }
+      ul{
+        list-style-type: square;
+        margin: 23px 0 0 45px;
+        li{
+          font-size: 15px;
+          font-weight: 300;
+          color: $light-black;
+        }
+      }
+    }
+  }
+}
