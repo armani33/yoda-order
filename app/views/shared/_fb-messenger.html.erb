@@ -36,9 +36,6 @@ logged_out_greeting="Hi! How can we help you?">
       xfbml            : true,
       version          : 'v4.0'
     });
-    FB.XFBML.parse({
-
-    });
   };
 
 
@@ -50,7 +47,7 @@ logged_out_greeting="Hi! How can we help you?">
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-
+FB.XFBML.parse();
 </script>
 
 <!-- Your customer chat code -->
