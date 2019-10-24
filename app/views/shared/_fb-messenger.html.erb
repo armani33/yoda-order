@@ -1,32 +1,4 @@
 <!-- Load Facebook SDK for JavaScript -->
-<!-- <div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v4.0'
-    });
-  };
-
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script> -->
-
-<!-- Your customer chat code -->
-<!-- <div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="345789982958766"
-logged_in_greeting="Hi! How can we help you?"
-logged_out_greeting="Hi! How can we help you?">
-</div>
-
- -->
-
-<!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
@@ -37,11 +9,7 @@ logged_out_greeting="Hi! How can we help you?">
       version          : 'v4.0'
     });
 
-    FB.Event.subscribe('customerchat.show', function(){
-      FB.CustomerChat.show({
-        shouldShowDialog: true
-      });
-    });
+    $(document).trigger('fbload');
 
   };
 
@@ -55,5 +23,18 @@ logged_out_greeting="Hi! How can we help you?">
 }(document, 'script', 'facebook-jssdk'));
 
 </script>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="345789982958766"
+  logged_in_greeting="Welcome, How we may help you"
+  logged_out_greeting="Welcome, How we may help you">>
 
-
+</div>
+<script>
+    $(function() {
+        $(document).on('fbload', function() {
+            console.log('fb loaded!');
+        });
+    });
+</script>

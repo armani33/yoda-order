@@ -160,16 +160,13 @@
       </table>
     </div>
   </div>
-  <!-- Your customer chat code -->
-  <div class="fb-customerchat"
-    attribution=setup_tool
-    page_id="345789982958766">
-  </div>
 
 
   <%= render "shared/footer" %>
 </div>
-
+<div id="fb-messenger-partial">
+  <%= render "shared/fb-messenger" %>
+</div>
 <script>
   $(document).ready(function() {
       $(window).scroll(function() {
@@ -184,10 +181,13 @@
       });
   });
 
+  $(function(){
+
+    $("#fb-messenger-partial").load()
+  };
 
 </script>
 
-<%= render "shared/fb-messenger" %>
 
 
 
