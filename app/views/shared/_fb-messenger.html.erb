@@ -38,15 +38,10 @@ logged_out_greeting="Hi! How can we help you?">
     });
 
     FB.Event.subscribe('customerchat.show', function(){
-      FB.CustomerChat.show(shouldShowDialog: true);;
-      // let facebookWidgetContainer = document.getElementById('facebook-widget-container');
-      // facebookWidgetContainer.style.display = 'none';
-
-      // var showOptionsContainer = document.getElementById("chat-widget-container");
-      // showOptionsContainer.style.display = "inline-grid";
+      FB.CustomerChat.show({
+        shouldShowDialog: true
+      });
     });
-
-    //     $(document).trigger('fbload');
   };
 
 
