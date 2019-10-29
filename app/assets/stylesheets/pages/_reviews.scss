@@ -42,14 +42,15 @@
       top: 120px;
       left: 120px;
       h3{
-        font-size: 80px;
-        font-weight: 500;
+        font-size: 50px;
+        font-weight: 900;
+        text-transform: uppercase;
         color: $green;
         margin-top: 50px;
       }
       p{
         font-size: 24px;
-        font-weight: 300;
+        font-weight: 500;
         margin: 10px 0 50px 0;
         color: #D9D9D9;
       }
@@ -70,7 +71,7 @@
           text-align: left;
           p.name{
             font-size: 25px;
-            font-weight: 500;
+            font-weight: 700;
             color: $green;
             margin-bottom: 8px;
           }
@@ -97,7 +98,7 @@
         margin-bottom: 80px;
         p.comment{
           color: #707070;
-          font-weight: 300;
+          font-weight: 400;
           font-size: 18px;
         }
       }

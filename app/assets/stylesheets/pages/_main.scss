@@ -6,7 +6,7 @@
   .page-container{
     height: 95vh;
     .page-1-content{
-      background: image-url("Yoda/Yoda-main-side-front@2x.png");
+      background: image-url("Yoda/Yoda-main-side-2-front@2x.png");
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
@@ -17,11 +17,18 @@
         margin-bottom: 50px;
         .text-content{
           h1{
-            font-size: 62px;
-            font-weight: 500;
-            line-height: 60px;
+            font-size: 60px;
+            font-weight: 900;
+            color: white;
+            text-transform: uppercase;
+            padding-right: 7px;
+            line-height: 70px;
             span{
-              color: $green;
+              padding: 0 12px;
+              background-color: $green;
+            }
+            span.black{
+              color: white;
             }
           }
           .text{
@@ -30,7 +37,7 @@
             margin-top: 20px;
             h2{
               font-size: 26px;
-              font-weight: 300;
+              font-weight: 500;
               color: $light-black;
             }
             a{
@@ -42,7 +49,7 @@
               p{
                 margin: 0;
                 font-size: 23px;
-                font-weight: 500;
+                font-weight: 700;
               }
               i{
                 margin-left: 15px;
@@ -94,16 +101,16 @@
         align-items: center;
         .text-content{
           h3{
-            font-size: 80px;
-            font-weight: 500;
-            line-height: 90px;
+            font-size: 60px;
+            font-weight: 900;
+            text-transform: uppercase;
             span{
               color: $green;
             }
           }
           p{
             font-size: 26px;
-            font-weight: 300;
+            font-weight: 500;
             color: $light-black;
             margin-top: 50px;
           }
@@ -117,7 +124,7 @@
               margin: 0;
               color: $green;
               font-size: 23px;
-              font-weight: 500;
+              font-weight: 700;
             }
             i{
               margin-left: 15px;
@@ -164,16 +171,16 @@
         align-items: center;
         .text-content{
           h3{
-            font-size: 80px;
-            font-weight: 500;
-            line-height: 90px;
+            font-size: 60px;
+            font-weight: 900;
+            text-transform: uppercase;
             span{
               color: $green;
             }
           }
           p{
             font-size: 26px;
-            font-weight: 300;
+            font-weight: 500;
             color: $light-black;
             margin-top: 50px;
           }
@@ -187,7 +194,7 @@
               margin: 0;
               color: $green;
               font-size: 23px;
-              font-weight: 500;
+              font-weight: 700;
             }
             i{
               margin-left: 15px;
@@ -211,16 +218,16 @@
         align-items: center;
         .text-content{
           h3{
-            font-size: 80px;
-            font-weight: 500;
-            line-height: 90px;
+            font-size: 60px;
+            font-weight: 900;
+            text-transform: uppercase;
             span{
               color: $green;
             }
           }
           p{
             font-size: 26px;
-            font-weight: 300;
+            font-weight: 500;
             color: $light-black;
             margin-top: 50px;
           }
@@ -234,7 +241,7 @@
               margin: 0;
               color: $green;
               font-size: 23px;
-              font-weight: 500;
+              font-weight: 700;
             }
             i{
               margin-left: 15px;
@@ -267,20 +274,20 @@
         margin-top: 80px;
         h3{
           font-size: 40px;
-          font-weight: 500;
-          line-height: 90px;
+          font-weight: 900;
+          text-transform: uppercase;
           span{
             color: $green;
           }
         }
         p{
           font-size: 23px;
-          font-weight: 400;
+          font-weight: 700;
           color: $black;
           margin: 20px 0;
         }
         #community{
-          font-weight: 300;
+          font-weight: 500;
           color: $light-black;
         }
       }
@@ -310,14 +317,14 @@
               justify-content: space-between;
               align-items: flex-start;
               p.name{
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 28px;
                 color: $black;
               }
               p.location{
                 margin-top: 7px;
                 color: #767373;
-                font-weight: 400;
+                font-weight: 500;
                 font-size: 17px;
               }
               .rating{

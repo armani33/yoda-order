@@ -13,15 +13,16 @@
       margin-left: 120px;
       margin-bottom: 160px;
       h1{
-        font-size: 85px;
-        font-weight: 500;
+        font-size: 60px;
+        font-weight: 900;
+        text-transform: uppercase;
         span{
           color: $green;
         }
       }
       p{
         font-size: 26px;
-        font-weight: 300;
+        font-weight: 500;
         margin-top: 40px;
       }
     }
@@ -39,20 +40,21 @@
         margin-left: 120px;
         margin-bottom: 30px;
         h2{
-          font-size: 75px;
-          font-weight: 500;
+          font-size: 60px;
+          font-weight: 900;
+          text-transform: uppercase;
           span{
             color: $green;
           }
         }
         p{
           font-size: 26px;
-          font-weight: 300;
+          font-weight: 500;
           margin-top: 40px;
         }
         p.title{
           font-size: 26px;
-          font-weight: 400;
+          font-weight: 700;
           margin-bottom: 40px;
         }
       }
@@ -90,20 +92,21 @@
         margin-left: 120px;
         margin-bottom: 30px;
         h2{
-          font-size: 75px;
-          font-weight: 500;
+          font-size: 60px;
+          font-weight: 900;
+          text-transform: uppercase;
           span{
             color: $green;
           }
         }
         p{
           font-size: 26px;
-          font-weight: 300;
+          font-weight: 500;
           margin-top: 40px;
         }
         p.title{
           font-size: 26px;
-          font-weight: 400;
+          font-weight: 700;
           margin-bottom: 40px;
         }
       }
