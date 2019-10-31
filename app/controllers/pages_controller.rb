@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
-  before_action :set_variant, only: [:main, :bike, :app, :reviews, :support, :test_ride, :cart, :warranty, :faq, :delivery, :returns]
-  before_action :format, only: [:main, :bike, :app, :reviews, :support, :test_ride, :cart, :warranty, :faq, :delivery, :returns]
+  before_action :set_variant, only: [:main, :bike, :app, :reviews, :support, :test_ride, :cart, :warranty, :faq, :delivery, :returns, :privacy_policy, :terms_of_use]
+  before_action :format, only: [:main, :bike, :app, :reviews, :support, :test_ride, :cart, :warranty, :faq, :delivery, :returns, :privacy_policy, :terms_of_use]
   def main
     @user = User.new
     @reviews = Review.all.shuffle[0..9]
@@ -45,6 +45,14 @@ class PagesController < ApplicationController
   end
 
   def returns
+    @user = User.new
+  end
+
+  def privacy_policy
+    @user = User.new
+  end
+
+  def terms_of_use
     @user = User.new
   end
 

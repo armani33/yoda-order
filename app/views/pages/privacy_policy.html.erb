@@ -1,0 +1,57 @@
+<%= render "shared/navbar" %>
+<div class="navbar-height"></div>
+<div class="infos-page-container">
+  <div class="infos-page-content">
+    <h1>Privacy policy</h1>
+    <br>
+    <p>YodaCity may use your personal data to provide you with its products and services. We do so in a manner that is respectful of your right to have your personal data protected, your rights to transparency of what we collect and do with it, and your rights to data ownership.We follow the rules set forth by European and Belgian laws and regulations such as GDPR.</p>
+    <br>
+    <p><b>The entity that collects your data (the “controller”)</b></p>
+    <p>YodaCity SRL<br>Chaussée de Waterloo 834<br>1180 Uccle<br>Belgium<br>E-mail <a href="mailto:contact@yoda-city.com">contact@yoda-city.com</a></p>
+    <br>
+    <p><b>Your behavior when you use our website, product and services</b></p>
+    <p>We ask that you only provide personal data that you are entitled to communicate to us, particularly when communicating data on behalf of others. Please do not provide personal data when you contact us through social media.</p>
+    <br>
+    <p><b>The personal data that we collect, and why</b></p>
+    <p><i>When you browse the website</i><br>We actually do not collect personal data, such as cookies, when you browse our website.</p>
+    <p><i>When you subscribe to our newsletter</i><br>We collect your email address. This allows us to keep you informed of our sales, promotions, events and updates to our products and services.</p>
+    <p><i>When you contact us by email, or through a form on the website</i><br>We collect your name and email address. This allows us to contact you back.</p>
+    <p><i>When you register for a test ride</i><br>We collect your name, email address, telephone number and IP address. This allows us to send you a confirmation of the time and place of the test ride, greet you personally, and notify you of any cancellation that may arise due, for instance, to bad weather. Collecting the IP address is done to avoid misuse of the system and combat abuse.</p>
+    <p><i>When you pre-order a Yoda</i><br>We collect your name, email address, telephone number, mailing address, and IP address. This allows us to fulfill our contract with you, including being able to contact you when your Yoda is available. If you pay by bank transfer, we will also store your account information to be able to verify your identity, should you request a refund according to our terms and conditions. Collecting the IP address is done to avoid misuse of the system and combat abuse.</p>
+    <br>
+    <p><b>Data storage policy</b></p>
+    <p>We rely on data processors to store personal data. These data processors may store the data in EU countries, or outside the EU (the US mainly). We have data processing agreements with all the data processors we rely on, which requires them to follow EU regulations. In particular, your data is encrypted and only accessible to the controller’s employee that require it to perform their job and duties. Additionally, we will not store data beyond a maximum of 36 months after the intent for which the data was collected does not exist (for instance, we’ll remove your info from our database after a maximum of 36 months after your test ride).</p>
+    <br>
+    <p><b>Collection of your personal data by third parties</b></p>
+    <p>Proper functionality of certain website functions such as social media buttons, may rely on the use of cookies by data processors.</p>
+    <br>
+    <p><b>Collection of data for statistical purposes</b></p>
+    <p>To improve the performance of the website and improve our products and services, we rely on data provided by data processors. These services may use cookies. The data provided to us for these purposes has been anonymized by the data processors.</p>
+    <br>
+    <p><b>Your rights regarding your personal data</b></p>
+    <p>You have the right to access your personal data or obtain a copy of your data.<br>You have the right to update your data, such as e-mail, telephone number or address.<br>You have the right to delete your data. We can request deletion from third party service providers as well. Deletion of your data will be performed as soon as possible, within a maximum of 180 days, unless EU or EU member state law requires storage.<br>Contact us via this form, or e-mail <a href="mailto:contact@yoda-city.com">contact@yoda-city.com</a> to do so.</p>
+    <p>You also have the right to file a complaint with the Data Protection Authority (in Belgium it is the “Autorité de protection des données / Gegevensbeschermingsautoriteit, Rue de la presse 35, 1000 Brussels, <a href="https://www.dataprotectionauthority.be">https://www.dataprotectionauthority.be</a>“).</p>
+    <br>
+    <p><b>Changes to this policy</b></p>
+    <p>Changes to this policy may occur at any time to reflect changes in our products or services. We recommend you consult and read this policy regularly. If you do not agree with this policy anymore, we kindly request that you ask for deletion of your data to us.</p>
+  </div>
+</div>
+<%= render "shared/footer" %>
+
+
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.page-1-content').height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - height*0.96) {
+              $('.nav-container').addClass('solid-nav');
+          } else {
+              $('.nav-container').removeClass('solid-nav');
+          }
+      });
+  });
+</script>
+
+<%= render "shared/fb-messenger" %>
