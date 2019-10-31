@@ -15,6 +15,46 @@
       .text-container{
         margin-left: 120px;
         margin-bottom: 50px;
+        #countdown{
+          position: absolute;
+          left: 120px;
+          top: 160px;
+          display: flex;
+          .card-countdown{
+            width: 60px;
+            height: 85px;
+            background-color: white;
+            position: relative;
+            text-align: center;
+            p{
+              font-size: 33px;
+              margin:  0;
+              font-weight: 700;
+            }
+            p#seconds{
+              color: $black;
+            }
+            p.data{
+              font-size: 13px;
+              font-weight: 700;
+              color: $green;
+            }
+          }
+          p.semicolon{
+            font-size: 33px;
+            margin: 0 4px;
+            margin-bottom: 8px;
+          }
+        }
+        .fixed-goal{
+          position: absolute;
+          left: 130px;
+          top: 230px;
+          p{
+            font-size: 17px;
+            font-weight: 500;
+          }
+        }
         .text-content{
           h1{
             font-size: 60px;
@@ -393,6 +433,31 @@
         background-position: center;
         .text-container{
           margin-bottom: 40px;
+          #countdown{
+            position: absolute;
+            left: 120px;
+            top: 110px;
+            display: flex;
+            .card-countdown{
+              p{
+                font-size: 30px;
+              }
+              p#seconds{
+                color: $black;
+              }
+              p.data{
+                font-size: 12px;
+              }
+            }
+            p.semicolon{
+              font-size: 30px;
+            }
+          }
+          .fixed-goal{
+            position: absolute;
+            left: 130px;
+            top: 180px;
+          }
           .text-content{
             h1{
               font-size: 48px;

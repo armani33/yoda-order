@@ -4,6 +4,31 @@
   <div class="page-container">
     <div class="page-1-content">
       <div class="text-container">
+        <div id="countdown">
+          <div class="card-countdown">
+            <p id="days"></p>
+            <p class="data">DAYS</p>
+          </div>
+          <p class="semicolon">:</p>
+          <div class="card-countdown">
+            <p id="hours"></p>
+            <p class="data">HOURS</p>
+          </div>
+          <p class="semicolon">:</p>
+          <div class="card-countdown">
+            <p id="minutes"></p>
+            <p class="data">MINUTES</p>
+          </div>
+          <p class="semicolon">:</p>
+          <div class="card-countdown">
+            <p id="seconds"></p>
+            <p class="data">SECONDS</p>
+          </div>
+        </div>
+        <div class="fixed-goal">
+          <p>Fixed goal: 200</p>
+          <p><b><%= 200 - @orders %></b> Yodas left</p>
+        </div>
         <div class="text-content">
           <!-- <h1>Move with <span>fun</span>.</h1> -->
           <h1><span>Anyone can</span><br><span>master a<span class="black">Yoda</span>.</span></h1>
@@ -167,6 +192,38 @@
 
 
 
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Dec 1, 2019 12:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="countdown"
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
 
 
 
