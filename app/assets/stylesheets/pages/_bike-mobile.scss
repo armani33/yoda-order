@@ -74,6 +74,15 @@
           span{
             font-weight: 600;
           }
+          span.full-price{
+            text-decoration: line-through;
+            text-decoration-color: red;
+            font-weight: 500;
+          }
+          span.pre-order-price{
+            color: red;
+            font-weight: 700;
+          }
         }
       }
       .ecomode-container{

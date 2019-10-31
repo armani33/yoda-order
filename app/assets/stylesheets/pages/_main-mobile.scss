@@ -43,8 +43,24 @@
           font-weight: 500;
         }
       }
+      .price-reduction{
+        position: absolute;
+        right: 15px;
+        top: 125px;
+        p#full-price{
+          font-size: 16px;
+          font-weight: 500;
+          text-decoration: line-through;
+          text-decoration-color: red;
+        }
+        p#pre-order-price{
+          font-size: 21px;
+          font-weight: 600;
+          color: red;
+        }
+      }
       img{
-        margin-top: 150px;
+        margin-top: 180px;
         margin-bottom: 0px;
         width: 100%;
       }

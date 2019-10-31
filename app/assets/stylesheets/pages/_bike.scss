@@ -367,6 +367,18 @@
           span{
             font-weight: 600;
           }
+          p.pre-order-price{
+            span{
+              color: red;
+            }
+          }
+          p.full-price{
+            span{
+              text-decoration: line-through;
+              text-decoration-color: red;
+              font-weight: 500;
+            }
+          }
         }
         th{
           padding-right: 400px;
