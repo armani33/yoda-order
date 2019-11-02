@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def main
     @user = User.new
     @reviews = Review.all.shuffle[0..9]
-    @orders = 14
+    @orders = 15
   end
 
   def bike
