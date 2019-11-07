@@ -16,8 +16,11 @@
         font-size: 60px;
         font-weight: 900;
         text-transform: uppercase;
+        line-height: 70px;
+        color: white;
         span{
-          color: $green;
+          padding: 0 18px;
+          background-color: $green;
         }
       }
       p{
@@ -36,15 +39,18 @@
       display: flex;
       align-items: center;
       .text-content{
-        color: $light-light-grey;
+        color: $black;
         margin-left: 120px;
         margin-bottom: 30px;
         h2{
           font-size: 60px;
           font-weight: 900;
           text-transform: uppercase;
+          line-height: 70px;
+          color: white;
           span{
-            color: $green;
+            padding: 0 18px;
+            background-color: $green;
           }
         }
         p{
@@ -60,12 +66,12 @@
       }
     }
     .black-bg{
-      background-color: $bike-black;
+      background-color: white;
     }
     .right-container{
       flex-basis: 50%;
       height: 100%;
-      background: image-url("App/Iphone_X-notif-tire-pressure@2x.png");
+      background: image-url("App/Iphone-notif-tire-pressure@2x.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -95,8 +101,11 @@
           font-size: 60px;
           font-weight: 900;
           text-transform: uppercase;
+          line-height: 70px;
+          color: white;
           span{
-            color: $green;
+            padding: 0 18px;
+            background-color: $green;
           }
         }
         p{

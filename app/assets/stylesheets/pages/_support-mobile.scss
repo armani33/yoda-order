@@ -11,12 +11,14 @@
       padding-bottom: 10%;
       padding-right: 20px;
       h1{
-        font-size: 30px;
+        font-size: 27px;
         font-weight: 900;
+        color: white;
         text-transform: uppercase;
-        margin-bottom: 15px;
+        padding-right: 7px;
         span{
-          color: $green;
+          padding: 0 10px;
+          background-color: $green;
         }
       }
       p{
