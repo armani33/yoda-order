@@ -82,7 +82,7 @@
             padding-right: 7px;
             line-height: 70px;
             span{
-              padding: 0 12px;
+              padding: 0 18px;
               background-color: $green;
             }
             span.black{
@@ -101,15 +101,16 @@
             a{
               text-decoration: none;
               margin-left: 35px;
-              color: $green;
+              color: $black;
               display: flex;
               align-items: center;
               p{
-                margin: 0;
+                margin-top: 35px;
                 font-size: 23px;
                 font-weight: 700;
               }
               i{
+                margin-top: 33px;
                 margin-left: 15px;
                 font-size: 23px;
               }
@@ -121,7 +122,7 @@
   }
   .media-container{
     height: 38vh;
-    background-color: $green;
+    background-color: $black;
     .media-content{
       height: 100%;
       .logo-media{
@@ -148,116 +149,103 @@
   .page-2-content{
     display: flex;
     height: 100%;
-    .left-container{
-      flex-basis: 50%;
-      background-color: white;
-      .text-container{
-        margin-left: 120px;
-        height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        .text-content{
-          h3{
-            font-size: 60px;
-            font-weight: 900;
-            text-transform: uppercase;
-            span{
-              color: $green;
-            }
-          }
-          p{
-            font-size: 26px;
-            font-weight: 500;
-            color: $light-black;
-            margin-top: 50px;
-          }
-          a{
-            text-decoration: none;
-            margin-top: 60px;
-            color: $green;
-            display: flex;
-            align-items: center;
-            p{
-              margin: 0;
-              color: $green;
-              font-size: 23px;
-              font-weight: 700;
-            }
-            i{
-              margin-left: 15px;
-              font-size: 23px;
-            }
+    background: image-url("Yoda/Zoom-front-wheel-2@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .text-container{
+      margin-left: 120px;
+      height: 100%;
+      margin-top: 9%;
+      .text-content{
+        h3{
+          font-size: 60px;
+          font-weight: 900;
+          text-transform: uppercase;
+          line-height: 70px;
+          color: white;
+          span{
+            padding: 0 18px;
+            background-color: $green;
           }
         }
-      }
-    }
-    .right-container{
-      flex-basis: 50%;
-      background-color: $black;
-      height: 100%;
-      .right-content{
-        height: 100%;
-        background: image-url("Yoda/Zoom-front-wheel@2x.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        p{
+          font-size: 26px;
+          font-weight: 500;
+          color: $light-black;
+          margin-top: 70px;
+        }
+        a{
+          text-decoration: none;
+          margin-top: 50px;
+          color: $black;
+          display: flex;
+          align-items: center;
+          p{
+            margin: 0;
+            color: $black;
+            font-size: 23px;
+            font-weight: 700;
+          }
+          i{
+            margin-top: 1px;
+            margin-left: 15px;
+            font-size: 23px;
+          }
+        }
       }
     }
   }
   .page-3-content{
     display: flex;
     height: 100%;
-    .left-container{
-      flex-basis: 50%;
+    background: image-url("Yoda/Handle-with-smartphone-2@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    .text-container{
       height: 100%;
-      background-color: $black;
-      .left-content{
-        height: 100%;
-        background: image-url("Yoda/Handle-with-smartphone@2x.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-      }
-    }
-    .right-container{
-      flex-basis: 50%;
-      .text-container{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .text-content{
-          h3{
-            font-size: 60px;
-            font-weight: 900;
-            text-transform: uppercase;
-            span{
-              color: $green;
-            }
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin-right: 120px;
+      margin-top: 9%;
+      .text-content{
+        h3{
+          font-size: 60px;
+          font-weight: 900;
+          text-transform: uppercase;
+          line-height: 70px;
+          color: white;
+          text-align: right;
+          span{
+            padding: 0 18px;
+            background-color: $green;
           }
+        }
+        p{
+          font-size: 26px;
+          font-weight: 500;
+          color: $light-black;
+          margin-top: 250px;
+        }
+        a{
+          text-decoration: none;
+          margin-top: 60px;
+          color: $black;
+          display: flex;
+          align-items: center;
           p{
-            font-size: 26px;
-            font-weight: 500;
-            color: $light-black;
-            margin-top: 50px;
+            margin: 0;
+            color: $black;
+            font-size: 23px;
+            font-weight: 700;
           }
-          a{
-            text-decoration: none;
-            margin-top: 60px;
-            color: $green;
-            display: flex;
-            align-items: center;
-            p{
-              margin: 0;
-              color: $green;
-              font-size: 23px;
-              font-weight: 700;
-            }
-            i{
-              margin-left: 15px;
-              font-size: 23px;
-            }
+          i{
+            margin-top: 1px;
+            margin-left: 15px;
+            font-size: 23px;
           }
         }
       }
@@ -266,56 +254,54 @@
   .page-4-content{
     display: flex;
     height: 100%;
-    .left-container{
-      flex-basis: 50%;
-      background-color: white;
-      .text-container{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .text-content{
-          h3{
-            font-size: 60px;
-            font-weight: 900;
-            text-transform: uppercase;
-            span{
-              color: $green;
-            }
+    background: image-url("App/Notification@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .text-container{
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin-left: 120px;
+      margin-top: 9%;
+      .text-content{
+        h3{
+          font-size: 60px;
+          font-weight: 900;
+          text-transform: uppercase;
+          line-height: 70px;
+          color: white;
+          text-align: left;
+          span{
+            padding: 0 18px;
+            background-color: $green;
           }
+        }
+        p{
+          font-size: 26px;
+          font-weight: 500;
+          color: $light-black;
+          margin-top: 70px;
+        }
+        a{
+          text-decoration: none;
+          margin-top: 50px;
+          color: $black;
+          display: flex;
+          align-items: center;
           p{
-            font-size: 26px;
-            font-weight: 500;
-            color: $light-black;
-            margin-top: 50px;
+            margin: 0;
+            font-size: 23px;
+            font-weight: 700;
           }
-          a{
-            text-decoration: none;
-            margin-top: 60px;
-            color: $green;
-            display: flex;
-            align-items: center;
-            p{
-              margin: 0;
-              color: $green;
-              font-size: 23px;
-              font-weight: 700;
-            }
-            i{
-              margin-left: 15px;
-              font-size: 23px;
-            }
+          i{
+            margin-top: 1px;
+            margin-left: 15px;
+            font-size: 23px;
           }
         }
       }
-    }
-    .right-container{
-      flex-basis: 50%;
-      height: 100%;
-      background: image-url("App/Notification@2x.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
     }
   }
 
@@ -331,11 +317,15 @@
         flex-basis: 25%;
         margin-top: 80px;
         h3{
-          font-size: 40px;
+          font-size: 45px;
           font-weight: 900;
           text-transform: uppercase;
+          line-height: 60px;
+          color: white;
+          text-align: left;
           span{
-            color: $green;
+            padding: 0 18px;
+            background-color: $green;
           }
         }
         p{
@@ -419,16 +409,16 @@
         }
         a{
           text-decoration: none;
-          color: $green;
+          color: $black;
           display: flex;
           align-items: center;
           margin-right: 120px;
           margin-bottom: 40px;
           p{
             margin: 0;
-            color: $green;
+            color: $black;
             font-size: 23px;
-            font-weight: 500;
+            font-weight: 700;
           }
           i{
             margin-left: 15px;
@@ -498,8 +488,10 @@
               a{
                 p{
                   font-size: 21px;
+                  margin-top: 15px;
                 }
                 i{
+                  margin-top: 15px;
                   margin-left: 13px;
                   font-size: 21px;
                 }
@@ -509,75 +501,74 @@
         }
       }
       .page-2-content{
-        .left-container{
-          .text-container{
-            .text-content{
-              h3{
-                font-size: 48px;
-              }
+        .text-container{
+          .text-content{
+            h3{
+              font-size: 48px;
+              line-height: 62px;
+            }
+            p{
+              font-size: 21px;
+              margin-top: 50px;
+            }
+            a{
+              margin-top: 40px;
               p{
                 font-size: 21px;
-                margin-top: 30px;
+                margin: 0;
               }
-              a{
-                margin-top: 45px;
-                p{
-                  font-size: 21px;
-                  margin: 0;
-                }
-                i{
-                  font-size: 21px;
-                }
+              i{
+                font-size: 21px;
               }
             }
           }
         }
       }
       .page-3-content{
-        .right-container{
-          .text-container{
-            .text-content{
-              h3{
-                font-size: 48px;
-              }
+        .text-container{
+          margin-top: 9%;
+          .text-content{
+            h3{
+              font-size: 48px;
+              line-height: 62px;
+              text-align: left;
+            }
+            p{
+              font-size: 21px;
+              margin-top: 180px;
+            }
+            a{
+              margin-top: 40px;
               p{
                 font-size: 21px;
-                margin-top: 30px;
+                margin: 0;
               }
-              a{
-                margin-top: 45px;
-                p{
-                  font-size: 21px;
-                  margin: 0;
-                }
-                i{
-                  font-size: 21px;
-                }
+              i{
+                font-size: 21px;
               }
             }
           }
         }
       }
       .page-4-content{
-        .left-container{
-          .text-container{
-            .text-content{
-              h3{
-                font-size: 48px;
-              }
+        .text-container{
+          .text-content{
+            h3{
+              font-size: 48px;
+              line-height: 62px;
+            }
+            p{
+              font-size: 21px;
+              margin-top: 50px;
+            }
+            a{
+              margin-top: 40px;
               p{
                 font-size: 21px;
-                margin-top: 30px;
+                margin: 0;
               }
-              a{
-                margin-top: 45px;
-                p{
-                  font-size: 21px;
-                  margin: 0;
-                }
-                i{
-                  font-size: 21px;
-                }
+              i{
+                font-size: 21px;
               }
             }
           }
@@ -590,10 +581,11 @@
             margin-top: 50px;
             h3{
               font-size: 33px;
+              line-height: 42px;
             }
             p{
               font-size: 20px;
-              margin: 10px 0;
+              margin: 50px 0 10px;
             }
           }
           .review-main-content-middle{
@@ -634,6 +626,39 @@
       }
     }
   }
+  }
+}
+
+@media (max-width: 1300px) {
+  .main-container{
+    .page-container{
+      .page-3-content{
+        .text-container{
+          margin-top: 8%;
+          .text-content{
+            h3{
+              font-size: 48px;
+              line-height: 62px;
+              text-align: left;
+            }
+            p{
+              font-size: 21px;
+              margin-top: 165px;
+            }
+            a{
+              margin-top: 40px;
+              p{
+                font-size: 21px;
+                margin: 0;
+              }
+              i{
+                font-size: 21px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

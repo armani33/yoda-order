@@ -94,7 +94,7 @@
           a{
             text-decoration: none;
             margin-top: 15px;
-            color: $green;
+            color: $black;
             display: flex;
             align-items: flex-end;
             p{
@@ -105,6 +105,7 @@
             i{
               margin-left: 15px;
               font-size: 17px;
+              margin-bottom: 2px;
             }
           }
         }
@@ -113,7 +114,7 @@
   }
   .media-mobile-container{
     height: 130px;
-    background-color: $green;
+    background-color: $black;
     .media-mobile-content{
       height: 100%;
       .logo-mobile-media{
@@ -148,18 +149,21 @@
         margin: 50px 0px 0 15px;
         width: 100%;
         h3{
-          font-size: 30px;
+          font-size: 29px;
           font-weight: 900;
+          color: white;
           text-transform: uppercase;
+          padding-right: 7px;
           span{
-            color: $green;
+            padding: 0 10px;
+            background-color: $green;
           }
         }
         p{
           font-size: 16px;
           font-weight: 500;
           color: $light-black;
-          margin-top: 15px;
+          margin-top: 20px;
           margin-right: 20px;
         }
         a{
@@ -167,16 +171,16 @@
           margin-top: 15px;
           display: flex;
           align-items: flex-end;
-          color: $green;
+          color: $black;
           p{
             margin: 0;
             font-size:17px;
-            color: $green;
             font-weight: 700;
           }
           i{
             margin-left: 15px;
             font-size: 17px;
+            margin-bottom: 2px;
           }
         }
       }
@@ -189,7 +193,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: $black;
+    background-color: $light-light-grey;
     .text-container{
       display: flex;
       justify-content: flex-start;
@@ -198,19 +202,20 @@
         margin: 50px 0 0 15px;
         width: 100%;
         h3{
-          font-size: 30px;
+          font-size: 29px;
           font-weight: 900;
-          text-transform: uppercase;
           color: white;
+          text-transform: uppercase;
+          padding-right: 7px;
           span{
-            color: $green;
+            padding: 0 10px;
+            background-color: $green;
           }
         }
         p{
           font-size: 16px;
           font-weight: 500;
-          color: white;
-          margin-top: 15px;
+          margin-top: 20px;
           margin-right: 20px;
         }
         a{
@@ -218,16 +223,16 @@
           margin-top: 15px;
           display: flex;
           align-items: flex-end;
-          color: $green;
+          color: $black;
           p{
             margin: 0;
             font-size:17px;
             font-weight: 700;
-            color: $green;
           }
           i{
             margin-left: 15px;
             font-size: 17px;
+            margin-bottom: 2px;
           }
         }
       }
@@ -250,19 +255,21 @@
         margin: 50px 0 0 20px;
         width: 100%;
         h3{
-          font-size: 30px;
+          font-size: 29px;
           font-weight: 900;
+          color: white;
           text-transform: uppercase;
-          color: $black;
+          padding-right: 7px;
           span{
-            color: $green;
+            padding: 0 10px;
+            background-color: $green;
           }
         }
         p{
           font-size: 16px;
           font-weight: 500;
           color: $black;
-          margin-top: 15px;
+          margin-top: 20px;
           margin-right: 20px;
         }
         a{
@@ -270,16 +277,16 @@
           margin-top: 15px;
           display: flex;
           align-items: flex-end;
-          color: $green;
+          color: $black;
           p{
             margin: 0;
             font-size:17px;
             font-weight: 700;
-            color: $green;
           }
           i{
             margin-left: 15px;
             font-size: 17px;
+            margin-bottom: 2px;
           }
         }
       }
@@ -290,13 +297,16 @@
   }
   .page-review-mobile-content{
     .review-content-top{
-      margin: 50px 20px 0 20px;
+      margin: 35px 20px 0 20px;
       h3{
-        font-size: 26px;
-        font-weight: 800;
+        font-size: 23px;
+        font-weight: 900;
+        color: white;
         text-transform: uppercase;
+        padding-right: 7px;
         span{
-          color: $green;
+          padding: 0 10px;
+          background-color: $green;
         }
       }
       p{
@@ -316,16 +326,16 @@
       margin-left: 20px;
       display: flex;
       align-items: flex-end;
-      color: $green;
+      color: $black;
       p{
         margin: 0;
         font-size:18px;
         font-weight: 700;
-        color: $green;
       }
       i{
         margin-left: 15px;
         font-size: 18px;
+        margin-bottom: 2px;
       }
     }
     .cards-wrapper{
