@@ -11,269 +11,35 @@
   background-color: transparent;
   z-index: 1;
   font-family: $body;
-  height: 100px;
+  height: 80px;
   .nav-content{
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     .nav-logo{
-      flex-basis: 10%;
       img{
-        margin-left: 120px;
-        width: 155px;
-      }
-    }
-    .menu-container{
-      flex-basis: 60%;
-      margin-left: 80px;
-      .menu-content{
-        ul{
-          list-style: none;
-          padding: 5px;
-          margin-top: 5px;
-          a{
-            text-decoration: none;
-            color: black;
-            float: left;
-            padding: 5px;
-            margin-left: 40px;
-            font-size: 17px;
-            font-weight: 600;
-            height: 100%;
-            border-bottom: 2px solid transparent;
-          }
-          a:hover{
-            border-bottom: 2px solid black;
-          }
-          a.active{
-            border-bottom: 2px solid white;
-          }
-        }
-        ul#navigation{
-          a{
-            color: $black;
-          }
-          a:hover{
-            border-bottom: 2px solid $black;
-          }
-          a.active{
-            border-bottom: 2px solid $black;
-          }
-        }
+        margin-left: 80px;
+        width: 138px;
       }
     }
     .btn-container{
-      height: 100%;
-      flex-basis: 30%;
-      vertical-align: center;
-      // background-color: red;
-      .btn-content{
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        a{
-          text-decoration: none;
-        }
-        .nav-btn{
-          height: 100%;
-          width: 230px;
-          font-size: 17px;
-          font-weight: 600;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .test-ride{
-          background-color: $black;
-          color: white;
-        }
-        .test-ride-white{
-          background-color: white;
-          color: $black;
-        }
-        .buy{
-          background-color: $green;
-          color: $black;
-          &:hover{
-            span { display : none }
-            &:before { content: "€2.490"}
-          }
-        }
+      display: flex;
+      justify-content: flex-around;
+      .nav-btn{
+        padding: 11px 30px;
+        border-radius: 25px;
+        font-weight: 300;
       }
-    }
-  }
-}
-.alert{
-  color: orange;
-}
-.nav-white-container{
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: transparent;
-  z-index: 1;
-  font-family: $body;
-  height: 100px;
-  .nav-white-content{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    .nav-logo{
-      flex-basis: 10%;
-      img{
-        margin-left: 120px;
-        width: 155px;
+      .rent{
+        border: 1px solid $black;
+        background-color: white;
       }
-    }
-    .menu-container{
-      flex-basis: 60%;
-      margin-left: 80px;
-      .menu-content{
-        ul{
-          list-style: none;
-          padding: 5px;
-          margin-top: 5px;
-          a{
-            text-decoration: none;
-            color: black;
-            float: left;
-            padding: 5px;
-            margin-left: 40px;
-            font-size: 17px;
-            font-weight: 600;
-            height: 100%;
-            border-bottom: 2px solid transparent;
-          }
-          a:active{
-            border-bottom: 2px solid black;
-          }
-          a:hover{
-            border-bottom: 2px solid black;
-          }
-        }
-        ul#navigation-text-white{
-          a{
-            color: white;
-          }
-          a.active{
-            border-bottom: 2px solid white;
-          }
-          a:hover{
-            border-bottom: 2px solid white;
-          }
-        }
-      }
-    }
-    .btn-container{
-      height: 100%;
-      flex-basis: 30%;
-      vertical-align: center;
-      // background-color: red;
-      .btn-content{
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        a{
-          text-decoration: none;
-        }
-        .nav-btn{
-          height: 100%;
-          width: 230px;
-          font-size: 17px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .test-ride{
-          background-color: $black;
-          color: white;
-        }
-        .test-ride-white{
-          background-color: white;
-          color: $black;
-        }
-        .buy{
-          background-color: $green;
-          color: $black;
-          &:hover{
-            span { display : none }
-            &:before { content: "€2,990.00"}
-          }
-        }
-      }
-    }
-  }
-}
-.solid-nav {
-  background-color: white;
-  transition: background-color 0.3s linear;
-}
-.solid-nav-black{
-  background-color: black;
-  transition: background-color 0.2s linear;
-}
-.solid-nav-greyblack{
-  background-color: $bike-black;
-  transition: background-color 0.2s linear;
-}
-
-@media (max-width: 1450px) {
-  .nav-container{
-    height:80px;
-    .nav-content{
-      .nav-logo{
-        img{
-          width: 125px;
-        }
-      }
-      .menu-container{
-        margin-left: 40px;
-        .menu-content{
-          ul{
-            a{
-              font-size: 16px;
-            }
-          }
-        }
-      }
-      .btn-container{
-        .btn-content{
-          .nav-btn{
-            width: 190px;
-            font-size: 16px;
-          }
-        }
-      }
-    }
-  }
-  .nav-white-container{
-    height:80px;
-    .nav-white-content{
-      .nav-logo{
-        img{
-          width: 125px;
-        }
-      }
-      .menu-container{
-        margin-left: 40px;
-        .menu-content{
-          ul{
-            a{
-              font-size: 16px;
-            }
-          }
-        }
-      }
-      .btn-container{
-        .btn-content{
-          .nav-btn{
-            width: 190px;
-            font-size: 16px;
-          }
-        }
+      .buy{
+        border: 1px solid $black;
+        background-color: $black;
+        color: white;
+        margin: 0 30px;
       }
     }
   }

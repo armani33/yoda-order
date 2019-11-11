@@ -2,7 +2,7 @@
   font-family: $body;
   background-color: $black;
   .footer-container-top{
-    border-bottom: 1px solid $footer-font-grey;
+    border-bottom: 1px solid $light-grey;
     .footer-content-top{
       display: flex;
       margin-left: 120px;
@@ -55,9 +55,9 @@
             padding: 10px 0;
             font-size: 18px;
             font-weight: 600;
-            color: $footer-font-grey;
+            color: $light-grey;
             a{
-              color: $footer-font-grey;
+              color: $light-grey;
               text-decoration: none;
               &:hover{
                 color: $green;
@@ -78,7 +78,7 @@
         align-items: flex-end;
         height: 100%;
         .newsletter-content{
-          border-bottom: 1px solid $footer-font-grey;
+          border-bottom: 1px solid $light-grey;
           p{
             font-size: 18px;
             font-weight: 600;
@@ -111,14 +111,14 @@
             display: inline-block;
             background-color: transparent;
             border: 0;
-            color: $footer-font-grey;
+            color: $light-grey;
             outline: none !important;
             z-index: 1;
           }
           i{
             margin-top: 10px;
             font-size: 25px;
-            color: $footer-font-grey;
+            color: $light-grey;
             cursor: pointer;
             &:hover{
               color: $green;
@@ -147,7 +147,7 @@
           color: white;
         }
         p{
-          color: $footer-font-grey;
+          color: $light-grey;
         }
       }
     }

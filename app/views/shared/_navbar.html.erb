@@ -5,21 +5,14 @@
         <%= image_tag('Logo/Logo@2x.png', class: "logo-nav") %>
       <% end %>
     </div>
+
     <% flash.each do |key, value| %>
       <div class="alert alert-<%= key %>"><%= value %></div>
     <% end %>
+
     <div class="btn-container">
-      <div class="btn-content">
-        <%= link_to test_ride_path do %>
-          <div class="nav-btn test-ride">
-            <p>TEST RIDE</p>
-          </div>
-        <% end %>
-        <%= link_to cart_path do %>
-          <div class="nav-btn buy">
-            <p><span>PRE-ORDER</span></p>
-          </div>
-        <% end %>
-      </div>
+      <div class="nav-btn rent">Rent a Yoda</div>
+      <div class="nav-btn buy">Buy a Yoda</div>
+    </div>
   </div>
 </nav>
