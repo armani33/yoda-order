@@ -27,9 +27,10 @@
       display: flex;
       justify-content: flex-around;
       .nav-btn{
-        padding: 11px 30px;
+        padding: 10px 27px;
         border-radius: 25px;
         font-weight: 300;
+        font-size: 14px;
       }
       .rent{
         border: 1px solid $black;
