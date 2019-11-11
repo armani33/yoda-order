@@ -4,161 +4,18 @@
   <div class="page-container">
     <div class="page-1-content">
       <div class="text-container">
-        <!-- <div id="countdown">
-          <div class="card-countdown">
-            <p id="days"></p>
-            <p class="data">DAYS</p>
-          </div>
-          <p class="semicolon">:</p>
-          <div class="card-countdown">
-            <p id="hours"></p>
-            <p class="data">HOURS</p>
-          </div>
-          <p class="semicolon">:</p>
-          <div class="card-countdown">
-            <p id="minutes"></p>
-            <p class="data">MINUTES</p>
-          </div>
-          <p class="semicolon">:</p>
-          <div class="card-countdown">
-            <p id="seconds"></p>
-            <p class="data">SECONDS</p>
-          </div>
-        </div>
-        <div class="fixed-goal">
-          <p>Fixed goal: 200</p>
-          <p><b><%= 200 - @orders %></b> Yodas left</p>
-        </div>
-        <div class="price-reduction">
-          <p id="full-price">2.990€</p>
-          <p id="pre-order-price">2.490€</p>
-        </div> -->
         <div class="text-content">
-          <!-- <h1>Move with <span>fun</span>.</h1> -->
-          <h1><span>Anyone can</span><br><span>master a<span class="black">Yoda</span>.</span></h1>
-          <div class="text">
-            <!-- <h2>You'll zip through traffic like never before up to 45 km/h.</h2> -->
-            <h2>The simplicity of a bicycle, combined with the advantages of a motorcycle.</h2>
-            <%= link_to bike_path do %>
-              <p>Discover the bike</p>
-              <i class="fas fa-chevron-right"></i>
-            <% end %>
-          </div>
+          <h1>Simply fun<span>.</span></h1>
+          <h2>At 29 kg, forget about heavy and complicated.<br>Zip through traffic like never before on a Yoda.</h2>
+          <!-- Calendly link widget begin -->
+          <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+          <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yodacity-test-ride/30min'});return false;">Book a test ride</a>
+          <!-- Calendly link widget end -->
         </div>
       </div>
     </div>
   </div>
-
-  <div class="media-container">
-    <div class="media-content">
-      <div class="logo-media">
-        <%= image_tag('Medias/bruzz@2x.png', class: "bruzz") %>
-        <%= image_tag('Medias/HLN@2x.png', class: "hln") %>
-        <%= image_tag('Medias/new-mobility@2x.png', class: "newmobility") %>
-        <%= image_tag('Medias/DH@2x.png', class: "dh") %>
-      </div>
-    </div>
-  </div>
-
-  <div class="page-container">
-    <div class="page-2-content">
-      <div class="text-container">
-        <div class="text-content">
-          <h3><span>Light weight means</span><br><span>maniability.</span></h3>
-          <p>No pedals. You won't break a sweat again.</p>
-          <%= link_to bike_path do %>
-            <p class="btn-to-other-page">Discover the bike</p>
-            <i class="fas fa-chevron-right"></i>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="page-container">
-    <div class="page-3-content">
-      <div class="text-container">
-        <div class="text-content">
-          <h3><span>Seamlessly integrate</span><br><span>with your phone.</span></h3>
-          <p>Unlock your Yoda with your phone. Navigation becomes easy peasy.<br>The anti-theft system alerts you directly of potential threats.</p>
-          <%= link_to app_path do %>
-            <p class="btn-to-other-page">Discover the app</p>
-            <i class="fas fa-chevron-right"></i>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="page-container">
-    <div class="page-4-content">
-      <div class="text-container">
-        <div class="text-content">
-          <h3><span>Support before</span><br><span>you need it.</span></h3>
-          <p>Our support team is with you. Always.</p>
-          <%= link_to support_path do %>
-            <p class="btn-to-other-page">Learn more</p>
-            <i class="fas fa-chevron-right"></i>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="page-container">
-    <div class="review-main-container">
-      <div class="review-main-content">
-        <div class="review-main-content-top">
-          <!-- <p>#May the Force be with you.</p> -->
-          <h3><span>They saw it.</span><span>They rode it.</span><br><span>They loved it.</span></h3>
-          <p id="community">Find out what the Yoda community thinks.</p>
-        </div>
-        <div class="review-main-content-middle">
-          <div class="cards-container">
-
-            <% @reviews.each do |review| %>
-
-              <div class="card">
-               <div class="card-nav-info">
-                <div class="left">
-                  <p class="name"><%= review.name %></p>
-                  <p class="location"><%= review.city %></p>
-                </div>
-                <div class="right">
-                  <div class="rating">
-                    <% review.rating.times do  %>
-                      <i class="green fas fa-star"></i>
-                    <% end %>
-                    <% review.blank_stars.times do %>
-                      <i class="grey fas fa-star"></i>
-                    <% end %>
-                  </div>
-                </div>
-              </div>
-              <div class="comment">
-                <p><%= review.comment %></p>
-              </div>
-             </div>
-
-            <% end %>
-
-          </div>
-        </div>
-        <div class="review-content-footer">
-          <div class="circle">
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-          </div>
-          <%=link_to reviews_path do %>
-            <p class="btn-to-other-page">See all reviews</p>
-            <i class="fas fa-chevron-right"></i>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
   <%= render "shared/footer" %>
 </div>
 
@@ -183,7 +40,7 @@
 
 
 
-<script>
+<!-- <script>
   // Set the date we're counting down to
   var countDownDate = new Date("Dec 1, 2019 12:00:00").getTime();
 
@@ -215,7 +72,7 @@
     }
 }, 1000);
 </script>
-
+ -->
 
 
 

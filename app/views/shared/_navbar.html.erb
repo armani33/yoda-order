@@ -5,16 +5,6 @@
         <%= image_tag('Logo/Logo@2x.png', class: "logo-nav") %>
       <% end %>
     </div>
-    <div class="menu-container">
-      <div class="menu-content">
-        <ul id="navigation">
-          <a href="<%= bike_path %>">BIKE</a>
-          <a href="<%= app_path %>">APP</a>
-          <a href="<%= support_path %>">SUPPORT</a>
-          <a href="<%= reviews_path %>">REVIEWS</a>
-        </ul>
-      </div>
-    </div>
     <% flash.each do |key, value| %>
       <div class="alert alert-<%= key %>"><%= value %></div>
     <% end %>
@@ -33,12 +23,3 @@
       </div>
   </div>
 </nav>
-
-<script>
-  // Highlight the active link in a navigation menu
-  for (var i = 0; i < document.links.length; i++) {
-      if (document.links[i].href == document.URL) {
-          document.links[i].className = 'active';
-      }
-  }
-</script>
