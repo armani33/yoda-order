@@ -11,8 +11,8 @@
     <% end %>
 
     <div class="btn-container">
-      <div class="nav-btn rent">Rent a Yoda</div>
-      <div class="nav-btn buy">Buy a Yoda</div>
+      <%= link_to rent_a_yoda_path do%><div class="nav-btn rent">Rent a Yoda</div><% end %>
+      <%= link_to buy_a_yoda_path do%><div class="nav-btn buy">Buy a Yoda</div><% end %>
     </div>
   </div>
 </nav>

@@ -1,12 +1,14 @@
 class PagesController < ApplicationController
-  before_action :set_variant, only: [:main, :test_ride, :cart, :warranty, :faq, :delivery, :returns, :privacy_policy, :terms_of_use]
-  before_action :format, only: [:main, :test_ride, :cart, :warranty, :faq, :delivery, :returns, :privacy_policy, :terms_of_use]
+  before_action :set_variant, only: [:main, :rent, :buy, :cart, :warranty, :faq, :delivery, :returns, :privacy_policy, :terms_of_use]
+  before_action :format, only: [:main, :rent, :buy, :cart, :warranty, :faq, :delivery, :returns, :privacy_policy, :terms_of_use]
   def main
     @user = User.new
   end
 
-  def test_ride
-    @user = User.new
+  def rent
+  end
+
+  def buy
   end
 
   def cart

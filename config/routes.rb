@@ -5,7 +5,8 @@ Rails.application.routes.draw do
 
   root to: 'pages#main'
 
-  get 'test-ride' => 'pages#test_ride'
+  get 'rent-a-yoda' => 'pages#rent'
+  get 'buy-a-yoda'  => 'pages#buy'
   get 'cart' => 'pages#cart'
   get 'page/warranty' => 'pages#warranty'
   get 'page/faq' => 'pages#faq'
