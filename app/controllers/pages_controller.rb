@@ -6,9 +6,11 @@ class PagesController < ApplicationController
   end
 
   def rent
+    @rent_navbar = true
   end
 
   def buy
+    @buy_navbar = true
   end
 
   def cart

@@ -1,0 +1,197 @@
+.ff-wrapper-container{
+  font-family: $body;
+  .rent-page-container{
+    .page-content-1{
+      background: image-url("Yoda/Yoda-front-ff-1@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 95vh;
+      display: flex;
+      align-items: flex-start;
+      .text-container{
+        margin-left: 80px;
+        margin-top: 160px;
+        h1{
+          font-size: 75px;
+          font-weight: 500;
+          span{
+            color: $green;
+          }
+        }
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color: $font-text-black;
+          margin-top: 22px;
+          margin-bottom: 55px;
+          margin-left: 8px;
+        }
+        a{
+          padding: 11px 30px;
+          border: 1px solid $black;
+          border-radius: 25px;
+          font-weight: 300;
+          color: $black;
+          text-decoration: none;
+          font-size: 16px;
+          margin-left: 8px;
+        }
+      }
+    }
+    .page-content-2{
+      background-color: $bg-black;
+      background-image: url('Yoda/Yoda-left-profile-ff-2@2x.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      .text-container{
+        margin-right: 100px;
+        margin-top: 160px;
+        h2{
+          font-size: 75px;
+          font-weight: 500;
+          color: white;
+          span{
+            color: $green;
+          }
+        }
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color: $light-light-grey;
+          margin-top: 22px;
+          margin-bottom: 55px;
+          margin-left: 8px;
+        }
+        a{
+          padding: 11px 30px;
+          border: 1px solid white;
+          background-color: white;
+          border-radius: 25px;
+          font-weight: 300;
+          color: $black;
+          text-decoration: none;
+          font-size: 16px;
+          margin-left: 8px;
+        }
+      }
+    }
+    .page-content-3{
+      background-image: url('Yoda/Yoda-no-pedals@2x.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      .text-container{
+        margin-left: 80px;
+        h2{
+          font-size: 75px;
+          font-weight: 500;
+          color: $black;
+          span{
+            color: $green;
+          }
+        }
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color: $font-text-black;
+          margin-top: 22px;
+          margin-bottom: 55px;
+        }
+        a{
+          padding: 11px 30px;
+          border: 1px solid $black;
+          border-radius: 25px;
+          font-weight: 300;
+          color: $black;
+          text-decoration: none;
+          font-size: 16px;
+        }
+      }
+    }
+    .page-content-4{
+      display: flex;
+      height: 100vh;
+      .left-side{
+        flex-basis: 60%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .text-container{
+          margin-left: 10%;
+          h2{
+            font-size: 75px;
+            font-weight: 500;
+            span{
+              color: $green;
+            }
+          }
+          p{
+            font-weight: 400;
+            font-size: 18px;
+            color: $font-text-black;
+            margin-top: 22px;
+            margin-bottom: 55px;
+          }
+          a{//calendly pop-up
+            padding: 11px 30px;
+            border: 1px solid $blue;
+            border-radius: 25px;
+            font-weight: 300;
+            color: $blue;
+            text-decoration: none;
+          }
+        }
+      }
+      .right-side{
+        flex-basis: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 68%;
+          margin-right: 150px;
+        }
+      }
+    }
+    .page-content-5{
+      background-color: $bg-black;
+      background-image: url('Yoda/Yoda-comfortable-ff-5@2x.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 95vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      .text-container{
+        margin-right: 120px;
+        margin-top: 70px;
+        h2{
+          font-size: 75px;
+          font-weight: 500;
+          color: $black;
+          span{
+            color: $green;
+          }
+        }
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color: $font-text-black;
+          margin-top: 22px;
+          margin-bottom: 55px;
+        }
+      }
+    }
+    .map{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

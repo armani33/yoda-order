@@ -7,7 +7,7 @@
       display: flex;
       align-items: center;
       box-shadow: 0 2px 6px #A7A7A7;
-      background-color: $light-black;
+      background-color: $bg-black;
       a.link-back{
         text-decoration: none;
         color: white;
@@ -119,7 +119,7 @@
           margin-left: 15px;
           font-size: 19px;
           font-weight: 300;
-          color: $light-black;
+          color: $bg-black;
           margin-top: 25px;
         }
         h3{
@@ -140,7 +140,7 @@
           p{
             font-size: 17px;
             font-weight: 300;
-            color: $light-black;
+            color: $bg-black;
             margin-top: 25px;
           }
           ul{
@@ -149,7 +149,7 @@
             li{
               font-size: 17px;
               font-weight: 300;
-              color: $light-black;
+              color: $bg-black;
             }
           }
           .img-bike-lanes-container{
@@ -172,7 +172,7 @@
         p{
           font-size: 17px;
           font-weight: 300;
-          color: $light-black;
+          color: $bg-black;
           margin-top: 25px;
         }
         ul{
@@ -181,7 +181,7 @@
           li{
             font-size: 17px;
             font-weight: 300;
-            color: $light-black;
+            color: $bg-black;
           }
         }
       }

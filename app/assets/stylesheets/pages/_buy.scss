@@ -1,0 +1,379 @@
+.buy-wrapper-container{
+  font-family: $body;
+  .buy-page-container{
+    .page-content-1{
+      background: image-url("Yoda/Yoda-profile-left-buy-1@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 95vh;
+      display: flex;
+      align-items: flex-start;
+      .text-container{
+        margin-left: 80px;
+        margin-top: 160px;
+        h1{
+          font-size: 75px;
+          font-weight: 500;
+          span{
+            color: $green;
+          }
+        }
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color: $font-text-black;
+          margin-top: 22px;
+          margin-bottom: 55px;
+        }
+        a{
+          padding: 11px 30px;
+          border: 1px solid $black;
+          border-radius: 25px;
+          font-weight: 300;
+          color: $black;
+          text-decoration: none;
+          font-size: 16px;
+          i{
+            color: $black;
+          }
+        }
+      }
+    }
+    .page-content-2{
+      display: flex;
+      height: 100vh;
+      .left-side{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 50%;
+        }
+      }
+      .right-side{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .text-container{
+          margin-left: 10%;
+          h2{
+            font-size: 75px;
+            font-weight: 500;
+            span{
+              color: $green;
+            }
+          }
+          .ecomode-container{
+            display: flex;
+            flex-direction: column;
+            margin: 33px 0;
+            .eco{
+              display: flex;
+              align-items: center;
+              margin-bottom: 22px;
+              img{
+                width: 40px;
+              }
+              p{
+                font-weight: 400;
+                font-size: 18px;
+                color: $font-text-black;
+                margin-left: 15px;
+                span{
+                  font-weight: 300;
+                }
+              }
+            }
+          }
+          a{//calendly pop-up
+            padding: 11px 30px;
+            border: 1px solid $blue;
+            border-radius: 25px;
+            font-weight: 300;
+            color: $blue;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .page-content-3{
+      background: image-url("Yoda/Yoda-back-comfortable-buy-3@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      .text-container{
+        margin-left: 80px;
+        margin-top: 160px;
+        h1{
+          font-size: 75px;
+          font-weight: 500;
+          span{
+            color: $green;
+          }
+        }
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color: $font-text-black;
+          margin-top: 22px;
+          margin-bottom: 55px;
+        }
+        a{
+          padding: 11px 30px;
+          border: 1px solid $blue;
+          border-radius: 25px;
+          font-weight: 300;
+          color: $blue;
+          text-decoration: none;
+          font-size: 16px;
+        }
+      }
+    }
+    .page-content-4{
+      background: image-url("Yoda/Yoda-battery-zoom-buy-4@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      .text-container{
+        margin-right: 120px;
+        margin-top: 100px;
+        text-align: right;
+        h2{
+          font-size: 75px;
+          font-weight: 500;
+          span{
+            color: $green;
+          }
+        }
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color: $font-text-black;
+          margin-top: 22px;
+          margin-bottom: 55px;
+          margin-right: 8px;
+        }
+        a{
+          padding: 11px 30px;
+          border: 1px solid $black;
+          border-radius: 25px;
+          font-weight: 300;
+          color: $black;
+          text-decoration: none;
+          font-size: 16px;
+          margin-right: 8px;
+          i{
+            color: $black;
+          }
+        }
+      }
+    }
+    #slideshow-wrapper{
+      background-color: #161616;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      #Slideshow{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        #Slider{
+          height: 100%;
+          overflow: hidden;
+          width: 100%;
+          border: 1px solid #161616;
+          #slide{
+            width: 100%;
+            height: 100%;
+          }
+          .first-second{
+            display: flex;
+            .left-side{
+              flex-basis: 60%;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              .text-container{
+                margin-left: 120px;
+                h3{
+                  font-size: 75px;
+                  font-weight: 500;
+                  color: white;
+                  span{
+                    color: $green;
+                  }
+                }
+                p{
+                  font-weight: 400;
+                  font-size: 18px;
+                  color: $light-light-grey;
+                  margin-top: 22px;
+                  margin-bottom: 55px;
+                }
+              }
+            }
+            .right-side{
+              flex-basis: 40%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img{
+                width: 63%;
+                margin-right: 150px;
+              }
+            }
+          }
+          .third{
+            display: flex;
+            align-items: center;
+            background-image: url('Yoda/Yoda-back-wheel-theft-lock@2x.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            .text-container{
+              margin-left: 120px;
+              h3{
+                font-size: 75px;
+                font-weight: 500;
+                color: white;
+                span{
+                  color: $green;
+                }
+              }
+              p{
+                font-weight: 400;
+                font-size: 18px;
+                color: $light-light-grey;
+                margin-top: 22px;
+                margin-bottom: 55px;
+              }
+            }
+          }
+        }
+        #Arrows{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 95%;
+          position: absolute;
+          width: 95%;
+          i{
+            color: white;
+            cursor: pointer;
+            height: 30px;
+            padding: 20px;
+
+            transition: background-color .5s, color .5s;
+          }
+        }
+        #Arrows i:first-of-type{
+          padding-right: 20px;
+        }
+
+        #Arrows i:last-of-type{
+          padding-left: 20px;
+        }
+
+        #Arrows i:hover{
+          background-color: rgba(28,29,33, .75);
+          color: #EEEFF7;
+        }
+      }
+    }
+    .technical-specs-container{
+      display: flex;
+      justify-content: center;
+      .technical-specs-content{
+        text-align: center;
+        h2{
+          font-size: 45px;
+          font-weight: 500;
+          color: $black;
+          margin-top: 80px;
+        }
+        table{
+          margin-top: 80px;
+          border-collapse: collapse;
+          tr{
+          border-bottom: 1px solid #D9D9D9;
+          display: flex;
+          justify-content: space-between;
+          }
+          th {
+            text-align: left;
+            line-height: 55px;
+            width: 200px;
+            height: 55px;
+            margin-left: 40px;
+            font-size: 18px;
+          }
+          td{
+            font-weight: 300;
+            text-align: left;
+            width: 400px;
+            height: 55px;
+            line-height: 55px;
+            margin-right: 40px;
+            span{
+              font-weight: 400;
+            }
+          }
+          th{
+            padding-right: 400px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .page-content-5{
+      background-color: $light-grey;
+      background-image: url('');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .text-container{
+        margin-right: 120px;
+        text-align: left;
+        h2{
+          font-size: 75px;
+          font-weight: 500;
+          span{
+            color: $green;
+          }
+        }
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color: $font-text-black;
+          margin-top: 22px;
+          margin-bottom: 55px;
+        }
+        a{
+          padding: 11px 30px;
+          border: 1px solid $black;
+          border-radius: 25px;
+          font-weight: 300;
+          color: white;
+          background-color: $black;
+          text-decoration: none;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
