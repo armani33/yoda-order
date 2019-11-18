@@ -10,24 +10,18 @@
   background-color: transparent;
   z-index: +1;
   .nav-mobile-content{
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     .nav-mobile-logo{
       img{
-      width: 40%;
+      width: 35%;
       }
     }
   }
 }
-.solid-mobile-nav {
+.solid-nav {
   background-color: white;
-  transition: background-color 0.1s linear;
-}
-
-.solid-mobile-black-nav {
-  background-color: $bg-black;
   transition: background-color 0.1s linear;
 }
 
@@ -38,84 +32,41 @@
   left: 0;
   right: 0;
   z-index: 1;
+  height: 8%;
+  background-color: white;
   .btn-mobile-content{
+    height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     a{
-      flex-basis: 50%;
       text-decoration: none;
     }
     .nav-mobile-btn{
-      padding: 20px;
+      width: 135px;
+      height: 36px;
       text-align: center;
+      line-height: 36px;
+      border-radius: 25px;
       p{
         padding: 0;
         margin: 0;
         font-family: $body;
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: 300;
       }
     }
-    .test-ride{
-      background-color: $black;
-      color: white;
+    .rent{
+      background-color: white;
+      border: 1px solid $black;
+      color: black;
+      margin-left: 5px;
     }
     .buy{
-      background-color: $green;
-      color: $black;
+      background-color: $black;
+      border: 1px solid $black;
+      color: white;
+      margin-right: 5px;
     }
   }
 }
-
-
-
-.dropbtn {
-  background-color: transparent;
-  padding: 5px;
-  border: none;
-  cursor: pointer;
-  z-index: 1;
-  i{
-    color: $black;
-    font-size: 23px;
-    z-index : -1;
-  }
-  .color-white{
-    color: white;
-  }
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  outline:none;
-  background-color: transparent;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right: 20px;
-  background-color: white;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
-  border-radius: 6px;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 10px 15px;
-  text-decoration: none;
-  display: block;
-  font-family: $body;
-  font-size: 18px;
-}
-
-.dropdown a:hover {background-color: transparent;}
-
-.show {display: block;}

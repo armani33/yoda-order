@@ -1,407 +1,277 @@
 .main-mobile-container{
   font-family: $body;
   .page-mobile-container{
-    .page-1-mobile-content{
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      #countdown{
-        position: absolute;
-        left: 3px;
-        top: 80px;
-        display: flex;
-        .card-countdown{
-          width: 60px;
-          background-color: white;
-          position: relative;
-          text-align: center;
-          p{
-            font-size: 15px;
-            margin:  0;
-            font-weight: 700;
-          }
-          p#seconds{
-            color: $black;
-          }
-          p.data{
-            font-size: 11px;
-            font-weight: 700;
-            color: $green;
-          }
-        }
-        p.semicolon{
-          font-size: 15px;
-          margin: 0 2px;
-          font-weight: 800
-        }
-      }
-      .fixed-goal{
-        position: absolute;
-        left: 15px;
-        top: 125px;
-        p{
-          font-size: 15px;
-          font-weight: 500;
-        }
-      }
-      .price-reduction{
-        position: absolute;
-        right: 15px;
-        top: 125px;
-        p#full-price{
-          font-size: 16px;
-          font-weight: 500;
-          text-decoration: line-through;
-          text-decoration-color: red;
-        }
-        p#pre-order-price{
-          font-size: 21px;
-          font-weight: 600;
-          color: red;
-        }
-      }
-      img{
-        margin-top: 110px;
-        margin-bottom: 0px;
-        width: 100%;
-      }
+    .page-mobile-content-1{
       .text-container{
-        position: absolute;
-        bottom: 30px;
-        left: 15px;
+        margin-left: 15px;
+        margin-top: 80px;
+        margin-bottom: 30px;
         .text-content{
           h1{
-            font-size: 29px;
-            font-weight: 900;
-            color: white;
-            text-transform: uppercase;
-            padding-right: 7px;
+            font-size: 52px;
+            font-weight: 500;
+            color: $black;
             span{
-              padding: 0 10px;
-              background-color: $green;
-            }
-            span.black{
-              color: white;
+              color: $green;
             }
           }
+          p{
+            font-weight: 400;
+            font-size: 13px;
+            color: $font-text-black;
+            margin-top: 10px;
+            margin-bottom: 26px;
+          }
+          a{//calendly pop-up
+            padding: 8px 20px;
+            border: 1px solid $green;
+            border-radius: 25px;
+            font-weight: 300;
+            color: $green;
+            text-decoration: none;
+            font-size: 13px;
+          }
+        }
+      }
+      .image{
+        text-align: center;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .page-mobile-content-2{
+      .text-container{
+        margin-left: 15px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        .text-content{
           h2{
-            font-size: 16px;
+            font-size: 52px;
             font-weight: 500;
-            color: $bg-black;
-            margin-top: 15px;
-            margin-right: 20px;
+            color: $black;
+            span{
+              color: $green;
+            }
+          }
+          p{
+            font-weight: 400;
+            font-size: 13px;
+            color: $font-text-black;
+            margin-top: 10px;
+            margin-bottom: 26px;
+            margin-left: 5px;
+            b{
+              font-size: 14px;
+            }
           }
           a{
-            text-decoration: none;
-            margin-top: 15px;
-            color: $black;
-            display: flex;
-            align-items: flex-end;
-            p{
-              margin: 0;
-              font-size:17px;
-              font-weight: 700;
-            }
-            i{
-              margin-left: 15px;
-              font-size: 17px;
-              margin-bottom: 2px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .media-mobile-container{
-    height: 130px;
-    background-color: $black;
-    .media-mobile-content{
-      height: 100%;
-      .logo-mobile-media{
-        margin: 0 5px;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .bruzz{
-          width: 64px;
-        }
-        .hln{
-          width: 52px;
-        }
-        .newmobility{
-          width: 90px;
-        }
-        .dh{
-          width: 60px;
-        }
-      }
-    }
-  }
-  .page-2-mobile-content{
-    display: flex;
-    flex-direction: column;
-    .text-container{
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      .text-content{
-        margin: 50px 0px 0 15px;
-        width: 100%;
-        h3{
-          font-size: 29px;
-          font-weight: 900;
-          color: white;
-          text-transform: uppercase;
-          padding-right: 7px;
-          span{
-            padding: 0 10px;
-            background-color: $green;
-          }
-        }
-        p{
-          font-size: 16px;
-          font-weight: 500;
-          color: $bg-black;
-          margin-top: 20px;
-          margin-right: 20px;
-        }
-        a{
-          text-decoration: none;
-          margin-top: 15px;
-          display: flex;
-          align-items: flex-end;
-          color: $black;
-          p{
-            margin: 0;
-            font-size:17px;
-            font-weight: 700;
-          }
-          i{
-            margin-left: 15px;
-            font-size: 17px;
-            margin-bottom: 2px;
-          }
-        }
-      }
-    }
-    img.front-fork-yoda{
-      width: 100%;
-    }
-  }
-  .page-3-mobile-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: $light-light-grey;
-    .text-container{
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      .text-content{
-        margin: 50px 0 0 15px;
-        width: 100%;
-        h3{
-          font-size: 29px;
-          font-weight: 900;
-          color: white;
-          text-transform: uppercase;
-          padding-right: 7px;
-          span{
-            padding: 0 10px;
-            background-color: $green;
-          }
-        }
-        p{
-          font-size: 16px;
-          font-weight: 500;
-          margin-top: 20px;
-          margin-right: 20px;
-        }
-        a{
-          text-decoration: none;
-          margin-top: 15px;
-          display: flex;
-          align-items: flex-end;
-          color: $black;
-          p{
-            margin: 0;
-            font-size:17px;
-            font-weight: 700;
-          }
-          i{
-            margin-left: 15px;
-            font-size: 17px;
-            margin-bottom: 2px;
-          }
-        }
-      }
-    }
-    img.handle-smartphone-yoda{
-      width: 100%;
-    }
-  }
-  .page-4-mobile-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    background-color: $light-light-grey;
-    .text-container{
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      .text-content{
-        margin: 50px 0 0 20px;
-        width: 100%;
-        h3{
-          font-size: 29px;
-          font-weight: 900;
-          color: white;
-          text-transform: uppercase;
-          padding-right: 7px;
-          span{
-            padding: 0 10px;
-            background-color: $green;
-          }
-        }
-        p{
-          font-size: 16px;
-          font-weight: 500;
-          color: $black;
-          margin-top: 20px;
-          margin-right: 20px;
-        }
-        a{
-          text-decoration: none;
-          margin-top: 15px;
-          display: flex;
-          align-items: flex-end;
-          color: $black;
-          p{
-            margin: 0;
-            font-size:17px;
-            font-weight: 700;
-          }
-          i{
-            margin-left: 15px;
-            font-size: 17px;
-            margin-bottom: 2px;
-          }
-        }
-      }
-    }
-    img.smartphone-yoda{
-      width: 100%;
-    }
-  }
-  .page-review-mobile-content{
-    .review-content-top{
-      margin: 35px 20px 0 20px;
-      h3{
-        font-size: 23px;
-        font-weight: 900;
-        color: white;
-        text-transform: uppercase;
-        padding-right: 7px;
-        span{
-          padding: 0 10px;
-          background-color: $green;
-        }
-      }
-      p{
-        font-size: 18px;
-        font-weight: 700;
-        color: $black;
-        margin: 20px 0;
-      }
-      #community{
-        font-weight: 500;
-        color: $bg-black;
-      }
-    }
-    a{
-      text-decoration: none;
-      margin-bottom: 20px;
-      margin-left: 20px;
-      display: flex;
-      align-items: flex-end;
-      color: $black;
-      p{
-        margin: 0;
-        font-size:18px;
-        font-weight: 700;
-      }
-      i{
-        margin-left: 15px;
-        font-size: 18px;
-        margin-bottom: 2px;
-      }
-    }
-    .cards-wrapper{
-      margin: 30px 0;
-      // c'est 3 lignes serve a faire le scroll vertical
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      .card{
-        flex: 0 0 auto; // cette ligne sert a faire le scroll vertical
-        width: 76%;
-        // height: 120px;
-        background-color: white;
-
-        padding: 10px;
-        margin: 10px 0 10px 20px;
-        border: 1px solid #D5D5D5;
-        border-radius: 3px;
-        box-shadow: 0 0 4px #EDEDED;
-        .card-nav-info {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          p.name{
-            font-weight: 600;
-            font-size: 21px;
-            color: $black;
-          }
-          p.location{
-            color: #767373;
+            padding: 8px 20px;
+            border: 1px solid $black;
+            border-radius: 25px;
             font-weight: 300;
-            font-size: 14px;
-          }
-          .rating{
-            i.green{
-              color: $green;
-              font-size: 12px;
-            }
-            i.grey{
-              color: #DBDBDB;
-              font-size: 12px;
-            }
+            color: white;
+            background-color: $black;
+            text-decoration: none;
+            font-size: 13px;
+            margin-left: 5px;
           }
         }
-        .comment{
-          margin-top: 25px;
-          font-size: 15px;
-          font-weight: 300;
-          color: $bg-black;
+      }
+      .image{
+        text-align: center;
+        img{
+          width: 80%;
         }
       }
     }
+    .page-mobile-content-3{
+      background-color: $bg-black;
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      .text-container{
+        margin-left: 15px;
+        margin-top: 50px;
+        .text-content{
+          h2{
+            font-size: 52px;
+            font-weight: 500;
+            color: white;
+            span{
+              color: $green;
+            }
+          }
+          p{
+            font-weight: 400;
+            font-size: 13px;
+            color: $light-light-grey;
+            margin-top: 13px;
+            margin-bottom: 33px;
+          }
+          a{//calendly pop-up
+            padding: 8px 20px;
+            border: 1px solid $green;
+            border-radius: 25px;
+            font-weight: 300;
+            color: $green;
+            text-decoration: none;
+            font-size: 13px;
+          }
+        }
+      }
+      .image{
+        text-align: center;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .page-mobile-content-4{
+      display: flex;
+      flex-direction: column;
+      .text-container{
+        margin-top: 50px;
+        text-align: center;
+        .text-content{
+          h2{
+            font-size: 52px;
+            font-weight: 500;
+            color: $black;
+            span{
+              color: $green;
+            }
+          }
+          p{
+            font-weight: 400;
+            font-size: 13px;
+            color: $font-text-black;
+            margin-top: 13px;
+          }
+        }
+      }
+      .image{
+        text-align: center;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .page-mobile-content-5{
+      display: flex;
+      flex-direction: column;
+      h2{
+        font-size: 37px;
+        font-weight: 500;
+        color: $black;
+        margin-left: 15px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        span{
+          color: $green;
+        }
+      }
+      .image{
+        text-align: center;
+        img{
+          width: 92%;
+        }
+      }
+      .stats-race{
+        margin-left: 15px;
+        .position{
+          display: flex;
+          align-items: center;
+          margin: 30px 0;
+          p{
+            font-weight: 400;
+            font-size: 13px;
+            color: $font-text-black;
+          }
+          img{
+            width: 40px;
+            height: 20px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+    .page-mobile-content-6{
+      background-color: $light-grey;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      .text-container{
+        margin-left: 15px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        .text-content{
+          h2{
+            font-size: 46px;
+            font-weight: 500;
+            color: $black;
+            span{
+              color: $green;
+            }
+          }
+          p{
+            font-weight: 400;
+            font-size: 13px;
+            color: $font-text-black;
+            margin-top: 10px;
+            margin-bottom: 26px;
+          }
+          a{//calendly pop-up
+            padding: 8px 20px;
+            border: 1px solid $black;
+            border-radius: 25px;
+            font-weight: 300;
+            color: $black;
+            text-decoration: none;
+            font-size: 13px;
+          }
+        }
+      }
+      .image{
+        text-align: center;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .page-mobile-content-7{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      .text-container{
+        margin-left: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .text-content{
+          h2{
+            font-size: 52px;
+            font-weight: 500;
+            color: $black;
+            span{
+              color: $green;
+            }
+          }
+          p{
+            font-weight: 400;
+            font-size: 13px;
+            color: $font-text-black;
+            margin-top: 10px;
+            margin-bottom: 26px;
+          }
+        }
+      }
+    }
+  }
+  .footer-mobile-height{
+    height: 42px;
+    background-color: red;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

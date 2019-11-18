@@ -5,54 +5,20 @@
         <%= image_tag('Logo/Logo@2x.png', class: "logo-nav") %>
       <% end %>
     </div>
-    <div class="menu-mobile-content">
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars dropbtn"></i></button>
-        <div id="myDropdown" class="dropdown-content">
-          <%= link_to bike_path do %>BIKE<% end %>
-          <%= link_to app_path do %>APP<% end %>
-          <%= link_to support_path do %>SUPPORT<% end %>
-          <%= link_to reviews_path do %>REVIEWS<% end %>
-        </div>
-      </div>
-    </div>
   </div>
 </nav>
 
 <div class="nav-footer-container">
   <div class="btn-mobile-content">
-    <%= link_to test_ride_path do %>
-      <div class="nav-mobile-btn test-ride">
-        <p>TEST RIDE</p>
+    <%= link_to rent_a_yoda_path do %>
+      <div class="nav-mobile-btn rent">
+        <p>Rent a Yoda</p>
       </div>
     <% end %>
-    <%= link_to cart_path do %>
+    <%= link_to buy_a_yoda_path do %>
       <div class="nav-mobile-btn buy">
-        <p>PRE-ORDER</p>
+        <p>Buy a Yoda</p>
       </div>
     <% end %>
   </div>
 </div>
-
-
-<script>
-  /* When the user clicks on the button,
-  toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-</script>

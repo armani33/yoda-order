@@ -1,0 +1,140 @@
+<%= render "shared/navbar-mobile" %>
+
+<div class="main-mobile-container">
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-1">
+      <div class="text-container">
+        <div class="text-content">
+          <h1>Simply fun<span>.</span></h1>
+          <p>At 29 kg, forget about heavy and complicated.<br>Zip through traffic like never before on a Yoda.</p>
+
+          <!-- Calendly link widget begin -->
+          <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+          <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yodacity-test-ride/30min'});return false;">Book a test ride</a>
+          <!-- Calendly link widget end -->
+        </div>
+      </div>
+      <div class="image">
+        <%= image_tag('Yoda/Mobile/Yoda-main-mobile-page-1@2x.png') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-2">
+      <div class="text-container">
+        <div class="text-content">
+          <h2>Take a ride<span>.</span></h2>
+          <p>Find a Yoda Nearby. Ride Anywhere with ease.<br><b>1€ = 1km.</b></p>
+          <%= link_to root_path do %>Learn more<% end %>
+        </div>
+      </div>
+      <div class="image">
+        <%= image_tag('App/Mobile/iphone_X_free-floating-mobile-map@2x.png', class: 'iphone_X') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-3">
+      <div class="text-container">
+        <div class="text-content">
+          <h2>Accessible to anyone<span>.</span></h2>
+          <p>It’s like riding a bike, you never forget.</p>
+          <!-- Calendly link widget begin -->
+          <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+          <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yodacity-test-ride/30min'});return false;">Book a test ride</a>
+          <!-- Calendly link widget end -->
+        </div>
+      </div>
+      <div class="image">
+        <%= image_tag('Yoda/Mobile/Yoda-mobile-accessible@2x.png') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-4">
+      <div class="text-container">
+        <div class="text-content">
+          <h2>Safety of <br>a bicycle<span>.</span></h2>
+          <p>You can use the bike lanes, courtesy<br>of the law.</p>
+        </div>
+      </div>
+      <div class="image">
+        <%= image_tag('Yoda/Mobile/Front-back-view-mobile@2x.png') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-5">
+      <h2>No one competes<span>.</span></h2>
+      <div class="image">
+        <%= image_tag('race-competition-map@2x.png') %>
+      </div>
+      <div class="stats-race">
+        <div class="position">
+          <p><b>Yoda:</b> 16min [max-speed: 45 km/h]</p>
+          <%= image_tag('bunny.png') %>
+        </div>
+        <div class="position">
+          <p><b>Electric bike:</b> 22min  [max-speed: 25 km/h]</p>
+        </div>
+        <div class="position">
+          <p><b>Car:</b> 41min  [max-speed: 120 km/h]</p>
+          <%= image_tag('tortle.png') %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-6">
+      <div class="text-container">
+        <div class="text-content">
+          <h2>Available now<span>.</span></h2>
+          <p>Book your Yoda for 500€ now. Get it home in June 2020.</p>
+          <%= link_to root_path do %>Learn more<% end %>
+        </div>
+      </div>
+      <div class="image">
+        <%= image_tag('Yoda/Mobile/Yoda-black-main-mobile-page@2x.png') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-7">
+      <div class="text-container">
+        <div class="text-content">
+          <h2>Book a<br>test ride<span>.</span></h2>
+          <p>Come try what it feels to ride a Yoda,<br>it’s completely free 😀</p>
+        </div>
+      </div>
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/yodacity-test-ride/30min" style="min-width:320px;height:750px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+      <!-- Calendly inline widget end -->
+    </div>
+  </div>
+  <%= render "shared/footer-mobile" %>
+  <div class="footer-mobile-height"></div>
+</div>
+
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.page-mobile-content-1').height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - height*0.96) {
+              $('.nav-mobile-container').addClass('solid-nav');
+          } else {
+              $('.nav-mobile-container').removeClass('solid-nav');
+          }
+      });
+  });
+</script>
