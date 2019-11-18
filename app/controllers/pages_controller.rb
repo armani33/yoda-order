@@ -6,10 +6,12 @@ class PagesController < ApplicationController
   end
 
   def rent
+    @user = User.new
     @rent_navbar = true
   end
 
   def buy
+    @user = User.new
     @buy_navbar = true
   end
 

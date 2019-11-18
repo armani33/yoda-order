@@ -1,0 +1,37 @@
+<%= render "shared/navbar-mobile" %>
+
+<div class="buy-mobile-container">
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-1">
+      <div class="text-container">
+        <div class="text-content">
+          <h1>Get one home<span>.</span></h1>
+          <p>The simplicity of a bicycle combine with a motorcycle.</p>
+          <%= link_to buy_a_yoda_path do %>Order now<% end %>
+        </div>
+      </div>
+      <div class="image">
+        <%= image_tag('Yoda/Mobile/Yoda-front-left-buy-page1@2x.png') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-2">
+      <h2>Manage your juice<span>.</span></h2>
+      <div class="image">
+        <%= image_tag('App/Mobile/Iphone_X-eco-app-mobile-buy-2@2x.png') %>
+      </div>
+      <div class="ecomode-container">
+        <div class="eco">
+          <%= image_tag('App/Eco-mode-On@2x.png') %>
+          <p>Economic mode <span>[30 km/h - 65 km]</span></p>
+        </div>
+        <div class="eco">
+          <%= image_tag('App/Eco-mode-Off@2x.png') %>
+          <p>Regular mode <span>[45 km/h - 50 km]</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

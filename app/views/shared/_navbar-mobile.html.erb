@@ -10,15 +10,39 @@
 
 <div class="nav-footer-container">
   <div class="btn-mobile-content">
-    <%= link_to rent_a_yoda_path do %>
-      <div class="nav-mobile-btn rent">
-        <p>Rent a Yoda</p>
-      </div>
-    <% end %>
-    <%= link_to buy_a_yoda_path do %>
-      <div class="nav-mobile-btn buy">
-        <p>Buy a Yoda</p>
-      </div>
+    <% if @rent_navbar %>
+      <%= link_to rent_a_yoda_path do %>
+        <div class="nav-mobile-btn rent">
+          <p>Get early Km</p>
+        </div>
+      <% end %>
+      <%= link_to buy_a_yoda_path do %>
+        <div class="nav-mobile-btn buy">
+          <p>Buy a Yoda</p>
+        </div>
+      <% end %>
+    <% elsif @buy_navbar %>
+      <%= link_to rent_a_yoda_path do %>
+        <div class="nav-mobile-btn rent">
+          <p>Rent a Yoda</p>
+        </div>
+      <% end %>
+      <%= link_to buy_a_yoda_path do %>
+        <div class="nav-mobile-btn buy">
+          <p>Cart <i class="fas fa-shopping-cart"></i></p>
+        </div>
+      <% end %>
+    <% else %>
+      <%= link_to rent_a_yoda_path do %>
+        <div class="nav-mobile-btn rent">
+          <p>Rent a Yoda</p>
+        </div>
+      <% end %>
+      <%= link_to buy_a_yoda_path do %>
+        <div class="nav-mobile-btn buy">
+          <p>Buy a Yoda</p>
+        </div>
+      <% end %>
     <% end %>
   </div>
 </div>
