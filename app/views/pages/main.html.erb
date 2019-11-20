@@ -19,7 +19,7 @@
   </div>
 
   <div class="page-container">
-    <div class="page-content-2">
+    <div id ="page-2" class="page-content-2">
       <div class="left-side">
         <%= image_tag('App/iphone_X_free-floating-map@2x.png') %>
       </div>
@@ -34,7 +34,7 @@
   </div>
 
   <div class="page-container">
-    <div class="page-content-3">
+    <div id ="page-3" class="page-content-3">
       <div class="text-container">
         <h2>Accessible to anyone<span>.</span></h2>
         <p>It’s like riding a bike, you never forget.</p>
@@ -109,19 +109,48 @@
   <%= render "shared/footer" %>
 </div>
 
-<script>
-  $(document).ready(function() {
-      $(window).scroll(function() {
-          var height = $('.page-1-content').height();
-          var scrollTop = $(window).scrollTop();
-
-          if (scrollTop >= height - height*0.96) {
-              $('.nav-container').addClass('solid-nav');
-          } else {
-              $('.nav-container').removeClass('solid-nav');
-          }
-      });
-  });
-
-</script>
 <%= render "shared/fb-messenger" %>
+
+
+<script>
+  var page_2_bottom = $('#page-2').offset().top + $('#page-2').height();
+  var page_3_bottom = $('#page-3').offset().top + $('#page-3').height();
+  $('.nav-logo-white').css('display', 'none');
+  $('.nav-logo-black').css('display', 'inline');
+
+  $('.rent').css('border-color', 'black');
+  $('.rent').css('background-color', 'white');
+  $('.rent').css('color', 'black');
+  $('.buy').css('border-color', 'black');
+  $('.buy').css('background-color', 'black');
+  $('.buy').css('color', 'white');
+  // on scroll,
+  $(window).on('scroll',function(){
+
+      // we round here to reduce a little workload
+      var stop = Math.round($(window).scrollTop());
+
+      if (stop > page_2_bottom && stop < page_3_bottom) {
+          $('.nav-logo-white').css('display', 'inline');
+          $('.nav-logo-black').css('display', 'none');
+
+          $('.rent').css('border-color', 'white');
+          $('.rent').css('background-color', 'black');
+          $('.rent').css('color', 'white');
+          $('.buy').css('border-color', 'white');
+          $('.buy').css('background-color', 'white');
+          $('.buy').css('color', 'black');
+      } else {
+          $('.nav-logo-white').css('display', 'none');
+          $('.nav-logo-black').css('display', 'inline');
+
+          $('.rent').css('border-color', 'black');
+          $('.rent').css('background-color', 'white');
+          $('.rent').css('color', 'black');
+          $('.buy').css('border-color', 'black');
+          $('.buy').css('background-color', 'black');
+          $('.buy').css('color', 'white');
+      }
+
+  });
+</script>

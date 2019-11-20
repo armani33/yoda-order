@@ -1,13 +1,14 @@
 <%= render "shared/navbar" %>
-<div class="navbar-height"></div>
+<!-- <div class="navbar-height"></div> -->
 
 <div class="ff-wrapper-container">
+
   <div class="rent-page-container">
-    <div class="page-content-1">
+    <div id ="page-rent-1" class="page-content-1">
       <div class="text-container">
-        <h1>Take your time<span>.</span></h1>
+        <h2>1€ = 1km<span>.</span></h2>
         <p>Pay for kilometres, not for red lights.🚦</p>
-        <%= link_to root_path do %>Get free km<% end %>
+        <%= link_to rent_a_yoda_path do %>Get free km<% end %>
       </div>
     </div>
   </div>
@@ -15,25 +16,15 @@
   <div class="rent-page-container">
     <div class="page-content-2">
       <div class="text-container">
-        <h2>1€ = 1km<span>.</span></h2>
-        <p>Find a Yoda nearby. Ride anywhere with ease.</p>
-        <%= link_to root_path do %>Get free km<% end %>
+        <h2>No pedals<span>.</span></h2>
+        <p>Move efficiently and have fun, what more?</p>
+        <%= link_to rent_a_yoda_path do %>Get free km<% end %>
       </div>
     </div>
   </div>
 
   <div class="rent-page-container">
     <div class="page-content-3">
-      <div class="text-container">
-        <h2>No pedals<span>.</span></h2>
-        <p>Move efficiently and have fun, what more?</p>
-        <%= link_to root_path do %>Get free km<% end %>
-      </div>
-    </div>
-  </div>
-
-  <div class="rent-page-container">
-    <div class="page-content-4">
       <div class="left-side">
         <div class="text-container">
           <h2>Experience is key<span>.</span></h2>
@@ -52,7 +43,7 @@
   </div>
 
   <div class="rent-page-container">
-    <div class="page-content-5">
+    <div class="page-content-4">
       <div class="text-container">
         <h2>A comfy ride<span>.</span></h2>
         <p>Use your phone to navigate, charge it, sit comfortably.</p>
@@ -66,7 +57,59 @@
     </div>
   </div>
 
-
-
-
 </div>
+
+
+<script>
+  var page_1_bottom = $('#page-rent-1').offset().top + $('#page-rent-1').height();
+  $('.nav-logo-white').css('display', 'inline');
+  $('.nav-logo-black').css('display', 'none');
+
+  $('.rent').css('border-color', 'white');
+  $('.rent').css('background-color', 'black');
+  $('.rent').css('color', 'white');
+  $('.buy').css('border-color', 'white');
+  $('.buy').css('background-color', 'white');
+  $('.buy').css('color', 'black');
+  // on scroll,
+  $(window).on('scroll',function(){
+
+      // we round here to reduce a little workload
+      var stop = Math.round($(window).scrollTop());
+
+      if (stop > page_1_bottom) {
+          $('.nav-logo-white').css('display', 'none');
+          $('.nav-logo-black').css('display', 'inline');
+
+          $('.rent').css('border-color', 'black');
+          $('.rent').css('background-color', 'white');
+          $('.rent').css('color', 'black');
+          $('.buy').css('border-color', 'black');
+          $('.buy').css('background-color', 'black');
+          $('.buy').css('color', 'white');
+      } else {
+          $('.nav-logo-white').css('display', 'inline');
+          $('.nav-logo-black').css('display', 'none');
+
+          $('.rent').css('border-color', 'white');
+          $('.rent').css('background-color', 'black');
+          $('.rent').css('color', 'white');
+          $('.buy').css('border-color', 'white');
+          $('.buy').css('background-color', 'white');
+          $('.buy').css('color', 'black');
+      }
+
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+

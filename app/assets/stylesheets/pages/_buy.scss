@@ -292,51 +292,6 @@
         }
       }
     }
-    .technical-specs-container{
-      display: flex;
-      justify-content: center;
-      .technical-specs-content{
-        text-align: center;
-        h2{
-          font-size: 45px;
-          font-weight: 500;
-          color: $black;
-          margin-top: 80px;
-        }
-        table{
-          margin-top: 80px;
-          border-collapse: collapse;
-          tr{
-          border-bottom: 1px solid #D9D9D9;
-          display: flex;
-          justify-content: space-between;
-          }
-          th {
-            text-align: left;
-            line-height: 55px;
-            width: 200px;
-            height: 55px;
-            margin-left: 40px;
-            font-size: 18px;
-          }
-          td{
-            font-weight: 300;
-            text-align: left;
-            width: 400px;
-            height: 55px;
-            line-height: 55px;
-            margin-right: 40px;
-            span{
-              font-weight: 400;
-            }
-          }
-          th{
-            padding-right: 400px;
-            font-weight: 400;
-          }
-        }
-      }
-    }
     .page-content-5{
       height: 100vh;
       display: flex;
