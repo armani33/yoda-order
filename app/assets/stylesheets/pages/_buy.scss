@@ -338,40 +338,89 @@
       }
     }
     .page-content-5{
-      background-color: $light-grey;
-      background-image: url('');
-      background-repeat: no-repeat;
-      background-size: cover;
       height: 100vh;
       display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      .text-container{
-        margin-right: 120px;
-        text-align: left;
-        h2{
-          font-size: 75px;
-          font-weight: 500;
-          span{
-            color: $green;
+      background-color: $light-grey;
+      .left{
+        flex-basis: 53%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .featurs-container{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .feature{
+              width: 180px;
+              text-align: center;
+              img{
+                width: 80px;
+              }
+              p{
+                margin-top: 5px;
+                font-size: 15px;
+                font-weight: 300;
+                text-align: center;
+              }
+              p.title{
+                font-weight: 400;
+              }
+            }
+          }
+          .row:first-child{
+            margin-bottom: 50px;
+          }
+          .text{
+            text-align: center;
+            h4{
+              font-size: 36px;
+              font-weight: 300;
+              margin: 40px 0 30px;
+            }
+            p{
+              font-size: 16px;
+              font-weight: 300;
+              margin-bottom: 3px;
+            }
           }
         }
-        p{
-          font-weight: 400;
-          font-size: 18px;
-          color: $font-text-black;
-          margin-top: 22px;
-          margin-bottom: 55px;
-        }
-        a{
-          padding: 11px 30px;
-          border: 1px solid $black;
-          border-radius: 25px;
-          font-weight: 300;
-          color: white;
-          background-color: $black;
-          text-decoration: none;
-          font-size: 16px;
+      }
+      .right{
+        flex-basis: 47%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text-container{
+          text-align: left;
+          h2{
+            font-size: 75px;
+            font-weight: 500;
+            span{
+              color: $green;
+            }
+          }
+          p{
+            font-weight: 400;
+            font-size: 18px;
+            color: $font-text-black;
+            margin-top: 22px;
+            margin-bottom: 55px;
+          }
+          a{
+            padding: 11px 30px;
+            border: 1px solid $blue;
+            border-radius: 25px;
+            font-weight: 300;
+            color: white;
+            background-color: $blue;
+            text-decoration: none;
+            font-size: 16px;
+          }
         }
       }
     }
