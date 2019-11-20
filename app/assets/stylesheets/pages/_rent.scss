@@ -81,6 +81,53 @@
       display: flex;
       height: 100vh;
       .left-side{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 50%;
+        }
+      }
+      .right-side{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .text-container{
+          margin-left: 10%;
+          h2{
+            font-size: 75px;
+            font-weight: 500;
+            span{
+              color: $green;
+            }
+          }
+          p{
+            font-weight: 400;
+            font-size: 18px;
+            color: $font-text-black;
+            margin-top: 22px;
+            margin-bottom: 55px;
+            margin-left: 10px;
+          }
+          a{//calendly pop-up
+            padding: 11px 30px;
+            border: 1px solid $black;
+            border-radius: 25px;
+            font-weight: 300;
+            color: white;
+            background-color: $black;
+            text-decoration: none;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .page-content-4{
+      display: flex;
+      height: 100vh;
+      .left-side{
         flex-basis: 60%;
         display: flex;
         justify-content: flex-start;
@@ -122,7 +169,7 @@
         }
       }
     }
-    .page-content-4{
+    .page-content-5{
       background-color: $bg-black;
       background-image: url('Yoda/Yoda-comfortable-ff-5@2x.png');
       background-repeat: no-repeat;
