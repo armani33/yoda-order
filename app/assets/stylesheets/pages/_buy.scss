@@ -175,6 +175,48 @@
         }
       }
     }
+    .page-content-5{
+      background: image-url("Yoda/Yoda-buy-go-distance@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .text-container{
+        margin-left: 80px;
+        margin-top: 100px;
+        text-align: left;
+        h2{
+          font-size: 75px;
+          font-weight: 500;
+          span{
+            color: $green;
+          }
+        }
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color: $font-text-black;
+          margin-top: 22px;
+          margin-bottom: 55px;
+          margin-right: 8px;
+        }
+        a{
+          padding: 11px 30px;
+          border: 1px solid $black;
+          border-radius: 25px;
+          font-weight: 300;
+          color: $black;
+          text-decoration: none;
+          font-size: 16px;
+          margin-right: 8px;
+          i{
+            color: $black;
+          }
+        }
+      }
+    }
     #slideshow-wrapper{
       background-color: #161616;
       display: flex;
@@ -292,7 +334,7 @@
         }
       }
     }
-    .page-content-5{
+    .page-content-6{
       height: 100vh;
       display: flex;
       background-color: $light-grey;

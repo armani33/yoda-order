@@ -55,10 +55,20 @@
   </div>
 
   <div class="buy-page-container">
-    <div id="page-4" class="page-content-4">
+    <div class="page-content-4">
       <div class="text-container">
         <h2>Charge anywhere<span>.</span></h2>
         <p>Take the battery with you. Full charge in 4 hours.</p>
+        <%= link_to "#order" do %>Reserve yours for 500€<% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="buy-page-container">
+    <div id="page-5" class="page-content-5">
+      <div class="text-container">
+        <h2>Go the distance<span>.</span></h2>
+        <p>Ride uphill, downhill, on-road, off-road. Nothing stop a Yoda.</p>
         <%= link_to "#order" do %>Reserve yours for 500€<% end %>
       </div>
     </div>
@@ -111,7 +121,7 @@
 
 
   <div class="buy-page-container">
-    <div id = "order" class="page-content-5">
+    <div id = "order" class="page-content-6">
       <div class="left">
         <div class="featurs-container">
           <div class="row">
@@ -174,7 +184,7 @@
 </script>
 
 <script>
-  var page_4_bottom = $('#page-4').offset().top + $('#page-4').height();
+  var page_4_bottom = $('#page-5').offset().top + $('#page-5').height();
   var page_slide_bottom = $('#slideshow-wrapper').offset().top + $('#slideshow-wrapper').height();
   $('.nav-logo-white').css('display', 'none');
   $('.nav-logo-black').css('display', 'inline');
