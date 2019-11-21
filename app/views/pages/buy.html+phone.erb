@@ -5,9 +5,9 @@
     <div class="page-mobile-content-1">
       <div class="text-container">
         <div class="text-content">
-          <h1>Get one home<span>.</span></h1>
+          <h1>Yoda @home<span>.</span></h1>
           <p>The simplicity of a bicycle, the efficiency of a motorcycle.</p>
-          <%= link_to buy_a_yoda_path do %>Reserve yours for 500€<% end %>
+          <%= link_to "#order" do %>Reserve yours for 500€<% end %>
         </div>
       </div>
       <div class="image">
@@ -65,11 +65,26 @@
         <div class="text-content">
           <h2>Charge anywhere<span>.</span></h2>
           <p>Take the battery with you. Full charge in 4 hours.</p>
-          <%= link_to buy_a_yoda_path do %>Reserve yours for 500€<% end %>
+          <%= link_to "#order" do %>Reserve yours for 500€<% end %>
         </div>
       </div>
       <div class="image">
         <%= image_tag('Yoda/Mobile/Yoda-battery-mobile-buy-4@2x.png') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-5">
+      <div class="text-container">
+        <div class="text-content">
+          <h2>Go the distance<span>.</span></h2>
+          <p>Ride uphill, downhill, on-road, off-road. Nothing stop a Yoda.</p>
+          <%= link_to "#order" do %>Reserve yours for 500€<% end %>
+        </div>
+      </div>
+      <div class="image">
+        <%= image_tag('Yoda/Mobile/Yoda-buy-mobile-go-distance@2x.png') %>
       </div>
     </div>
   </div>
@@ -111,8 +126,54 @@
     </section>
   </div>
 
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-6">
+      <div class="featurs-container">
+        <div class="row">
+          <div class="feature">
+            <%= image_tag('Checkout/Battery-range@2x.png') %>
+            <p class= "title">65 km</p><p>Range per charge</p>
+          </div>
+          <div class="feature">
+            <%= image_tag('Checkout/Max-speed@2x.png') %>
+            <p class= "title">45 km/h</p><p>Maximum Speed</p>
+          </div>
+          <div class="feature">
+            <%= image_tag('Checkout/Weight@2x.png') %>
+            <p class= "title">27 kg</p><p>Weight of a Yoda</p>
+          </div>
+        </div>
+        <div id="order"></div>
+        <div class="row">
+          <div class="feature">
+            <%= image_tag('Checkout/Charging-time@2x.png') %>
+            <p class= "title">4 hours</p><p>Charging time</p>
+          </div>
+          <div class="feature">
+            <%= image_tag('Checkout/Connectivity@2x.png') %>
+            <p class= "title">Connectivity</p><p>Bluetooth Low Energy</p>
+          </div>
+          <div class="feature">
+            <%= image_tag('Checkout/Street-legal@2x.png') %>
+            <p class= "title">Street legal</p><p>Car license B or A3 or AM</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-book">
+        <h2>Book it now<span>.</span></h2>
+        <p>Book your Yoda with a deposit of 500€.<br>Pay the balance when we delivered it in June 2020.</p>
+        <%= link_to "#order" do %>Reserve for 500€<% end %>
+        <h4>2.499€</h4>
+      </div>
+      <div class="text-price">
+        <p>Production begins February 2020.</p>
+        <p>Delivery estimate for this batch mid June 2020.</p>
+        <p>2.499€ is for the production batch of 2020<br>(a Yoda will cost 2.990€ on the next batch).</p>
+      </div>
+    </div>
+  </div>
 
-
+  <%= render "shared/footer-mobile" %>
 </div>
 
 
