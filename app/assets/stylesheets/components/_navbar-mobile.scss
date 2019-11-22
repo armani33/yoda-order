@@ -13,14 +13,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .nav-mobile-logo{
+    .nav-mobile-logo-black{
+      display: inline;
+      img{
+      width: 33%;
+      }
+    }
+    .nav-mobile-logo-white{
+      display: none;
       img{
       width: 33%;
       }
     }
   }
 }
-.solid-nav {
+.solid-mobile-nav{
   background-color: white;
   transition: background-color 0.1s linear;
 }

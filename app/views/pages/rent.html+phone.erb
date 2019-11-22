@@ -2,26 +2,11 @@
 
 <div class="rent-mobile-container">
   <div class="page-mobile-container">
-    <div class="page-mobile-content-1">
-      <div class="text-container">
-        <div class="text-content">
-          <h2>Take your time<span>.</span></h2>
-          <p>Pay for kilometres, not for red lights.🚦</p>
-          <%= link_to "https://yodacity.myshopify.com/cart/31543099195491:1?channel=buy_button" do %>Get free km<% end %>
-        </div>
-      </div>
-      <div class="image">
-        <%= image_tag('Yoda/Mobile/Yoda-front-mobile-rent-1@2x.png') %>
-      </div>
-    </div>
-  </div>
-
-  <div class="page-mobile-container">
-    <div class="page-mobile-content-2">
+    <div id ="page-mobile-rent-1" class="page-mobile-content-1">
       <div class="text-container">
         <div class="text-content">
           <h1>1€ = 1km<span>.</span></h1>
-          <p>Find a Yoda nearby. Ride anywhere with ease.</p>
+          <p>Pay for kilometres, not for red lights.🚦</p>
           <%= link_to "https://yodacity.myshopify.com/cart/31543099195491:1?channel=buy_button" do %>Get free km<% end %>
         </div>
       </div>
@@ -32,7 +17,7 @@
   </div>
 
   <div class="page-mobile-container">
-    <div class="page-mobile-content-3">
+    <div class="page-mobile-content-2">
       <div class="text-container">
         <div class="text-content">
           <h2>No pedals<span>.</span></h2>
@@ -44,7 +29,7 @@
   </div>
 
   <div class="page-mobile-container">
-    <div class="page-mobile-content-4">
+    <div class="page-mobile-content-3">
       <div class="text-container">
         <div class="text-content">
           <h2>Experience is key<span>.</span></h2>
@@ -63,7 +48,7 @@
   </div>
 
   <div class="page-mobile-container">
-    <div class="page-mobile-content-5">
+    <div class="page-mobile-content-4">
       <div class="text-container">
         <div class="text-content">
           <h2>A comfy ride<span>.</span></h2>
@@ -93,10 +78,34 @@
           var scrollTop = $(window).scrollTop();
 
           if (scrollTop >= height - height*0.96) {
-              $('.nav-mobile-container').addClass('solid-nav');
+              $('.solid-mobile-nav').css('background-color', '#0A0A0A');
+              $('.nav-mobile-container').addClass('solid-mobile-nav');
           } else {
-              $('.nav-mobile-container').removeClass('solid-nav');
+              $('.nav-mobile-container').removeClass('solid-mobile-nav');
           }
       });
+  });
+</script>
+
+<script>
+  var page_1_bottom = $('#page-mobile-rent-1').offset().top + $('#page-mobile-rent-1').height();
+  $('.nav-mobile-logo-white').css('display', 'inline');
+  $('.nav-mobile-logo-black').css('display', 'none');
+  // on scroll,
+  $(window).on('scroll',function(){
+
+      // we round here to reduce a little workload
+      var stop = Math.round($(window).scrollTop());
+
+      if (stop > page_1_bottom) {
+          $('.nav-mobile-logo-white').css('display', 'none');
+          $('.nav-mobile-logo-black').css('display', 'inline');
+          $('.solid-mobile-nav').css('background-color', 'white');
+      } else {
+          $('.nav-mobile-logo-white').css('display', 'inline');
+          $('.nav-mobile-logo-black').css('display', 'none');
+          $('.solid-mobile-nav').css('background-color', '#0A0A0A');
+      }
+
   });
 </script>

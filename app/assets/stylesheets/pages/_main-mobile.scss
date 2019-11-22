@@ -251,7 +251,7 @@
         margin-bottom: 30px;
         .text-content{
           h2{
-            font-size: 52px;
+            font-size: 41px;
             font-weight: 500;
             color: $black;
             span{
@@ -276,9 +276,233 @@
 }
 
 
+@media (min-width: 321px) and (max-width: 375px){ //iphone 6-7-8
+  .main-mobile-container{
+    font-family: $body;
+    .page-mobile-container{
+      .page-mobile-content-1{
+        .text-container{
+          margin-left: 20px;
+          .text-content{
+            h1{
+              font-size: 60px;
 
+            }
+            p{
+              font-size: 15px;
+            }
+            a{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .page-mobile-content-2{
+        .text-container{
+          .text-content{
+            h2{
+              font-size: 60px;
+            }
+            p{
+              font-size: 15px;
+            }
+            a{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .page-mobile-content-3{
+        .text-container{
+          margin-left: 20px;
+          .text-content{
+            h2{
+              font-size: 60px;
+            }
+            p{
+              font-size: 15px;
+            }
+            a{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .page-mobile-content-4{
+        .text-container{
+          .text-content{
+            h2{
+              font-size: 60px;
+            }
+            p{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .page-mobile-content-5{
+        h2{
+          font-size: 42px;
+        }
+        .stats-race{
+          margin-left: 20px;
+          .position{
+            p{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .page-mobile-content-6{
+        .text-container{
+          margin-left: 20px;
+          .text-content{
+            h2{
+              font-size: 48px;
+            }
+            p{
+              font-size: 15px;
+            }
+            a{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .page-mobile-content-7{
+        .text-container{
+          margin-left: 20px;
+          .text-content{
+            h2{
+              font-size: 48px;
+            }
+            p{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+    .footer-mobile-height{
+      height: 45px;
+      background-color: red;
+    }
+  }
+}
 
+@media (min-width: 376px) and (max-width: 414px){ //iphone 6-7-8
+  .main-mobile-container{
+    font-family: $body;
+    .page-mobile-container{
+      .page-mobile-content-1{
+        .text-container{
+          margin-left: 20px;
+          .text-content{
+            h1{
+              font-size: 60px;
 
+            }
+            p{
+              font-size: 15px;
+            }
+            a{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .page-mobile-content-2{
+        .text-container{
+          .text-content{
+            h2{
+              font-size: 60px;
+            }
+            p{
+              font-size: 15px;
+            }
+            a{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .page-mobile-content-3{
+        .text-container{
+          margin-left: 20px;
+          .text-content{
+            h2{
+              font-size: 60px;
+            }
+            p{
+              font-size: 15px;
+            }
+            a{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .page-mobile-content-4{
+        .text-container{
+          .text-content{
+            h2{
+              font-size: 60px;
+            }
+            p{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .page-mobile-content-5{
+        h2{
+          font-size: 48px;
+        }
+        .stats-race{
+          margin-left: 20px;
+          .position{
+            p{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .page-mobile-content-6{
+        .text-container{
+          margin-left: 20px;
+          .text-content{
+            h2{
+              font-size: 55px;
+            }
+            p{
+              font-size: 15px;
+            }
+            a{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .page-mobile-content-7{
+        .text-container{
+          margin-left: 20px;
+          .text-content{
+            h2{
+              font-size: 52px;
+            }
+            p{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+    .footer-mobile-height{
+      height: 45px;
+      background-color: red;
+    }
+  }
+}
 
 
 
