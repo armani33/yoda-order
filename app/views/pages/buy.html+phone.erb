@@ -176,6 +176,7 @@
   </div>
 
   <%= render "shared/footer-mobile" %>
+  <div class="footer-mobile-height"></div>
 </div>
 
 
@@ -186,6 +187,7 @@
           var scrollTop = $(window).scrollTop();
           $('.nav-mobile-logo-white').css('display', 'none');
           $('.nav-mobile-logo-black').css('display', 'inline');
+          $('.solid-mobile-nav').css('background-color', 'transparent');
 
           if (scrollTop >= height - height*0.96) {
               $('.solid-mobile-nav').css('background-color', 'white');
