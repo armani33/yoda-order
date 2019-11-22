@@ -81,8 +81,16 @@
       $(window).scroll(function() {
           var height = $('.page-1-content').height();
           var scrollTop = $(window).scrollTop();
-
           if (scrollTop >= height - height*0.96) {
+            $('.nav-logo-white').css('display', 'none');
+            $('.nav-logo-black').css('display', 'inline');
+
+            $('.rent').css('border-color', 'black');
+            $('.rent').css('background-color', 'white');
+            $('.rent').css('color', 'black');
+            $('.buy').css('border-color', 'black');
+            $('.buy').css('background-color', 'black');
+            $('.buy').css('color', 'white');
               $('.nav-container').addClass('solid-nav');
           } else {
               $('.nav-container').removeClass('solid-nav');

@@ -10,7 +10,7 @@
       font-size: 62px;
       font-weight: 500;
       line-height: 60px;
-      color: $green;
+      color: $black;
       margin-left: 120px;
     }
     p{
@@ -65,14 +65,15 @@
           padding: 10px;
           color: black !important;
           background-color: transparent;
-          border: 2px solid black;
+          border: 1px solid black;
           font-size: 16px;
-          font-weight: 500;
+          font-weight: 400;
           border-radius: 30px;
           -webkit-appearance: none;
           -moz-appearance: none;
           &:hover{
-            background-color: $green;
+            background-color: $black;
+            color: white !important;
             transition: 0.3s;
             border-color: transparent;
           }
