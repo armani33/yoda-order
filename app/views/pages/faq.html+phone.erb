@@ -63,11 +63,11 @@
     </div>
     <div class="faq-question">
       <h5>Can I reserve one if I don’t live in Belgium?</h5>
-      <p><%= link_to page_contact_path do %>Please contact us.<% end %></p>
+      <p><%= link_to contact_path do %>Please contact us.<% end %></p>
     </div>
     <div class="faq-question">
       <h5>Is there a warranty?</h5>
-      <p><%= link_to page_warranty_path do %>Check out the warranty terms.<% end %> </p>
+      <p><%= link_to warranty_path do %>Check out the warranty terms.<% end %> </p>
     </div>
   </div>
 </div>
@@ -80,12 +80,15 @@
       $(window).scroll(function() {
           var height = $('.page-1-mobile-content').height();
           var scrollTop = $(window).scrollTop();
+          $('.nav-mobile-logo-white').css('display', 'none');
+          $('.nav-mobile-logo-black').css('display', 'inline');
+          $('.solid-mobile-nav').css('background-color', 'transparent');
+
           if (scrollTop >= height - height*0.96) {
-            $('.nav-mobile-container').addClass('solid-mobile-nav');
-            $('.nav-mobile-container').removeClass('solid-mobile-black-nav');
+              $('.solid-mobile-nav').css('background-color', 'white');
+              $('.nav-mobile-container').addClass('solid-mobile-nav');
           } else {
-            $('.nav-mobile-container').removeClass('solid-mobile-nav');
-            $('.nav-mobile-container').removeClass('solid-mobile-black-nav');
+              $('.nav-mobile-container').removeClass('solid-mobile-nav');
           }
       });
   });

@@ -8,15 +8,16 @@ Rails.application.routes.draw do
   get 'rent-a-yoda' => 'pages#rent'
   get 'buy-a-yoda'  => 'pages#buy'
   get 'cart' => 'pages#cart'
-  get 'page/warranty' => 'pages#warranty'
-  get 'page/faq' => 'pages#faq'
-  get 'page/delivery' => 'pages#delivery'
-  get 'page/returns' => 'pages#returns'
-  get 'page/privacy-policy' => 'pages#privacy_policy'
+  get 'warranty' => 'pages#warranty'
+  get 'faq' => 'pages#faq'
+  get 'delivery' => 'pages#delivery'
+  get 'returns' => 'pages#returns'
+  get 'privacy-policy' => 'pages#privacy_policy'
+  get 'terms-of-use' => 'pages#terms_of_use'
 
 
   resources :contact, only: [:create]
-  get 'page/contact' => 'contact#contact'
+  get 'contact' => 'contact#contact'
 
   post 'users/create' => 'users#create'
 

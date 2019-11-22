@@ -25,13 +25,15 @@
       $(window).scroll(function() {
           var height = $('.page-1-mobile-content').height();
           var scrollTop = $(window).scrollTop();
+          $('.nav-mobile-logo-white').css('display', 'none');
+          $('.nav-mobile-logo-black').css('display', 'inline');
+          $('.solid-mobile-nav').css('background-color', 'transparent');
 
           if (scrollTop >= height - height*0.96) {
-            $('.nav-mobile-container').addClass('solid-mobile-nav');
-            $('.nav-mobile-container').removeClass('solid-mobile-black-nav');
+              $('.solid-mobile-nav').css('background-color', 'white');
+              $('.nav-mobile-container').addClass('solid-mobile-nav');
           } else {
-            $('.nav-mobile-container').removeClass('solid-mobile-nav');
-            $('.nav-mobile-container').removeClass('solid-mobile-black-nav');
+              $('.nav-mobile-container').removeClass('solid-mobile-nav');
           }
       });
   });
