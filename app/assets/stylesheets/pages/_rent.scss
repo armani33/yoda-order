@@ -170,7 +170,6 @@
       }
     }
     .page-content-5{
-      background-color: $bg-black;
       background-image: url('Yoda/Yoda-comfortable-ff-5@2x.png');
       background-repeat: no-repeat;
       background-size: cover;
@@ -201,6 +200,95 @@
     .map{
       img{
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1450px){
+  .ff-wrapper-container{
+    .rent-page-container{
+      .page-content-1{
+        .text-container{
+          margin-right: 12%;
+          margin-top: 13%;
+          h2{
+            font-size: 85px;
+          }
+          p{
+            font-size: 20px;
+          }
+          a{
+            font-size: 18px;
+          }
+        }
+      }
+      .page-content-2{
+        .text-container{
+          margin-left: 120px;
+          h2{
+            font-size: 85px;
+          }
+          p{
+            font-size: 20px;
+          }
+          a{
+            font-size: 18px;
+          }
+        }
+      }
+      .page-content-3{
+        .left-side{
+        }
+        .right-side{
+          .text-container{
+            margin-left: 10%;
+            h2{
+              font-size: 85px;
+            }
+            p{
+              font-size: 20px;
+            }
+            a{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .page-content-4{
+        .left-side{
+          .text-container{
+            margin-left: 10%;
+            h2{
+              font-size: 85px;
+            }
+            p{
+              font-size: 20px;
+            }
+            a{
+              font-size: 18px;
+            }
+          }
+        }
+        .right-side{
+        }
+      }
+      .page-content-5{
+        .text-container{
+          margin-right: 140px;
+          margin-top: 100px;
+          h2{
+            font-size: 85px;
+          }
+          p{
+            font-size: 20px;
+          }
+        }
+      }
+      .map{
+        img{
+          width: 100%;
+        }
       }
     }
   }

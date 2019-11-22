@@ -423,3 +423,247 @@
     }
   }
 }
+
+
+
+@media (min-width: 1450px){
+  .buy-wrapper-container{
+    .buy-page-container{
+      .page-content-1{
+        .text-container{
+          margin-left: 120px;
+          margin-top: 160px;
+          h1{
+            font-size: 85px;
+          }
+          p{
+            font-size: 20px;
+          }
+          a{
+            font-size: 18px;
+          }
+        }
+      }
+      .page-content-2{
+        .left-side{
+        }
+        .right-side{
+          .text-container{
+            margin-left: 10%;
+            h2{
+              font-size: 85px;
+            }
+            .ecomode-container{
+              margin: 35px 0;
+              .eco{
+                img{
+                  width: 42px;
+                }
+                p{
+                  font-size: 20px;
+                }
+              }
+            }
+            a{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .page-content-3{
+        .text-container{
+          margin-left: 120px;
+          margin-top: 160px;
+          h1{
+            font-size: 85px;
+          }
+          p{
+            font-size: 20px;
+          }
+          a{
+            font-size: 18px;
+          }
+        }
+      }
+      .page-content-4{
+        .text-container{
+          margin-right: 150px;
+          h2{
+            font-size: 85px;
+          }
+          p{
+            font-size: 20px;
+          }
+          a{
+            font-size: 18px;
+          }
+        }
+      }
+      .page-content-5{
+        .text-container{
+          margin-left: 120px;
+          h2{
+            font-size: 85px;
+          }
+          p{
+            font-size: 20px;
+          }
+          a{
+            font-size: 18px;
+          }
+        }
+      }
+      #slideshow-wrapper{
+        #Slideshow{
+          #Slider{
+            #slide{
+            }
+            .first-second{
+              .left-side{
+                .text-container{
+                  margin-left: 160px;
+                  h3{
+                    font-size: 85px;
+                  }
+                  p{
+                    font-size: 20px;
+                  }
+                }
+              }
+              .right-side{
+              }
+            }
+            .third{
+              .text-container{
+                margin-left: 160px;
+                h3{
+                  font-size: 85px;
+                }
+                p{
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          #Arrows{
+            i{
+              font-size: 45px;
+            }
+          }
+        }
+      }
+      .page-content-6{
+        .left{
+          .featurs-container{
+            .row{
+              .feature{
+                width: 200px;
+                img{
+                  width: 85px;
+                }
+              }
+            }
+            .row:first-child{
+              margin-bottom: 50px;
+            }
+            .text{
+              text-align: center;
+              h4{
+                font-size: 38px;
+              }
+              p{
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .right{
+          .text-container{
+            h2{
+              font-size: 85px;
+            }
+            p{
+              font-size: 20px;
+            }
+            a{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1670px){
+  .buy-wrapper-container{
+    .buy-page-container{
+      .page-content-1{
+        .text-container{
+          margin-left: 120px;
+          margin-top: 180px;
+        }
+      }
+      .page-content-3{
+        .text-container{
+          margin-left: 120px;
+          margin-top: 180px;
+        }
+      }
+      .page-content-4{
+        .text-container{
+          margin-right: 160px;
+          margin-top: 160px;
+        }
+      }
+      .page-content-5{
+        .text-container{
+          margin-left: 120px;
+          margin-top: 140px;
+        }
+      }
+      #slideshow-wrapper{
+        #Slideshow{
+          #Slider{
+            #slide{
+            }
+            .first-second{
+              .left-side{
+                .text-container{
+                  margin-left: 160px;
+                  h3{
+                    font-size: 85px;
+                  }
+                  p{
+                    font-size: 20px;
+                  }
+                }
+              }
+              .right-side{
+                img{
+                  margin-right: 40%;
+                }
+              }
+            }
+            .third{
+              .text-container{
+                margin-left: 160px;
+                h3{
+                  font-size: 85px;
+                }
+                p{
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          #Arrows{
+            i{
+              font-size: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
