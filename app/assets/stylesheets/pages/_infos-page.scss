@@ -7,10 +7,9 @@
     width: 50%;
     margin-top: 6%;
     h1{
-      font-size: 62px;
-      font-weight: 900;
-      line-height: 60px;
-      color: $green;
+      font-size: 50px;
+      font-weight: 500;
+      color: $black;
     }
     h2{
       margin-top: 60px;
@@ -19,7 +18,7 @@
       letter-spacing: 0.6px;
     }
     p{
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
       color: $bg-black;
       margin-top: 25px;
@@ -34,7 +33,7 @@
       list-style-type: square;
       margin: 23px 0 0 45px;
       li{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 300;
         color: $bg-black;
       }
@@ -43,7 +42,7 @@
       text-align: center;
       margin: 15px 0;
       img.bike-lanes{
-        width: 120px;
+        width: 110px;
       }
     }
   }
@@ -61,23 +60,23 @@
     margin-top: 100px;
     h1{
       font-size: 40px;
-      font-weight: 900;
-      color: $green;
+      font-weight: 500;
+      color: $black;
     }
     h2{
       margin-top: 33px;
-      font-size: 23px;
+      font-size: 20px;
       font-weight: 500;
       letter-spacing: 0.6px;
     }
     h5{
       margin-top: 25px;
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 400;
       margin-bottom: -13px;
     }
     p{
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
       color: $bg-black;
       margin-top: 25px;
@@ -86,7 +85,7 @@
       list-style-type: square;
       margin: 23px 0 0 45px;
       li{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300;
         color: $bg-black;
       }
@@ -95,7 +94,7 @@
       text-align: center;
       margin: 15px 0;
       img.bike-lanes{
-        width: 120px;
+        width: 80px;
       }
     }
   }
