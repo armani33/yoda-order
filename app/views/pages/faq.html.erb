@@ -28,7 +28,7 @@
       <h5>Can I drive a Yoda on bike lanes?</h5>
       <p>It depends on the laws of the country in which you ride. For instance in Belgium, YES you can in most cases use bike lanes marked by this sign</p>
       <div class="img-bike-lanes-container">
-        <%= image_tag('Checkout/Bike-lanes-sign.png', class: "bike-lanes") %>
+        <%= image_tag('Bike-lanes-sign.png', class: "bike-lanes") %>
       </div>
       <p>More information is available<a href="https://www.permisdeconduire-online.be/theorie/theorie-permis-am/ou-devez-vous-rouler-avec-votre-motoclyclette"> here (français)</a> and <a href="https://www.gratisrijbewijsonline.be/theorie/leerstof-rijbewijs-am/fietser-fietspad-oversteekplaats"> here (Nederlands)</a>.</p>
     </div>
@@ -68,6 +68,15 @@
 
 <%= render "shared/footer" %>
 <script>
+  $('.nav-logo-white').css('display', 'none');
+  $('.nav-logo-black').css('display', 'inline');
+
+  $('.rent').css('border-color', 'black');
+  $('.rent').css('background-color', 'white');
+  $('.rent').css('color', 'black');
+  $('.buy').css('border-color', 'black');
+  $('.buy').css('background-color', 'black');
+  $('.buy').css('color', 'white');
   $(document).ready(function() {
       $(window).scroll(function() {
           var height = $('.page-1-content').height();
