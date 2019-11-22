@@ -16,24 +16,27 @@
       .list{
         list-style: none;
         li{
-          padding: 6px 0;
+          text-align: left;
+          padding: 8px 0;
           font-size: 13px;
-          font-weight: 600;
-          color: $light-grey;
+          font-weight: 300;
+          color: white;
         }
         a{
           text-decoration: none;
-          color: $light-grey;
+          color: white;
         }
         li:first-child{
-          color: white;
+          font-weight: 400;
+          color: #9B9B9B;
+          font-size: 18px;
         }
         li:last-child{
           padding-bottom: 0px;
         }
       }
-      .infos{
-        margin-left: 80px;
+      .list:last-child{
+        margin-left: 40px;
       }
     }
     .newsletter-container{

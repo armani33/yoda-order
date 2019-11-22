@@ -4,7 +4,18 @@
       <%= image_tag('Logo/Logo-white@2x.png', class: 'logo-image') %>
     <% end %>
     <div class="list-menu">
-
+      <ul class="list">
+        <li>Yoda Bike</li>
+        <li><%= link_to rent_a_yoda_path do %>Rent a Yoda<% end %></li>
+        <li><%= link_to buy_a_yoda_path do %>Buy a Yoda<% end %></li>
+        <li><%= link_to root_path do %>Test a Yoda<% end %></li>
+      </ul>
+      <ul class="list">
+        <li>Company</li>
+        <li><%= link_to contact_path do %>Contact Us<% end %></li>
+        <li><%= link_to faq_path do %>FAQ<% end %></li>
+        <li><%= link_to root_path do %>News<% end %></li>
+      </ul>
     </div>
     <div class="newsletter-container">
       <div class="newsletter-content-mobile">
