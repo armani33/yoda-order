@@ -13,14 +13,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .nav-mobile-logo{
+    .nav-mobile-logo-black{
+      display: inline;
+      img{
+      width: 33%;
+      }
+    }
+    .nav-mobile-logo-white{
+      display: none;
       img{
       width: 33%;
       }
     }
   }
 }
-.solid-nav {
+.solid-mobile-nav{
   background-color: white;
   transition: background-color 0.1s linear;
 }
@@ -70,3 +77,76 @@
     }
   }
 }
+
+@media (min-width: 321px) and (max-width: 375px){ //iphone 6-7-8
+  .nav-footer-container{
+    .btn-mobile-content{
+      .nav-mobile-btn{
+        width: 160px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        border-radius: 25px;
+        p{
+          padding: 0;
+          margin: 0;
+          font-family: $body;
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+      .rent{
+        background-color: white;
+        border: 1px solid $black;
+        color: black;
+        margin-left: 9px;
+      }
+      .buy{
+        background-color: $black;
+        border: 1px solid $black;
+        color: white;
+        margin-right: 9px;
+      }
+    }
+  }
+}
+
+@media (min-width: 376px){ //iphone 6-7-8 PLUS
+  .nav-footer-container{
+    .btn-mobile-content{
+      .nav-mobile-btn{
+        width: 180px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        border-radius: 25px;
+        p{
+          padding: 0;
+          margin: 0;
+          font-family: $body;
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+      .rent{
+        background-color: white;
+        border: 1px solid $black;
+        color: black;
+        margin-left: 9px;
+      }
+      .buy{
+        background-color: $black;
+        border: 1px solid $black;
+        color: white;
+        margin-right: 9px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
