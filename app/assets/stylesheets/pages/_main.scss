@@ -198,7 +198,8 @@
       }
     }
     .page-content-6{
-      background: $light-grey url('Yoda/Yoda-profile-black@2x.png');
+      background-color: $light-grey;
+      background-image: image_url('Yoda/Yoda-profile-black@2x.png');
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
