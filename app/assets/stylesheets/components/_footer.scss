@@ -28,7 +28,7 @@
           margin-left: 10px;
           p{
             font-weight: 400;
-            font-size: 23px;
+            font-size: 20px;
             color: #9B9B9B;
           }
           .icon{
@@ -42,13 +42,13 @@
               color: white;
               cursor: pointer;
               &:hover{
-                font-size: 45px;
+                color: $green;
               }
             }
             i:last-child{
               font-size: 41px;
               &:hover{
-                font-size: 45px;
+                color: $green;
               }
             }
           }
@@ -59,7 +59,7 @@
         margin-top: 20px;
         li{
           padding: 10px 0;
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 300;
           color: white;
           a{
@@ -72,7 +72,7 @@
         }
         li:first-child{
           font-weight: 400;
-          font-size: 23px;
+          font-size: 20px;
           color: #9B9B9B;
         }
         li:last-child{
@@ -87,18 +87,17 @@
         .newsletter-content{
           border-bottom: 1px solid $light-grey;
           p{
-            font-size: 23px;
+            font-size: 20px;
             font-weight: 400;
-            color: #9B9B9B;
-            margin-bottom: 12px;
+            color: $green;
+            margin-bottom: 8px;
             margin-right: 5px;
-            margin-left: 5px;
           }
           form.footer-form{
             display: flex;
           }
           input[type=text]{
-            width: 76%;
+            width: 72%;
             padding: 12px 20px;
             margin: 8px 0;
             display: inline-block;
@@ -125,6 +124,7 @@
           ::-webkit-input-placeholder { /* Edge */
             color: white;
             font-weight: 300;
+            font-size: 16px;
           }
           i{
             margin-top: 10px;

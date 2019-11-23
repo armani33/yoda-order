@@ -19,7 +19,7 @@
     </div>
     <div class="newsletter-container">
       <div class="newsletter-content-mobile">
-        <p>SIGN UP TO OUR NEWSLETTER</p>
+        <p>Subscribe To Our Newsletter</p>
         <%= form_for @user, url: users_create_path, class: "footer-form", method: :post do |f| %>
           <%= f.text_field :email, :placeholder => "Type in your email" %>
           <submit type="submit"><i class="fas fa-arrow-right"></i></submit>
@@ -35,9 +35,9 @@
   </div>
   <div class="footer-bottom-container">
     <div class="legal-menu-footer">
-      <%= link_to terms_of_use_path do %>TERMS OF USE<% end %>
-      <%= link_to privacy_policy_path do %>PRIVACY POLICY<% end %>
-      <p>© 2019 YODACITY</p>
+      <%= link_to terms_of_use_path do %>Terms of use<% end %>
+      <%= link_to privacy_policy_path do %>Privacy policy<% end %>
+      <p>© 2019 YodaCity</p>
     </div>
   </div>
 </div>

@@ -2,7 +2,7 @@
   font-family: $body;
   background-color: $black;
   .footer-top-container{
-    border-bottom: 1px solid #707070;
+    // border-bottom: 1px solid #707070;
     img.logo-image{
       width: 120px;
       margin-top: 20px;
@@ -18,7 +18,7 @@
         li{
           text-align: left;
           padding: 8px 0;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 300;
           color: white;
         }
@@ -29,14 +29,14 @@
         li:first-child{
           font-weight: 400;
           color: #9B9B9B;
-          font-size: 18px;
+          font-size: 17px;
         }
         li:last-child{
           padding-bottom: 0px;
         }
       }
       .list:last-child{
-        margin-left: 40px;
+        margin-left: 60px;
       }
     }
     .newsletter-container{
@@ -49,9 +49,9 @@
         border-bottom: 1px solid $light-grey;
         margin-right: 3px;
         p{
-          font-size: 13px;
+          font-size: 17px;
           font-weight: 400;
-          color: white;
+          color: $green;
         }
         form.footer-form{
           display: flex;
@@ -82,9 +82,14 @@
           outline: none !important;
           z-index: 1
         }
+        ::-webkit-input-placeholder { /* Edge */
+          color: white;
+          font-weight: 300;
+          font-size: 14px;
+        }
         i{
-          margin-top: 10px;
-          font-size: 17px;
+          margin-top: 12px;
+          font-size: 20px;
           color: $light-grey;
           cursor: pointer;
         }
@@ -114,14 +119,15 @@
       font-size: 11px;
       font-weight: 400;
       justify-content: space-between;
-      margin: 0 15px;
+      margin: 0 30px;
       a{
-        text-decoration: none;
-        color: $light-grey;
+        color: #636363;
+        text-decoration: underline;
         margin: 30px 0 32px;
       }
       p{
-        color: $light-grey;
+        color: #636363;
+        text-decoration: underline;
         margin: 30px 0 32px;
       }
     }
