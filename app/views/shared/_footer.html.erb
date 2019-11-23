@@ -33,7 +33,7 @@
           <p>Subscribe To Our Newsletter</p>
           <%= form_for @user, url: users_create_path, class: "footer-form", method: :post do |f| %>
             <%= f.text_field :email, :placeholder => "Type in your email" %>
-            <submit type="submit"><i class="fas fa-arrow-right"></i></submit>
+            <submit type="submit" class="subscribe-btn"><i class="fas fa-arrow-right"></i></submit>
           <% end %>
         </div>
       </div>

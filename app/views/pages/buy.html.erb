@@ -1,6 +1,5 @@
 <%= render "shared/navbar" %>
 <div class="navbar-height"></div>
-
 <div class="buy-wrapper-container">
   <div class="buy-page-container">
     <div class="page-content-1">
@@ -75,41 +74,44 @@
   </div>
 
 
-
   <div class="buy-page-container">
     <section id="slideshow-wrapper">
       <div id="Slideshow">
         <div id="Slider">
-
-          <div id="slide" class="first-second">
-            <div class="left-side">
-              <div class="text-container">
-                <h3>Peace of mind<span>.</span></h3>
-                <p>Be notified of suspicious activity.</p>
+          <span>
+            <div id="slide" class="first-second">
+              <div class="left-side">
+                <div class="text-container">
+                  <h3>Peace of mind<span>.</span></h3>
+                  <p>Be notified of suspicious activity.</p>
+                </div>
+              </div>
+              <div class="right-side">
+                <%= image_tag('App/Iphone_X-notif-home-theft@2x.png') %>
               </div>
             </div>
-            <div class="right-side">
-              <%= image_tag('App/Iphone_X-notif-home-theft@2x.png') %>
-            </div>
-          </div>
-          <div id="slide" class="first-second">
-            <div class="left-side">
-              <div class="text-container">
-                <h3>Track your Yoda<span>.</span></h3>
-                <p>Geo-localize your stolen bike.</p>
+          </span>
+          <span>
+            <div id="slide" class="first-second">
+              <div class="left-side">
+                <div class="text-container">
+                  <h3>Track your Yoda<span>.</span></h3>
+                  <p>Geo-localize your stolen bike.</p>
+                </div>
+              </div>
+              <div class="right-side">
+                <%= image_tag('App/Iphone_X-track-map-theft@2x.png') %>
               </div>
             </div>
-            <div class="right-side">
-              <%= image_tag('App/Iphone_X-track-map-theft@2x.png') %>
+          </span>
+          <span>
+            <div id="slide" class="third">
+              <div class="text-container">
+                <h3>Motor locked<span>.</span></h3>
+                <p>Opportunity thieves wont hijack your Yoda.</p>
+              </div>
             </div>
-          </div>
-
-          <div id="slide" class="third">
-            <div class="text-container">
-              <h3>Motor locked<span>.</span></h3>
-              <p>Opportunity thieves wont hijack your Yoda.</p>
-            </div>
-          </div>
+          </span>
         </div>
         <div id="Arrows">
           <i id="Prev" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
@@ -172,20 +174,22 @@
   <%= render "shared/footer" %>
 </div>
 
-
 <script>//Manual Slideshow with navigation arrow
   $("#Next").click(function(){
+    $("html, body").animate({scrollTop: $("#Slider").offset().top})
     $("#Slider").append($("#Slider #slide:first-of-type"));
+
   });
 
   $("#Prev").click(function(){
+    $("html, body").animate({scrollTop: $("#Slider").offset().top})
     $("#Slider").prepend($("#Slider #slide:last-of-type"));
   });
 </script>
 
 <script>
-  var page_4_bottom = $('#page-5').offset().top + $('#page-5').height();
-  var page_slide_bottom = $('#slideshow-wrapper').offset().top + $('#slideshow-wrapper').height()*0.95;
+  var page_4_bottom = $('#page-5').offset().top + $('#page-5').height()*0.95;
+  var page_slide_bottom = $('#slideshow-wrapper').offset().top + $('#slideshow-wrapper').height();
   $('.nav-logo-white').css('display', 'none');
   $('.nav-logo-black').css('display', 'inline');
 
@@ -225,4 +229,3 @@
 
   });
 </script>
-

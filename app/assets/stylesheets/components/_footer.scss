@@ -110,16 +110,17 @@
             font-weight: 400;
             outline: none !important;
           }
-          input[type=submit]{
-            width: 21%;
-            height: 100%;
-            margin: 8px 0;
-            display: inline-block;
-            background-color: transparent;
-            border: 0;
-            color: white;
+          input[type=submit].subscribe-btn{
+            width: 21% !important;
+            height: 100% !important;
+            margin: 8px 0 !important;
+            display: inline-block !important;
+            background-color: transparent !important;
+            border: 0 !important;
+            color: white !important;
             outline: none !important;
-            z-index: 1;
+            z-index: 1 !important;
+            -webkit-appearance: none;
           }
           ::-webkit-input-placeholder { /* Edge */
             color: white;
