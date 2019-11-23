@@ -86,7 +86,8 @@
       }
     }
     .page-content-3{
-      background: $bg-black url('Yoda/Yoda-profile-left-bike@2x.png');
+      background-color: $bg-black;
+      background-image: image_url('Yoda/Yoda-profile-left-bike@2x.png');
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;

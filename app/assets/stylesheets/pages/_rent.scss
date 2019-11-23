@@ -2,7 +2,8 @@
   font-family: $body;
   .rent-page-container{
     .page-content-1{
-      background: $bg-black url('Yoda/Yoda-left-profile-ff-2@2x.png');
+      background-color: $bg-black;
+      background-image: image_url('Yoda/Yoda-left-profile-ff-2@2x.png');
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
@@ -42,7 +43,7 @@
       }
     }
     .page-content-2{
-      background: url('Yoda/Yoda-no-pedals@2x.png');
+      background-image: image_url('Yoda/Yoda-no-pedals@2x.png');
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
@@ -169,7 +170,7 @@
       }
     }
     .page-content-5{
-      background: url('Yoda/Yoda-comfortable-ff-5@2x.png');
+      background-image: image_url('Yoda/Yoda-comfortable-ff-5@2x.png');
       background-repeat: no-repeat;
       background-size: cover;
       height: 95vh;
