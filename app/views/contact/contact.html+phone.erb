@@ -1,0 +1,35 @@
+<%= render "shared/navbar-mobile" %>
+<div class="contact-page-mobile-container">
+  <div class="contact-page-mobile-content">
+    <h1>Contact</h1>
+    <p>We are excited to hear from You!<br>You can send us an email using this form, call us on <span>+32 472 22 22 05</span>.</p>
+    <div class="form-contact-container">
+      <div class="form-contact-content">
+        <%= render "shared/contact-form" %>
+      </div>
+    </div>
+  </div>
+</div>
+<%= render "shared/footer-mobile" %>
+<div class="footer-mobile-height"></div>
+
+
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.page-1-mobile-content').height();
+          var scrollTop = $(window).scrollTop();
+          $('.nav-mobile-logo-white').css('display', 'none');
+          $('.nav-mobile-logo-black').css('display', 'inline');
+          $('.solid-mobile-nav').css('background-color', 'transparent');
+
+          if (scrollTop >= height - height*0.96) {
+              $('.solid-mobile-nav').css('background-color', 'white');
+              $('.nav-mobile-container').addClass('solid-mobile-nav');
+          } else {
+              $('.nav-mobile-container').removeClass('solid-mobile-nav');
+          }
+      });
+  });
+</script>
+<%= render "shared/fb-messenger" %>
