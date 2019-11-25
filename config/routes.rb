@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
   root to: 'pages#main'
 
   get 'rent-a-yoda' => 'pages#rent'
