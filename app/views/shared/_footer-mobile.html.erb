@@ -8,7 +8,9 @@
         <li>Yoda Bike</li>
         <li><%= link_to rent_a_yoda_path do %>Rent a Yoda<% end %></li>
         <li><%= link_to buy_a_yoda_path do %>Buy a Yoda<% end %></li>
-        <li><%= link_to root_path do %>Test a Yoda<% end %></li>
+        <li><a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yodacity-test-ride/30min'});return false;">Test a Yoda</a></li>
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
       </ul>
       <ul class="list">
         <li>Company</li>

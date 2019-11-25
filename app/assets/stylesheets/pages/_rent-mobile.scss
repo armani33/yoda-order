@@ -205,6 +205,67 @@
         width: 100%;
       }
     }
+    .page-mobile-content-6{
+      background-color: $bg-black;
+      .text-container{
+        padding-top: 100px;
+        .text-content{
+          text-align: center;
+          h2{
+            font-size: 39px;
+            font-weight: 500;
+            color: white;
+            span{
+              color: $green;
+            }
+          }
+          p.upercase{
+            font-weight: 400;
+            font-size: 18px;
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 26px;
+          }
+          .price{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+            h4{
+              font-size: 25px;
+              font-weight: 400;
+              color: #9B9B9B;
+            }
+            h5{
+              text-decoration: line-through #FF9393;
+              font-weight: 400;
+              font-size: 15px;
+              color: #9B9B9B;
+              margin: 0 10px;
+            }
+            h4.red{
+              color: #FF9393;
+            }
+          }
+          a{
+            padding: 8px 20px;
+            border: 1px solid #FF9393;
+            border-radius: 25px;
+            font-weight: 300;
+            background-color: #FF9393;
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+          }
+        }
+      }
+      .image{
+        text-align: center;
+        img{
+          width: 100%;
+        }
+      }
+    }
   }
 }
 

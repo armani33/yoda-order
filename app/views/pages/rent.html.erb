@@ -8,7 +8,7 @@
       <div class="text-container">
         <h2>1€ = 1km<span>.</span></h2>
         <p>Pay for kilometres, not for red lights.🚦</p>
-        <%= link_to "https://yodacity.myshopify.com/cart/31543099195491:1?channel=buy_button" do %>Get free km<% end %>
+        <%= link_to "#km-order" do %>Get free km<% end %>
       </div>
     </div>
   </div>
@@ -18,7 +18,7 @@
       <div class="text-container">
         <h2>No pedals<span>.</span></h2>
         <p>Move efficiently and have fun, what more?</p>
-        <%= link_to "https://yodacity.myshopify.com/cart/31543099195491:1?channel=buy_button" do %>Get free km<% end %>
+        <%= link_to "#km-order" do %>Get free km<% end %>
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@
           <h2>Take a ride<span>.</span></h2>
           <!-- <p>Find a Yoda nearby. Ride anywhere with ease.</p> -->
           <p>Max. speed: 45 km/h. You need a car license (B)<br>or a motorcycle license (A3 or AM)</p>
-          <%= link_to "https://yodacity.myshopify.com/cart/31543099195491:1?channel=buy_button" do %>Get free km<% end %>
+          <%= link_to "#km-order" do %>Get free km<% end %>
         </div>
       </div>
     </div>
@@ -68,16 +68,33 @@
   </div>
 
   <div class="rent-page-container">
-    <div class="map">
+    <div id="map" class="map">
       <%= image_tag('Map-ff-bxl@2x.png') %>
     </div>
   </div>
+
+  <div class="rent-page-container">
+    <div id="km-order" class="page-content-6">
+      <div class="text-container">
+        <h2>Free kilometres<span>.</span></h2>
+        <p class="upercase">GET EARLY KILOMETERS AT 50%</p>
+        <div class="price">
+          <h4>50KM =</h4>
+          <h5>50€</h5>
+          <h4 class="red">25€</h4>
+        </div>
+        <%= link_to "https://yodacity.myshopify.com/cart/31543099195491:1?channel=buy_button" do %>Order 50km<% end %>
+      </div>
+    </div>
+  </div>
+
   <%= render "shared/footer" %>
 </div>
 
 
 <script>
   var page_1_bottom = $('#page-rent-1').offset().top + $('#page-rent-1').height();
+  var page_map_bottom = $('#map').offset().top + $('#map').height();
   $('.nav-logo-white').css('display', 'inline');
   $('.nav-logo-black').css('display', 'none');
 
@@ -93,7 +110,7 @@
       // we round here to reduce a little workload
       var stop = Math.round($(window).scrollTop());
 
-      if (stop > page_1_bottom) {
+      if (stop > page_1_bottom && stop < page_map_bottom) {
           $('.nav-logo-white').css('display', 'none');
           $('.nav-logo-black').css('display', 'inline');
 
@@ -113,6 +130,18 @@
           $('.buy').css('border-color', 'white');
           $('.buy').css('background-color', 'white');
           $('.buy').css('color', 'black');
+      }
+
+      if (stop >= page_map_bottom - page_map_bottom*0.01) {
+        $('.nav-logo-white').css('display', 'inline');
+        $('.nav-logo-black').css('display', 'none');
+
+        $('.rent').css('border-color', 'white');
+        $('.rent').css('background-color', 'black');
+        $('.rent').css('color', 'white');
+        $('.buy').css('border-color', 'white');
+        $('.buy').css('background-color', 'white');
+        $('.buy').css('color', 'black');
       }
 
   });

@@ -202,6 +202,66 @@
         width: 100%;
       }
     }
+    .page-content-6{
+      background-color: $bg-black;
+      background-image: image_url("Yoda/Yoda-front-back@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .text-container{
+        text-align: center;
+        margin-bottom: 100px;
+        margin-right: 19px;
+        h2{
+          font-size: 55px;
+          font-weight: 500;
+          color: white;
+          span{
+            color: $green;
+          }
+        }
+        p.upercase{
+          font-weight: 300;
+          font-size: 18px;
+          color: white;
+          margin: 25px 0;
+          text-align: center;
+        }
+        .price{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 40px;
+          h4{
+            font-size: 33px;
+            font-weight: 400;
+            color: #9B9B9B;
+          }
+          h5{
+            text-decoration: line-through #FF9393;
+            font-weight: 400;
+            font-size: 17px;
+            color: #9B9B9B;
+            margin: 0 20px;
+          }
+          h4.red{
+            color: #FF9393;
+          }
+        }
+        a{
+          padding: 10px 28px;
+          border: 1px solid #FF9393;
+          background-color: #FF9393;
+          border-radius: 25px;
+          font-weight: 300;
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
 
