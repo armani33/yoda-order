@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
 
-  devise_for :admins, :skip => [:registrations]
-
   root to: 'pages#main'
 
   get 'rent-a-yoda' => 'pages#rent'
