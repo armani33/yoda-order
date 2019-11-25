@@ -2,7 +2,7 @@
   font-family: $body;
   .buy-page-container{
     .page-content-1{
-      background: image-url("Yoda/Yoda-profile-left-buy-1@2x.png");
+      background-image: image_url("Yoda/Yoda-profile-left-buy-1@2x.png");
       background-repeat: no-repeat;
       background-size: cover;
       height: 95vh;
@@ -99,7 +99,7 @@
       }
     }
     .page-content-3{
-      background: image-url("Yoda/Yoda-back-comfortable-buy-3@2x.png");
+      background-image: image_url("Yoda/Yoda-back-comfortable-buy-3@2x.png");
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
@@ -134,7 +134,7 @@
       }
     }
     .page-content-4{
-      background: image-url("Yoda/Yoda-battery-zoom-buy-4@2x.png");
+      background-image: image_url("Yoda/Yoda-battery-zoom-buy-4@2x.png");
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
@@ -176,7 +176,7 @@
       }
     }
     .page-content-5{
-      background: image-url("Yoda/Yoda-buy-go-distance@2x.png");
+      background-image: image_url("Yoda/Yoda-buy-go-distance@2x.png");
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
@@ -281,7 +281,7 @@
           .third{
             display: flex;
             align-items: center;
-            background-image: url('Yoda/Yoda-black-wheel-theft-lock@2x.png');
+            background-image: image_url('Yoda/Yoda-black-wheel-theft-lock@2x.png');
             background-repeat: no-repeat;
             background-size: cover;
             .text-container{
