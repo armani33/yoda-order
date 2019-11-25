@@ -205,7 +205,7 @@
       // we round here to reduce a little workload
       var stop = Math.round($(window).scrollTop());
 
-      if (stop > page_4_bottom && stop < page_slide_bottom) {
+      if (stop > page_4_bottom - page_4_bottom*0.01 && stop < page_slide_bottom) {
           $('.nav-logo-white').css('display', 'inline');
           $('.nav-logo-black').css('display', 'none');
 
