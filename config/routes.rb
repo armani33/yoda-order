@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
   root to: 'pages#main'
 
   get 'rent-a-yoda' => 'pages#rent'
@@ -18,7 +19,8 @@ Rails.application.routes.draw do
   resources :contact, only: [:create]
   get 'contact' => 'contact#contact'
 
-  post 'users/create' => 'users#create'
 
+  post 'users/create' => 'users#create'
+  get 'rent-a-yoda/refer-a-friend' => 'users#refer'
 
 end
