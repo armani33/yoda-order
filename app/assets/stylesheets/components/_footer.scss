@@ -33,7 +33,7 @@
           }
           .icon{
             margin-top: 10px;
-            width: 100%;
+            width: 140%;
             display: flex;
             justify-content: space-between;
             i{
@@ -45,7 +45,7 @@
                 color: $green;
               }
             }
-            i:last-child{
+            i.fa-instagram{
               font-size: 41px;
               &:hover{
                 color: $green;
