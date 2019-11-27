@@ -16,10 +16,10 @@
       background-size: cover;
       background-position: bottom center;
       .refer-friends-left{
-        flex-basis: 60%;
+        flex-basis: 55%;
       }
       .refer-friends-right{
-        flex-basis: 40%;
+        flex-basis: 45%;
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
@@ -39,7 +39,7 @@
           margin:0;
           padding:0;
           font-weight: 500;
-          font-size: 17px;
+          font-size: 18px;
           color: $black;
           width: 100%;
           text-align: center;
@@ -50,7 +50,7 @@
           text-align: center;
           font-family: $body;
           font-weight: 500;
-          font-size: 13px;
+          font-size: 15px;
           margin-top: 15px;
           opacity: 0.8;
           letter-spacing: 1px;
@@ -62,7 +62,7 @@
           border-radius: 3px;
           font-size: 15px;
           text-align: center;
-          box-shadow: 0 0 2px #BEBEBE;
+          box-shadow: 0 0 2px #001C7A;
           color: $black;
         }
         .social-links{
@@ -74,7 +74,7 @@
           }
           i{
             font-size: 35px;
-            color: $black;
+            color: #001C7A;
           }
         }
       }
@@ -87,11 +87,18 @@
         position: relative;
         width: 1150px;
         margin: 0 auto;
+        i{
+          color: white;
+          position: absolute;
+          bottom: 95px;
+          right: -22px;
+          font-size: 25px;
+        }
       }
       .callout{
         text-align: center;
         font-size: 18px;
-        color: $black;
+        color: white;
         font-weight: 500;
         font-family: $body;
         margin: 15px 0 0 0;
@@ -105,12 +112,12 @@
         position: relative;
         z-index: 0;
         list-style: none;
+        color: white;
         li.title{
           height: 100%;
-          text-transform: uppercase;
-          color: $black;
+          // text-transform: uppercase;
           font-family: $body;
-          font-weight: 500;
+          font-weight: 300;
           font-size: 14px;
           float: left;
           margin-right: 68px;
@@ -128,8 +135,8 @@
         li.product{
           height: 100%;
           color: #074E6F;
-          width: 130px;
-          margin-right: 129px;
+          width: 100px;
+          margin-left: 25%;
           float: left;
           position: relative;
           .circle{
@@ -139,10 +146,10 @@
             border: 1px solid #DAD9D2;
             text-align: center;
             line-height: 35px;
-            color: $black;
+            color: white;
             font-family: $body;
             overflow: hidden;
-            background: white;
+            background: $black;
             font-weight: bold;
             font-size: 13px;
             margin: 0 auto;
@@ -156,10 +163,10 @@
           .tooltip{
             height: 254px;
             width: 190px;
-            border: 2px solid $green;
+            border: 2px solid grey;
             position: absolute;
             top: -285px;
-            left: -32px;
+            left: -46px;
             display: none;
             background: #FFF;
             img{
@@ -173,13 +180,13 @@
             font-weight: 500;
             font-size: 13px;
             letter-spacing: 1px;
-            color: $black;
+            color: white;
           }
         }
         .selected .circle{
-          background: $green !important;
-          border-color: white !important;
-          color: $black !important;
+          background: $black !important;
+          border-color: $green !important;
+          color: $green !important;
         }
         .selected p{
           color: $green;
@@ -187,12 +194,13 @@
         }
         li.product:last-child{
           margin-right: 0;
+          margin-left: 37%;
         }
         li.product:hover{
           .circle{
-            color: $black;
-            background: $green;
-            border-color: white;
+            color: $green;
+            background: $black;
+            border-color: $green;
           }
           .tooltip{
             display: block;
@@ -205,46 +213,30 @@
         background: image-url("Refer/progress-bg-2.png") 0 0 repeat-x;
         background-size: 1px 4px;
         position: absolute;
+        padding-bottom: 4px;
         top: 95px;
         z-index: 0;
         .mover{
           position: absolute;
-          top: 0;
+          // top: -14px;
           left: 0;
-          .bar{
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          #bar{
+            margin-top: 30px;
             background: image-url("Refer/progress-done.png") 0 0 repeat-x;
-            width: 130px;
+            width: 80px;
             height: 4px;
             -webkit-background-size: 1px 4px;
             background-size: 1px 4px;
           }
-        }
-      }
-      .prize-two{
-        .progress{
-          .mover{
-            .bar{ width: 305px; }
-          }
-        }
-      }
-      .prize-three{
-        .progress{
-          .mover{
-            .bar{ width: 566px; }
-          }
-        }
-      }
-      .prize-four{
-        .progress{
-          .mover{
-            .bar{ width: 820px; }
-          }
-        }
-      }
-      .prize-five{
-        .progress{
-          .mover{
-            .bar{ width: 1140px; }
+          .yoda-icon{
+            img{
+              margin-top: 5px;
+              width: 50px;
+              border-bottom: 4px solid $green;
+            }
           }
         }
       }

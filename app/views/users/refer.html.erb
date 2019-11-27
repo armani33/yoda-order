@@ -8,14 +8,14 @@
         <div class="refer-friends-left"></div>
         <div class="refer-friends-right">
           <div class="text-part">
-            <h2>DON'T LEAVE YOUR FRIENDS BEHIND</h2>
+            <h2>Don't leave your friends behind!</h2>
             <h1><span>INVITE</span> FRIENDS &<br>EARN KILOMETERS</h1>
             <div class="copy-link"><%= root_url %>?ref=<%= @user.referral_code %></div>
             <% twitter_message = "#Mobility is evolving. Excited for YodaCity to launch." %>
             <div class="social-links">
-              <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=YodaCity" class="fb" target="_blank"><i class="fab fa-facebook" style="color: #001C7A;"></i></a>
+              <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=YodaCity" class="fb" target="_blank"><i class="fab fa-facebook"></i></a>
               <div class="sep"></div>
-              <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"><i class="fab fa-twitter-square" style="color: #001C7A;"></i></a>
+              <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"><i class="fab fa-twitter-square"></i></a>
             </div>
             <p style="margin-top: 0px; color: #001C7A;">Your unique link works with those two buttons too :-)</p>
             <p>You can also share your unique link via Email, Messenger<br>or Instagram to earn YodaCity rewards.</p>
@@ -40,18 +40,36 @@
     end
   }
 %>
-
+<%
+  word_friend = ''
+  word_km = ''
+  if referrals_count == 1 || referrals_count == 0
+    word_friend = 'Friend'
+    word_km = 'Kilometer'
+  else
+    word_friend = 'Friends'
+    word_km = 'Kilometers'
+  end
+%>
+<%
+width_bar = 0
+if referrals_count <= 25
+  width_bar = 80 + referrals_count*18.6
+else
+  width_bar = 80 + referrals_count*10.2
+end
+%>
 
     <div class="refer-friends-bottom-prizes <% if found %>prize-<%= found["class"] %><% end %>">
       <div class="page-content">
-        <p class="callout">Here's How It Works:</p>
+        <p class="callout">1 friend = 1 kilometer</p>
         <ul class="products">
 
-          <li class="title"><p class="friends">Friends Joined</p><p class="rewards">Free kilometers</p></li>
+          <li class="title"><p class="friends"> <%= referrals_count %> <%= word_friend %></p><p class="rewards"><%= referrals_count %> <%= word_km %></p></li>
 
           <% stops.each do |stop| %>
 
-            <li class="product <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
+            <li class="product <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'two' %>last<% end %>">
               <div class="circle"><%= stop["count"] %></div>
               <div class="sep"></div>
               <p><%= stop["html"].html_safe %></p>
@@ -64,12 +82,13 @@
           <% end %>
 
         </ul>
+
         <div class="progress">
           <div class="mover">
-            <div class="bar"></div>
+            <div id="bar"></div>
+            <div class="yoda-icon"><%= image_tag('Refer/Yoda-icon.png') %></div>
           </div>
         </div>
-
 
         <%
           words = ''
@@ -87,7 +106,7 @@
           <p class="place"><span id="friend"><%= referrals_count %></span> <%= words %> joined</p>
         <% end %>
         <p class="check">Keep checking</p>
-
+        <i class="fas fa-flag-checkered"></i>
       </div>
     </div>
   </div>
@@ -100,7 +119,7 @@
       <div class="text-container">
         <h2>1€ = 1km<span>.</span></h2>
         <p>Pay for kilometers, not for red lights.🚦</p>
-        <%= link_to "#km-order" do %>Get free km<% end %>
+        <%= link_to "#km-order" do %>50% on km<% end %>
       </div>
     </div>
   </div>
@@ -185,6 +204,11 @@
 
 
 <script>
+  window.onload=function(){
+    var elem = document.getElementById('bar');
+    elem.style.width = <%= width_bar %> + 'px';
+  }
+
   var page_1_bottom = $('#page-rent-1').offset().top + $('#page-rent-1').height();
   var page_map_bottom = $('#map').offset().top + $('#map').height();
   var refer_friend_page = $('#refer-friend-page').offset().top + $('#refer-friend-page').height();
@@ -237,7 +261,7 @@
         $('.buy').css('color', 'black');
       }
 
-      if (stop < refer_friend_page*0.95) {
+      if (stop < refer_friend_page*0.63) {
         $('.nav-logo-white').css('display', 'none');
         $('.nav-logo-black').css('display', 'inline');
 

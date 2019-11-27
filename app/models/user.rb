@@ -14,29 +14,15 @@ class User < ApplicationRecord
 
   REFERRAL_STEPS = [
     {
-      'count' => 5,
-      'html' => '3Km',
-      'class' => 'two',
-      # 'image' =>  ActionController::Base.helpers.asset_path(
-      #   'refer/cream-tooltip@2x.png')
-    },
-    {
-      'count' => 10,
-      'html' => '8Km',
-      'class' => 'three',
-      # 'image' => ActionController::Base.helpers.asset_path(
-      #   'refer/truman@2x.png')
-    },
-    {
       'count' => 25,
-      'html' => '25Km<br>+ 1 T-shirt',
-      'class' => 'four',
+      'html' => '1 T-shirt',
+      'class' => 'one',
       # 'image' => ActionController::Base.helpers.image_path("reduc_3.png")
     },
     {
-      'count' => 50,
-      'html' => '60km<br>+ 1 T-shirt',
-      'class' => 'five',
+      'count' => 100,
+      'html' => '1 Rain-jacket',
+      'class' => 'two',
       # 'image' => ActionController::Base.helpers.asset_path(
       #   'refer/blade-explain@2x.png')
     }
