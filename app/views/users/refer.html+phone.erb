@@ -1,1 +1,294 @@
-phonnee
+<%= render "shared/navbar-mobile" %>
+
+<div class="refer-mobile-container">
+  <div id="refer-bottom" class="first-refer-friends-mobile-container">
+    <div class="refer-main-mobile-text-1">
+      <h2>D'ont leave your friends behind!</h2>
+      <h1><span>INVITE</span> FRIENDS &<br>EARN KILOMETERS</h1>
+      <div class="copy-link"><%= root_url %>?ref=<%= @user.referral_code %></div>
+      <% twitter_message = "#Mobility is evolving. Excited for YodaCity to launch." %>
+      <div class="social-links">
+        <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=YodaCity" target="_blank"><i class="fab fa-facebook" style="color: #001C7A;"></i></a>
+        <div class="sep"></div>
+        <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"><i class="fab fa-twitter-square" style="color: #001C7A;"></i></a>
+      </div>
+      <p style="margin-top: 0px; margin-bottom: 20px; color: #001C7A;">Your unique link works with those two buttons too :-)</p>
+      <p>You can also share your unique link via Email Messenger or Instagram to earn YodaCity rewards.</p>
+    </div>
+    <%= image_tag('Yoda/Mobile/Yoda-refer-friend-mobile@2x.png', class: "yoda-image") %>
+  </div>
+
+
+
+<%
+
+  if @user.referrals.count <= 100
+    referrals_count = @user.referrals.count
+  else
+    referrals_count = 100
+  end
+
+  stops = User::REFERRAL_STEPS_MOBILE
+
+  found = nil
+
+  stops.reverse_each { |stop|
+    if stop["count"] <= referrals_count and !found
+      stop["selected"] = true
+      found = stop
+    else
+      stop["selected"] = false
+    end
+  }
+%>
+<%
+  word_friend = ''
+  word_meter = ''
+  if referrals_count == 0
+    word_friend = 'Friend'
+    word_meter = 'Meter'
+    meter = 0
+  elsif referrals_count == 1
+    word_friend = 'Friend'
+    word_meter = 'Meters'
+    meter = 500
+  else
+    word_friend = 'Friends'
+    word_meter = 'Meters'
+    meter = nil
+  end
+%>
+<%
+width_bar = 0
+if referrals_count <= 25
+  width_bar = referrals_count*5.52
+else
+  width_bar = referrals_count*3.65
+end
+%>
+
+
+
+  <div class="prizes-friends-mobile-container <% if found %>prize-mobile-<%=found["class"]%><% end %>">
+    <div class="page-content-top">
+      <p class="callout">1 friend = 500 Meters</p>
+    </div>
+
+    <ul class="products">
+      <li class="title">
+        <p class="friends"><%= referrals_count %> <%= word_friend %></p>
+        <p class="rewards">
+        <%=
+        if !meter.nil?
+          meter
+        else
+          (referrals_count/2.0*1000).to_i
+        end
+        %> <%= word_meter %></p>
+      </li>
+      <% stops.each do |stop| %>
+        <li class="product <% if stop["selected"] %>selected<% end %>">
+          <div class="circle"><%= stop["count"] %></div>
+          <div class="sep"></div>
+          <p><%= stop["html"].html_safe %></p>
+
+          <div class="tooltip">
+            <img src="<%= stop["image"] %>" height="254">
+          </div>
+        </li>
+      <% end %>
+      <div class="progress">
+        <div class="mover">
+          <div id="bar"></div>
+          <div class="yoda-icon"><%= image_tag('Refer/Yoda-icon.png') %></div>
+        </div>
+      </div>
+      <i class="fas fa-flag-checkered"></i>
+    </ul>
+     <%
+        words = ''
+        if referrals_count == 1
+          words = 'friend has'
+        else
+          words = 'friends have'
+        end
+      %>
+
+      <% if referrals_count == 0 %>
+        <p class="place"><span>No</span> friends have joined...Yet!</p>
+        <p class="place check">Keep checking...</p>
+      <% elsif referrals_count <= 99 %>
+        <p class="place"><span id="friend"><%= referrals_count %></span> <%= words %> joined</p>
+      <%else %>
+        <p class="place"><span id="friend"><%= referrals_count %></span> <%= words %> joined</p>
+        <p class="place check">Congratulation!</p>
+      <% end %>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="rent-mobile-container">
+  <div class="page-mobile-container">
+    <div id ="page-mobile-rent-1" class="page-mobile-content-1">
+      <div class="text-container">
+        <div class="text-content">
+          <h1>1€ = 1km<span>.</span></h1>
+          <p>Pay for kilometers, not for red lights.🚦</p>
+          <%= link_to "#km-order" do %>Get free km<% end %>
+        </div>
+      </div>
+      <div class="image">
+        <%= image_tag('Yoda/Mobile/Yoda-left-profile-rent-2@2x.png') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-2">
+      <div class="text-container">
+        <div class="text-content">
+          <h2>No pedals<span>.</span></h2>
+          <p>Move efficiently and have fun, what more? </p>
+          <%= link_to "#km-order" do %>Get free km<% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-3">
+      <div class="text-container">
+        <div class="text-content">
+          <h2>Take a ride<span>.</span></h2>
+          <p>Max. speed: 45 km/h. You need a car license (B)<br>or a motorcycle license (A3 or AM)</p>
+          <%= link_to "#km-order" do %>Get free km<% end %>
+        </div>
+      </div>
+      <div class="image">
+        <%= image_tag('App/Mobile/iphone_X_free-floating-mobile-map@2x.png', class: 'iphone_X') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-4">
+      <div class="text-container">
+        <div class="text-content">
+          <h2>Experience is key<span>.</span></h2>
+          <p>Choose how you want to familiarize yourself with the Yoda. Take it easy.</p>
+          <!-- Calendly link widget begin -->
+          <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+          <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yodacity-test-ride/30min'});return false;">Book a test ride</a>
+          <!-- Calendly link widget end -->
+        </div>
+      </div>
+      <div class="image">
+        <%= image_tag('App/Mobile/Iphone_X-mobile-Learn-progressively@2x.png') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div class="page-mobile-content-5">
+      <div class="text-container">
+        <div class="text-content">
+          <h2>A comfy ride<span>.</span></h2>
+          <p>Use your phone to navigate while charging it.<br>Sit comfortably.</p>
+        </div>
+      </div>
+      <div class="image">
+        <%= image_tag('Yoda/Mobile/Yoda-ff-mobile-comfy-ride@2x.png') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div id="map" class="map-mobile">
+      <%= image_tag('Map-ff-bxl-mobile@2x.png') %>
+    </div>
+  </div>
+
+  <div class="page-mobile-container">
+    <div id="km-order" class="page-mobile-content-6">
+      <div class="text-container">
+        <div class="text-content">
+          <h2>Free kilometers<span>.</span></h2>
+          <p class="upercase">GET EARLY KILOMETERS AT 50%</p>
+          <div class="price">
+            <h4>50KM =</h4>
+            <h5>50€</h5>
+            <h4 class="red">25€</h4>
+          </div>
+          <%= link_to "https://yodacity.myshopify.com/cart/31543099195491:1?channel=buy_button" do %>Order 50km<% end %>
+        </div>
+      </div>
+      <div class="image">
+        <%= image_tag('Yoda/Mobile/Front-back-view-mobile-order-km@2x.png') %>
+      </div>
+    </div>
+  </div>
+
+  <%= render "shared/footer-mobile" %>
+  <div class="footer-mobile-height"></div>
+</div>
+
+
+<script>
+  $(document).ready(function() {
+      $(window).scroll(function() {
+          var height = $('.page-mobile-content-1').height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - height*0.96) {
+              $('.nav-mobile-container').addClass('solid-mobile-nav');
+          } else {
+              $('.nav-mobile-container').removeClass('solid-mobile-nav');
+          }
+      });
+  });
+</script>
+
+<script>
+  window.onload=function(){
+    var elem = document.getElementById('bar');
+    elem.style.height = <%= width_bar %> + 'px';
+  }
+
+  var page_1_bottom = $('#page-mobile-rent-1').offset().top + $('#page-mobile-rent-1').height();
+  var refer_bottom = $('#refer-bottom').offset().top + $('#refer-bottom').height();
+  var map_bottom = $('#map').offset().top + $('#map').height();
+  var km_order_bottom = $('#km-order').offset().top + $('#km-order').height();
+
+  $('.nav-mobile-logo-white').css('display', 'none');
+  $('.nav-mobile-logo-black').css('display', 'inline');
+  // on scroll,
+  $(window).on('scroll',function(){
+
+      // we round here to reduce a little workload
+      var stop = Math.round($(window).scrollTop());
+
+      if (stop > refer_bottom*0.9 && stop < page_1_bottom) {
+          $('.nav-mobile-logo-white').css('display', 'inline');
+          $('.nav-mobile-logo-black').css('display', 'none');
+          $('.solid-mobile-nav').css('background-color', 'transparent');
+      } else if (stop > map_bottom - 30 && stop < km_order_bottom - 200) {
+          $('.nav-mobile-logo-white').css('display', 'inline');
+          $('.nav-mobile-logo-black').css('display', 'none');
+          $('.solid-mobile-nav').css('background-color', 'transparent');
+      } else if (stop > km_order_bottom - 200 ) {
+          $('.nav-mobile-logo-white').css('display', 'none');
+          $('.nav-mobile-logo-black').css('display', 'none');
+      }else {
+          $('.nav-mobile-logo-white').css('display', 'none');
+          $('.nav-mobile-logo-black').css('display', 'inline');
+          $('.solid-mobile-nav').css('background-color', 'transparent');
+      }
+
+  });
+</script>

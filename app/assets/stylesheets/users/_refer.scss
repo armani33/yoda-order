@@ -22,8 +22,8 @@
         flex-basis: 45%;
         display: flex;
         justify-content: flex-start;
-        align-items: flex-end;
-        margin-bottom: 60px;
+        align-items: center;
+        // margin-bottom: 80px;
         h1{
          margin-bottom:15px;
           padding:0;
@@ -61,6 +61,7 @@
           border: 1.5px solid #001C7A;
           border-radius: 3px;
           font-size: 15px;
+          font-weight: 300;
           text-align: center;
           box-shadow: 0 0 2px #001C7A;
           color: $black;
@@ -124,17 +125,16 @@
           width: 165px;
           font-weight: bold;
           .friends{
-            margin-top: 11px;
+            margin-top: -10px;
             letter-spacing: 2px;
           }
           .rewards{
-            margin-top: 36px;
+            margin-top: 75px;
             letter-spacing: 2px;
           }
         }
         li.product{
           height: 100%;
-          color: #074E6F;
           width: 100px;
           margin-left: 25%;
           float: left;
@@ -185,12 +185,13 @@
         }
         .selected .circle{
           background: $black !important;
-          border-color: $green !important;
-          color: $green !important;
+          border-color: #02AD0F !important;
+          color: #02AD0F !important;
         }
-        .selected p{
-          color: $green;
-          font-weight: bold;
+        .selected{
+          p{
+            color: #02AD0F !important;
+          }
         }
         li.product:last-child{
           margin-right: 0;
@@ -226,7 +227,7 @@
           #bar{
             margin-top: 30px;
             background: image-url("Refer/progress-done.png") 0 0 repeat-x;
-            width: 80px;
+            width: 0px;
             height: 4px;
             -webkit-background-size: 1px 4px;
             background-size: 1px 4px;
@@ -262,6 +263,26 @@
         width: 100%;
         font-weight: 400;
         margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1450px){
+  .refer-friends-container{
+    .refer-friends-content{
+      .refer-friends-top{
+        .refer-friends-left{
+          flex-basis: 55%;
+        }
+        .refer-friends-right{
+          h1{
+            font-size: 40px;
+          }
+          h2{
+            font-size: 22px;
+          }
+        }
       }
     }
   }

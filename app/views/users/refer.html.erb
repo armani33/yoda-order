@@ -25,7 +25,12 @@
 
 
 <%
-  referrals_count = @user.referrals.count
+
+  if @user.referrals.count <= 100
+    referrals_count = @user.referrals.count
+  else
+    referrals_count = 100
+  end
 
   stops = User::REFERRAL_STEPS
 
@@ -42,30 +47,46 @@
 %>
 <%
   word_friend = ''
-  word_km = ''
-  if referrals_count == 1 || referrals_count == 0
+  word_meter = ''
+  if referrals_count == 0
     word_friend = 'Friend'
-    word_km = 'Kilometer'
+    word_meter = 'Meter'
+    meter = 0
+  elsif referrals_count == 1
+    word_friend = 'Friend'
+    word_meter = 'Meters'
+    meter = 500
   else
     word_friend = 'Friends'
-    word_km = 'Kilometers'
+    word_meter = 'Meters'
+    meter = nil
   end
 %>
 <%
 width_bar = 0
 if referrals_count <= 25
-  width_bar = 80 + referrals_count*18.6
+  width_bar = referrals_count*21.8
 else
-  width_bar = 80 + referrals_count*10.2
+  width_bar = referrals_count*11
 end
 %>
 
     <div class="refer-friends-bottom-prizes <% if found %>prize-<%= found["class"] %><% end %>">
       <div class="page-content">
-        <p class="callout">1 friend = 1 kilometer</p>
+        <p class="callout">1 friend = 500 Meters</p>
         <ul class="products">
 
-          <li class="title"><p class="friends"> <%= referrals_count %> <%= word_friend %></p><p class="rewards"><%= referrals_count %> <%= word_km %></p></li>
+          <li class="title">
+            <p class="friends"> <%= referrals_count %> <%= word_friend %></p>
+            <p class="rewards">
+              <%=
+                if !meter.nil?
+                  meter
+                else
+                  (referrals_count/2.0*1000).to_i
+                end
+                %> <%= word_meter %></p>
+            </li>
 
           <% stops.each do |stop| %>
 
@@ -74,9 +95,9 @@ end
               <div class="sep"></div>
               <p><%= stop["html"].html_safe %></p>
 
-              <div class="tooltip">
+              <!-- <div class="tooltip">
                 <img src="<%= stop["image"] %>" height="254">
-              </div>
+              </div> -->
             </li>
 
           <% end %>
@@ -101,11 +122,14 @@ end
 
 
         <% if referrals_count == 0 %>
-          <p class="place"><span>No</span> friends have joined...Yet!</p>
-        <% else %>
-          <p class="place"><span id="friend"><%= referrals_count %></span> <%= words %> joined</p>
-        <% end %>
-        <p class="check">Keep checking</p>
+        <p class="place"><span>No</span> friends have joined...Yet!</p>
+        <p class="place check">Keep checking...</p>
+      <% elsif referrals_count <= 99 %>
+        <p class="place"><span id="friend"><%= referrals_count %></span> <%= words %> joined</p>
+      <%else %>
+        <p class="place"><span id="friend"><%= referrals_count %></span> <%= words %> joined</p>
+        <p class="place check">Congratulation!</p>
+      <% end %>
         <i class="fas fa-flag-checkered"></i>
       </div>
     </div>
@@ -129,7 +153,7 @@ end
       <div class="text-container">
         <h2>No pedals<span>.</span></h2>
         <p>Move efficiently and have fun, what more?</p>
-        <%= link_to "#km-order" do %>Get free km<% end %>
+        <%= link_to "#km-order" do %>50% on km<% end %>
       </div>
     </div>
   </div>
@@ -144,7 +168,7 @@ end
           <h2>Take a ride<span>.</span></h2>
           <!-- <p>Find a Yoda nearby. Ride anywhere with ease.</p> -->
           <p>Max. speed: 45 km/h. You need a car license (B)<br>or a motorcycle license (A3 or AM)</p>
-          <%= link_to "#km-order" do %>Get free km<% end %>
+          <%= link_to "#km-order" do %>50% on km<% end %>
         </div>
       </div>
     </div>
