@@ -8,17 +8,24 @@
       <div class="text-container">
         <h2>1€ = 1km<span>.</span></h2>
         <p>Pay for kilometers, not for red lights.🚦</p>
-        <%= link_to "#km-order" do %>Get free km<% end %>
+        <% if Rails.application.config.ended %>
+          <%= render "shared/campaign_ended" %>
+        <% else %>
+          <%= render "shared/campaign_ongoing" %>
+        <% end %>
       </div>
     </div>
   </div>
-
   <div class="rent-page-container">
     <div class="page-content-2">
       <div class="text-container">
         <h2>No pedals<span>.</span></h2>
         <p>Move efficiently and have fun, what more?</p>
-        <%= link_to "#km-order" do %>Get free km<% end %>
+        <% if Rails.application.config.ended %>
+          <%= render "shared/campaign_ended" %>
+        <% else %>
+          <%= render "shared/campaign_ongoing2" %>
+        <% end %>
       </div>
     </div>
   </div>
@@ -33,7 +40,11 @@
           <h2>Take a ride<span>.</span></h2>
           <!-- <p>Find a Yoda nearby. Ride anywhere with ease.</p> -->
           <p>Max. speed: 45 km/h. You need a car license (B)<br>or a motorcycle license (A3 or AM)</p>
-          <%= link_to "#km-order" do %>Get free km<% end %>
+          <% if Rails.application.config.ended %>
+            <%= render "shared/campaign_ended" %>
+          <% else %>
+            <%= render "shared/campaign_ongoing3" %>
+          <% end %>
         </div>
       </div>
     </div>
