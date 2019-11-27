@@ -181,10 +181,11 @@
           }
           a{//calendly pop-up
             padding: 11px 30px;
-            border: 1px solid $blue;
+            border: 1px solid $black;
+            background-color: $black;
             border-radius: 25px;
-            font-weight: 300;
-            color: $blue;
+            font-weight: 400;
+            color: white;
             text-decoration: none;
           }
         }
