@@ -34,7 +34,7 @@
       <div class="newsletter">
         <div class="newsletter-content">
           <p>Subscribe To Our Newsletter</p>
-          <%= form_for @user, url: users_create_path, class: "footer-form", method: :post do |f| %>
+          <%= form_for @user, url: users_email_verification_path, method: :post  class: "footer-form" do |f| %>
             <%= f.text_field :email, :placeholder => "Type in your email" %>
             <submit type="submit" class="subscribe-btn"><i class="fas fa-arrow-right"></i></submit>
             <!-- <input class="submit brandon" name="commit" type="submit" value="Step Inside" /> -->
