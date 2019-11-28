@@ -1,0 +1,166 @@
+<style>
+ @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+.login3_bar {
+  display: flex;
+  width: 280px;
+  height: 40px;
+  background: #E6E6E6;
+  border-radius: 10px;
+  top: 50%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.login3 {
+  background: transparent;
+  position: absolute;
+  height: 100%;
+  width: 180px;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 12px;
+  border: none;
+  line-height: 40px;
+  vertical-align: middle;
+  z-index: 10;
+  -webkit-transition: transform 0.2s ease-in-out 0s;
+     -moz-transition: transform 0.2s ease-in-out 0s;
+       -o-transition: transform 0.2s ease-in-out 0s;
+          transition: transform 0.2s ease-in-out 0s;
+}
+
+.login3_active {
+  -webkit-transform: translateX(280px);
+     -moz-transform: translateX(280px);
+      -ms-transform: translateX(280px);
+       -o-transform: translateX(280px);
+          transform: translateX(280px);
+}
+
+.subscribe_button3:hover{
+  background-color: #0091EA;
+  /*#282828;*/
+  cursor:pointer;
+}
+
+.subscribe_button3 {
+  background: #1CA9FF;
+  /*#383838;*/
+
+  position: absolute;
+  top: -40px;
+  left: 190px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 120px;
+  width: 91px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 100px;
+  vertical-align: middle;
+  color: white;
+  -webkit-transition: transform 0.5s ease 0s;
+     -moz-transition: transform 0.5s ease 0s;
+       -o-transition: transform 0.5s ease 0s;
+          transition: transform 0.5s ease 0s;
+}
+
+.subscribe_button3_active{
+  -webkit-transform: translateY(40px);
+     -moz-transform: translateY(40px);
+      -ms-transform: translateY(40px);
+       -o-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+.subscribing3{
+  background: #CDD4DC;
+  height: 100%;
+  width: 280px;
+  z-index: 5;
+  position: absolute;
+  left:-280px;
+  display: inline-block;
+  -webkit-transition: transform 1s ease 0s ;
+     -moz-transition: transform 1s ease 0s ;
+       -o-transition: transform 1s ease 0s ;
+          transition: transform 1s ease 0s ;
+}
+
+.subscribing3_active {
+  -webkit-transform: translateX(280px);
+     -moz-transform: translateX(280px);
+      -ms-transform: translateX(280px);
+       -o-transform: translateX(280px);
+          transform: translateX(280px);
+}
+
+.thanks3{
+  background: #FFCE00;
+  height: 100%;
+  width: 280px;
+  z-index: 5;
+  text-align: left;
+  line-height: 40px;
+  vertical-align: middle;
+  padding-left: 10px;
+  position: absolute;
+  font-size: 12px;
+  top:40px;
+  display: inline-block;
+  -webkit-transition: transform 0.5s ease 0s ;
+     -moz-transition: transform 0.5s ease 0s ;
+       -o-transition: transform 0.5s ease 0s ;
+          transition: transform 0.5s ease 0s ;
+}
+
+.thanks3_active {
+  -webkit-transform: translateY(-40px);
+     -moz-transform: translateY(-40px);
+      -ms-transform: translateY(-40px);
+       -o-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+</style>
+
+<p class="sub">Be the first to know <span>&</span> get Kilometers</p>
+<div class="login3_bar">
+  <%= form_for @user, url: users_email_verification_path, method: :post do |f| %>
+    <%= f.text_field :email, class: "login3", :placeholder => "Type in your email" %>
+    <input class="submit subscribe_button3" onclick="subscribeOnClick()" name="commit" type="submit" value="Step Inside" />
+  <% end %>
+  <span class="subscribing3"></span>
+  <span class="thanks3">Thank you. Verify your email to get early access.</span>
+                                                                        <p></p>
+</div>
+
+<script>
+var subscribe_button3 = document.querySelector(".subscribe_button3");
+
+subscribe_button3.addEventListener('click', function(){
+  var subscribing3 = document.querySelector(".subscribing3");
+  var thanks3 = document.querySelector(".thanks3");
+  var login3 = document.querySelector(".login3");
+
+  subscribing3.classList.add("subscribing3_active");
+  subscribe_button3.classList.add("subscribe_button3_active");
+  setTimeout(function(){
+    login3.classList.add("login3_active");
+  }, 1200);
+  setTimeout(function(){
+    thanks3.classList.add("thanks3_active");
+  }, 1400);
+
+  setTimeout(function(){
+    thanks3.classList.remove("thanks3_active");
+    login3.classList.remove("login3_active");
+    subscribing3.classList.remove("subscribing3_active");
+    subscribe_button3.classList.remove("subscribe_button3_active");
+  }, 4000000);
+});
+</script>

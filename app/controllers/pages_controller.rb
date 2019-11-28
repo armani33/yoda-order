@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   before_action :set_variant, only: [:main, :rent, :buy, :cart, :warranty, :faq, :delivery, :returns, :privacy_policy, :terms_of_use]
   before_action :format, only: [:main, :rent, :buy, :cart, :warranty, :faq, :delivery, :returns, :privacy_policy, :terms_of_use]
+  before_action :skip_rent_a_yoda_page, only: :rent
   def main
     @user = User.new
   end
@@ -52,6 +53,17 @@ class PagesController < ApplicationController
       # html.phone
       # html.tablet
       # end
+    end
+  end
+
+  def skip_rent_a_yoda_page
+    return if Rails.application.config.ended
+
+    email = cookies[:h_email]
+    if email && User.find_by_email(email)
+      redirect_to rent_a_yoda_refer_a_friend_path
+    else
+      cookies.delete :h_email
     end
   end
 

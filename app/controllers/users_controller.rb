@@ -1,29 +1,55 @@
 class UsersController < ApplicationController
-  before_action :set_variant, only: [:new_buy, :new_test]
-  def new_buy
-    @user = User.new
-    respond_to do |format|
-      format.html(&:phone)
-      # do |html|
-      # html.phone
-      # html.tablet
-      # end
-    end
-  end
+  before_action :set_variant, only: [:refer]
+
 
   def create
-    @user = User.new(user_params)
-
+    @referrer_code = params[:param2] # "value2"
+    @user = User.new(email: params[:param1])
+    @user.referrer = User.find_by_referral_code(@referrer_code) if @referrer_code
     if @user.save
-      flash[:success] = "Thanks for the subscription."
-      redirect_to root_path
+      cookies[:h_email] = { value: @user.email, expires: 52.week.from_now }
+      redirect_to rent_a_yoda_refer_a_friend_path
     else
-      # render :new => ca c'est si on veut rediriger vers une def local
-      flash[:error] = "something went wrong"
-      redirect_to root_path
+      logger.info('Error saving user')
+      redirect_to rent_a_yoda_path, alert: 'Error saving your email'
     end
   end
 
+  def refer
+    @refer_friend_navbar = true
+
+    session[:expires_at] = Time.now + 5
+    @nav_link_refer = true
+    @user = User.find_by_email(cookies[:h_email])
+
+    if @user.nil?
+      respond_to do |format|
+        format.html(&:phone)
+        redirect_to root_path, alert: 'Something went wrong!'
+      end
+    else
+      respond_to do |format|
+        format.html(&:phone) # refer.html.erb
+      end
+    end
+  end
+
+  def email_verification
+    ref_code = cookies[:h_ref]
+    @user = User.new(user_params)
+    @user.referrer = User.find_by_referral_code(ref_code) if ref_code
+
+    if User.find_by_email(@user.email).nil?
+      if @user.valid?
+        UserMailer.email_verification(@user).deliver_now
+      else
+        redirect_to rent_a_yoda_path, alert: 'Error sending your email. Try again.'
+      end
+    else
+      logger.info('This user already subscribed')
+      redirect_to rent_a_yoda_path, alert: 'This user already subscribed'
+    end
+  end
 
   private
 

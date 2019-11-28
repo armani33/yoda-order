@@ -7,7 +7,11 @@
         <div class="text-content">
           <h1>1€ = 1km<span>.</span></h1>
           <p>Pay for kilometers, not for red lights.🚦</p>
-          <%= link_to "#km-order" do %>Get free km<% end %>
+          <% if Rails.application.config.ended %>
+            <%= render "shared/campaign_ended" %>
+          <% else %>
+            <%= render "shared/campaign_ongoing_mobile" %>
+          <% end %>
         </div>
       </div>
       <div class="image">
@@ -22,7 +26,7 @@
         <div class="text-content">
           <h2>No pedals<span>.</span></h2>
           <p>Move efficiently and have fun, what more? </p>
-          <%= link_to "#km-order" do %>Get free km<% end %>
+          <%= render "shared/campaign_ended" %>
         </div>
       </div>
     </div>
@@ -34,11 +38,15 @@
         <div class="text-content">
           <h2>Take a ride<span>.</span></h2>
           <p>Max. speed: 45 km/h. You need a car license (B)<br>or a motorcycle license (A3 or AM)</p>
-          <%= link_to "#km-order" do %>Get free km<% end %>
         </div>
       </div>
       <div class="image">
         <%= image_tag('App/Mobile/iphone_X_free-floating-mobile-map@2x.png', class: 'iphone_X') %>
+        <% if Rails.application.config.ended %>
+          <%= render "shared/campaign_ended" %>
+        <% else %>
+          <%= render "shared/campaign_ongoing_mobile3" %>
+        <% end %>
       </div>
     </div>
   </div>

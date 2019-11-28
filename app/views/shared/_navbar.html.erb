@@ -22,6 +22,9 @@
       <% elsif @buy_navbar %>
         <%= link_to rent_a_yoda_path do%><div class="nav-btn rent">Rent a Yoda</div><% end %>
         <%= link_to "#order" do%><div class="nav-btn nav-buy-btn buy">Reserve yours for 500€</div><% end %>
+      <% elsif @refer_friend_navbar %>
+        <%= link_to "#km-order" do%><div class="nav-btn rent">50% on km</div><% end %>
+        <%= link_to buy_a_yoda_path do%><div class="nav-btn buy">Buy a Yoda</div><% end %>
       <% else %>
         <%= link_to rent_a_yoda_path do%><div class="nav-btn rent">Rent a Yoda</div><% end %>
         <%= link_to buy_a_yoda_path do%><div class="nav-btn buy">Buy a Yoda</div><% end %>

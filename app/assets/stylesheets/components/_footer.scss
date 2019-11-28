@@ -86,57 +86,58 @@
         height: 100%;
         margin-top: 30px;
         .newsletter-content{
-          border-bottom: 1px solid $light-grey;
           p{
-            font-size: 20px;
             font-weight: 400;
-            color: $green;
-            margin-bottom: 8px;
-            margin-right: 5px;
-          }
-          form.footer-form{
-            display: flex;
-          }
-          input[type=text]{
-            width: 72%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 0px;
-            background-color: transparent;
-            font-size: 18px;
-            font-family: $body;
-            text-indent: 0px;
-            color: white !important;
-            font-weight: 400;
-            outline: none !important;
-          }
-          input[type=submit].subscribe-btn{
-            width: 21% !important;
-            height: 100% !important;
-            margin: 8px 0 !important;
-            display: inline-block !important;
-            background-color: transparent !important;
-            border: 0 !important;
-            color: white !important;
-            outline: none !important;
-            z-index: 1 !important;
-            -webkit-appearance: none;
-          }
-          ::-webkit-input-placeholder { /* Edge */
-            color: white;
-            font-weight: 300;
-            font-size: 16px;
-          }
-          i{
-            margin-top: 10px;
-            font-size: 25px;
-            color: white;
-            cursor: pointer;
-            &:hover{
+            font-size: 17px;
+            color: #9B9B9B;
+            margin-bottom: 20px;
+            span{
               color: $green;
             }
           }
+        //   form.footer-form{
+        //     display: flex;
+        //   }
+        //   input[type=text]{
+        //     width: 72%;
+        //     padding: 12px 20px;
+        //     margin: 8px 0;
+        //     display: inline-block;
+        //     border: 0px;
+        //     background-color: transparent;
+        //     font-size: 18px;
+        //     font-family: $body;
+        //     text-indent: 0px;
+        //     color: white !important;
+        //     font-weight: 400;
+        //     outline: none !important;
+        //   }
+        //   input[type=submit].subscribe-btn{
+        //     width: 21% !important;
+        //     height: 100% !important;
+        //     margin: 8px 0 !important;
+        //     display: inline-block !important;
+        //     background-color: transparent !important;
+        //     border: 0 !important;
+        //     color: white !important;
+        //     outline: none !important;
+        //     z-index: 1 !important;
+        //     -webkit-appearance: none;
+        //   }
+        //   ::-webkit-input-placeholder { /* Edge */
+        //     color: white;
+        //     font-weight: 300;
+        //     font-size: 16px;
+        //   }
+        //   i{
+        //     margin-top: 10px;
+        //     font-size: 25px;
+        //     color: white;
+        //     cursor: pointer;
+        //     &:hover{
+        //       color: $green;
+        //     }
+        //   }
         }
         .infos-contact{
           margin-top: 20px;

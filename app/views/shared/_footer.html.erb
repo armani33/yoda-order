@@ -33,11 +33,7 @@
       </ul>
       <div class="newsletter">
         <div class="newsletter-content">
-          <p>Subscribe To Our Newsletter</p>
-          <%= form_for @user, url: users_create_path, class: "footer-form", method: :post do |f| %>
-            <%= f.text_field :email, :placeholder => "Type in your email" %>
-            <submit type="submit" class="subscribe-btn"><i class="fas fa-arrow-right"></i></submit>
-          <% end %>
+          <%= render "shared/campaign_ongoing_footer" %>
         </div>
         <div class="infos-contact">
           <p>Chaussée de Waterloo 834<br>1180, Brussels, Belgium</p>
