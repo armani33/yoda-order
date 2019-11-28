@@ -70,8 +70,11 @@
           display: flex;
           justify-content: center;
           margin: 20px 0 0px;
+          a{
+            margin-right: 50px;
+          }
           a:last-child{
-            margin-left: 70px;
+            margin-right: 0px;
           }
           i{
             font-size: 35px;

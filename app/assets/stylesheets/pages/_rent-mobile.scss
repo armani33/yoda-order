@@ -271,24 +271,24 @@
             }
             h5{
               text-decoration: line-through;
-              text-decoration-color: #FF9393;
+              text-decoration-color: $orange;
               -webkit-text-decoration-line: line-through;
-              -webkit-text-decoration-color:  #FF9393;
+              -webkit-text-decoration-color:  $orange;
               font-weight: 400;
               font-size: 15px;
               color: #9B9B9B;
               margin: 0 10px;
             }
             h4.red{
-              color: #FF9393;
+              color: $orange;
             }
           }
           a{
             padding: 8px 20px;
-            border: 1px solid #FF9393;
+            border: 1px solid $orange;
             border-radius: 25px;
             font-weight: 300;
-            background-color: #FF9393;
+            background-color: $orange;
             color: white;
             text-decoration: none;
             font-size: 14px;
