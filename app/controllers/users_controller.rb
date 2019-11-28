@@ -7,13 +7,13 @@ class UsersController < ApplicationController
     @user = User.new(email: params[:param1])
     @user.referrer = User.find_by_referral_code(@referrer_code) if @referrer_code
     if @user.save
-        cookies[:h_email] = { value: @user.email, expires: 52.week.from_now }
-        redirect_to rent_a_yoda_refer_a_friend_path
-        # redirect_to rent_a_yoda_path, alert: 'An email has been send! verify it to get early access'
-      else
-        logger.info('Error saving user')
-        redirect_to rent_a_yoda_path, alert: 'Error saving your email'
-      end
+      cookies[:h_email] = { value: @user.email, expires: 52.week.from_now }
+      redirect_to rent_a_yoda_refer_a_friend_path
+      # redirect_to rent_a_yoda_path, alert: 'An email has been send! verify it to get early access'
+    else
+      logger.info('Error saving user')
+      redirect_to rent_a_yoda_path, alert: 'Error saving your email'
+    end
   end
 
   def refer
