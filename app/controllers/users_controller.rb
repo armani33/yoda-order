@@ -42,7 +42,7 @@ class UsersController < ApplicationController
 
     if User.find_by_email(@user.email).nil?
       if @user.valid?
-        UserMailer.email_verification(@user).deliver_now
+        # UserMailer.email_verification(@user).deliver_now
       else
         redirect_to rent_a_yoda_path, alert: 'Error sending your email. Try again.'
       end
