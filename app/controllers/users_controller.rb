@@ -9,7 +9,6 @@ class UsersController < ApplicationController
     if @user.save
       cookies[:h_email] = { value: @user.email, expires: 52.week.from_now }
       redirect_to rent_a_yoda_refer_a_friend_path
-      # redirect_to rent_a_yoda_path, alert: 'An email has been send! verify it to get early access'
     else
       logger.info('Error saving user')
       redirect_to rent_a_yoda_path, alert: 'Error saving your email'
@@ -42,7 +41,7 @@ class UsersController < ApplicationController
 
     if User.find_by_email(@user.email).nil?
       if @user.valid?
-        # UserMailer.email_verification(@user).deliver_now
+        UserMailer.email_verification(@user).deliver_now
       else
         redirect_to rent_a_yoda_path, alert: 'Error sending your email. Try again.'
       end

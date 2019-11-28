@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   before_action :set_variant, only: [:main, :rent, :buy, :cart, :warranty, :faq, :delivery, :returns, :privacy_policy, :terms_of_use]
   before_action :format, only: [:main, :rent, :buy, :cart, :warranty, :faq, :delivery, :returns, :privacy_policy, :terms_of_use]
-  # before_action :skip_rent_a_yoda_page, only: :rent
+  before_action :skip_rent_a_yoda_page, only: :rent
   def main
     @user = User.new
   end
