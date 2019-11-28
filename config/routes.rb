@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get 'contact' => 'contact#contact'
 
 
-  post 'users/create' => 'users#create'
+  get 'users/create' => 'users#create'
+  post 'users/email-verification' => 'users#email_verification'
   get 'rent-a-yoda/refer-a-friend' => 'users#refer'
-
 end

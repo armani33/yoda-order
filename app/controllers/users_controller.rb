@@ -1,24 +1,19 @@
 class UsersController < ApplicationController
   before_action :set_variant, only: [:refer]
 
-  def create
-    ref_code = cookies[:h_ref]
-    @user = User.new(user_params)
-    @user.referrer = User.find_by_referral_code(ref_code) if ref_code
 
-    if User.find_by_email(@user.email).nil?
-      if @user#.save
+  def create
+    @referrer_code = params[:param2] # "value2"
+    @user = User.new(email: params[:param1])
+    @user.referrer = User.find_by_referral_code(@referrer_code) if @referrer_code
+    if @user.save
         cookies[:h_email] = { value: @user.email, expires: 52.week.from_now }
-        # redirect_to rent_a_yoda_refer_a_friend_path
+        redirect_to rent_a_yoda_refer_a_friend_path
         # redirect_to rent_a_yoda_path, alert: 'An email has been send! verify it to get early access'
       else
         logger.info('Error saving user')
         redirect_to rent_a_yoda_path, alert: 'Error saving your email'
       end
-    else
-      logger.info('Error saving user with email, #{@user.email}')
-      redirect_to rent_a_yoda_path, alert: 'This user already subscribed'
-    end
   end
 
   def refer
@@ -40,19 +35,24 @@ class UsersController < ApplicationController
     end
   end
 
+  def email_verification
+    ref_code = cookies[:h_ref]
+    @user = User.new(user_params)
+    @user.referrer = User.find_by_referral_code(ref_code) if ref_code
 
-  private
-
-  def skip_first_page
-    return if Rails.application.config.ended
-
-    email = cookies[:h_email]
-    if email && User.find_by_email(email)
-      redirect_to rent_a_yoda_refer_a_friend_path
+    if User.find_by_email(@user.email).nil?
+      if @user.valid?
+        UserMailer.email_verification(@user).deliver_now
+      else
+        redirect_to rent_a_yoda_path, alert: 'Error sending your email. Try again.'
+      end
     else
-      cookies.delete :h_email
+      logger.info('This user already subscribed')
+      redirect_to rent_a_yoda_path, alert: 'This user already subscribed'
     end
   end
+
+  private
 
   def user_params
     params.require(:user).permit(:email)

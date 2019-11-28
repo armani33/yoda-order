@@ -128,12 +128,12 @@
 
 <p class="sub">Be the first to know <span>&</span> get Kilometers</p>
 <div class="login2_bar">
-  <%= form_for @user, url: users_create_path, method: :post do |f| %>
+  <%= form_for @user, url: users_email_verification_path, method: :post do |f| %>
     <%= f.text_field :email, class: "login2", :placeholder => "Type in your email" %>
     <input class="submit subscribe_button2" onclick="subscribeOnClick()" name="commit" type="submit" value="Step Inside" />
   <% end %>
   <span class="subscribing2"></span>
-  <span class="thanks2"> Thank you. You have been subscribed</span>
+  <span class="thanks2">Thank you. Verify your email to get early access.</span>
 </div>
 
 <script>
