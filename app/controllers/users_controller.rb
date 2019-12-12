@@ -15,6 +15,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def create_subscriber
+
+  end
+
   def refer
     @refer_friend_navbar = true
 
