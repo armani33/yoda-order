@@ -16,7 +16,13 @@ class UsersController < ApplicationController
   end
 
   def create_subscriber
-
+    @user = User.new(user_params)
+    if @user.save
+      redirect_to root_path, alert: "Thank you for your subscribtion."
+    else
+      # render :new => ca c'est si on veut rediriger vers une def local
+      redirect_to root_path, alert: "something went wrong"
+    end
   end
 
   def refer

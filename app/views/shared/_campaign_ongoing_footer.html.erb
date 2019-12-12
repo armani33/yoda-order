@@ -130,7 +130,7 @@
 
 <p class="sub">Be The First To Know <span>&</span> Get Kilometers</p>
 <div class="login4_bar">
-  <%= form_for @user, url: users_email_verification_path, method: :post do |f| %>
+  <%= form_for @user, url: users_subscribe_path, method: :post do |f| %>
     <%= f.text_field :email, class: "login4", :placeholder => "Type in your email" %>
     <input class="submit subscribe_button4" onclick="subscribeOnClick()" name="commit" type="submit" value="Step Inside" />
   <% end %>

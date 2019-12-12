@@ -22,7 +22,7 @@
     <div class="newsletter-container">
       <div class="newsletter-content-mobile">
         <p>Subscribe To Our Newsletter</p>
-        <%= form_for @user, url: users_email_verification_path, method: :post, class: "footer-form" do |f| %>
+        <%= form_for @user, url: users_subscribe_path, method: :post, class: "footer-form" do |f| %>
           <%= f.text_field :email, :placeholder => "Type in your email" %>
           <submit type="submit"><i class="fas fa-arrow-right"></i></submit>
         <% end %>

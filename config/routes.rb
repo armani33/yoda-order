@@ -21,6 +21,7 @@ Rails.application.routes.draw do
 
 
   get 'users/create' => 'users#create'
+  post 'users/subscribe' => 'users#create_subscriber'
   post 'users/email-verification' => 'users#email_verification'
   get 'rent-a-yoda/refer-a-friend' => 'users#refer'
 end
