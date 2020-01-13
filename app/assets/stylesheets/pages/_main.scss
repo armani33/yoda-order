@@ -5,7 +5,7 @@
   font-family: $body;
   .page-container{
     .page-content-1{
-      background: image_url("Yoda/Yoda-main-picture@2x.png");
+      background: image_url("Yoda/Black-main-yoda@2x.png");
       background-repeat: no-repeat;
       background-size: cover;
       height: 95vh;
@@ -30,8 +30,8 @@
         }
         a{//calendly pop-up
           padding: 11px 30px;
-          border: 1px solid $blue;
-          background-color: $blue;
+          border: 1px solid $black;
+          background-color: $black;
           border-radius: 25px;
           font-weight: 400;
           color: white;
