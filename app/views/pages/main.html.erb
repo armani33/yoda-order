@@ -3,7 +3,7 @@
 <div class="navbar-height"></div>
 <div class="main-container">
   <div class="page-container">
-    <div class="page-content-1">
+    <div id ="page-1" class="page-content-1">
       <div class="text-container">
         <h1>Simply fun<span>.</span></h1>
         <p>At 27 kg, forget about heavy and complicated.<br>Zip through traffic like never before on a Yoda.</p>
@@ -14,21 +14,6 @@
         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/yodacity-test-ride/30min'});return false;">Book a test ride</a> -->
         <!-- Calendly link widget end -->
 
-      </div>
-    </div>
-  </div>
-
-  <div class="page-container">
-    <div id ="page-2" class="page-content-2">
-      <div class="left-side">
-        <%= image_tag('App/iphone_X_free-floating-map@2x.png') %>
-      </div>
-      <div class="right-side">
-        <div class="text-container">
-          <h2>Take a ride<span>.</span></h2>
-          <p>Find a Yoda nearby. Ride anywhere with ease.<br>1€ = 1km.</p>
-          <%= link_to rent_a_yoda_path do %>Learn more<% end %>
-        </div>
       </div>
     </div>
   </div>
@@ -113,7 +98,7 @@
 
 
 <script>
-  var page_2_bottom = $('#page-2').offset().top + $('#page-2').height();
+  var page_1_bottom = $('#page-1').offset().top + $('#page-1').height();
   var page_3_bottom = $('#page-3').offset().top + $('#page-3').height();
   $('.nav-logo-white').css('display', 'none');
   $('.nav-logo-black').css('display', 'inline');
@@ -130,7 +115,7 @@
       // we round here to reduce a little workload
       var stop = Math.round($(window).scrollTop());
 
-      if (stop > page_2_bottom && stop < page_3_bottom) {
+      if (stop > page_1_bottom && stop < page_3_bottom) {
           $('.nav-logo-white').css('display', 'inline');
           $('.nav-logo-black').css('display', 'none');
 

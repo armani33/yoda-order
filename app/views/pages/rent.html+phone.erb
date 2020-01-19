@@ -42,12 +42,12 @@
       </div>
       <div class="image">
         <%= image_tag('App/Mobile/iphone_X_free-floating-mobile-map@2x.png', class: 'iphone_X') %>
-        <% if Rails.application.config.ended %>
-          <%= render "shared/campaign_ended" %>
-        <% else %>
-          <%= render "shared/campaign_ongoing_mobile3" %>
-        <% end %>
       </div>
+      <% if Rails.application.config.ended %>
+        <%= render "shared/campaign_ended" %>
+      <% else %>
+        <%= render "shared/campaign_ongoing_mobile3" %>
+      <% end %>
     </div>
   </div>
 
