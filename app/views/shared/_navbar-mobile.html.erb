@@ -24,7 +24,7 @@
           <p>Get free km</p>
         </div>
       <% end %>
-      <%= link_to buy_a_yoda_path do %>
+      <%= link_to root_path do %>
         <div class="nav-mobile-btn buy">
           <p>Buy a Yoda</p>
         </div>
@@ -35,20 +35,9 @@
           <p>50% on km</p>
         </div>
       <% end %>
-      <%= link_to buy_a_yoda_path do %>
+      <%= link_to root_path do %>
         <div class="nav-mobile-btn buy">
           <p>Buy a Yoda</p>
-        </div>
-      <% end %>
-    <% elsif @buy_navbar %>
-      <%= link_to rent_a_yoda_path do %>
-        <div class="nav-mobile-btn rent">
-          <p>Sharing Yoda</p>
-        </div>
-      <% end %>
-      <%= link_to "#order" do %>
-        <div class="nav-mobile-btn buy">
-          <p>Reserve yours</p>
         </div>
       <% end %>
     <% else %>
@@ -57,7 +46,7 @@
           <p>Rent a Yoda</p>
         </div>
       <% end %>
-      <%= link_to buy_a_yoda_path do %>
+      <%= link_to "#order" do %>
         <div class="nav-mobile-btn buy">
           <p>Buy a Yoda</p>
         </div>
