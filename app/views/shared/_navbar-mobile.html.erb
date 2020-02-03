@@ -29,15 +29,15 @@
           <p>Buy a Yoda</p>
         </div>
       <% end %>
-      <% elsif @refer_friend_navbar %>
-        <%= link_to "#km-order" do %>
+    <% elsif @refer_friend_navbar %>
+      <%= link_to "#km-order" do %>
         <div class="nav-mobile-btn rent">
           <p>50% on km</p>
         </div>
       <% end %>
-      <%= link_to root_path do %>
+    <%= link_to root_path do %>
         <div class="nav-mobile-btn buy">
-          <p>Buy a Yoda</p>
+          <p>Pre-order</p>
         </div>
       <% end %>
     <% else %>
@@ -48,7 +48,7 @@
       <% end %>
       <%= link_to "#order" do %>
         <div class="nav-mobile-btn buy">
-          <p>Buy a Yoda</p>
+          <p>Pre-order</p>
         </div>
       <% end %>
     <% end %>
