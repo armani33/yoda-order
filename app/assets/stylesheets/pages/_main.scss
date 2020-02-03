@@ -41,6 +41,7 @@
       }
     }
     .page-content-2{
+      background-color: $bg-black;
       display: flex;
       height: 100vh;
       .left-side{
@@ -62,34 +63,47 @@
           h2{
             font-size: 75px;
             font-weight: 500;
+            color: white;
             span{
               color: $green;
             }
           }
-          p{
-            font-weight: 400;
-            font-size: 18px;
-            color: $font-text-black;
-            margin-top: 22px;
-            margin-bottom: 55px;
-            margin-left: 10px;
+          .ecomode-container{
+            display: flex;
+            flex-direction: column;
+            margin: 33px 0;
+            .eco{
+              display: flex;
+              align-items: center;
+              margin-bottom: 22px;
+              img{
+                width: 40px;
+              }
+              p{
+                font-weight: 400;
+                font-size: 18px;
+                color: $font-text-black;
+                margin-left: 15px;
+                color: white;
+                span{
+                  font-weight: 300;
+                }
+              }
+            }
           }
           a{//calendly pop-up
             padding: 11px 30px;
-            border: 1px solid $orange;
-            background-color: $orange;
+            border: 1px solid $blue;
             border-radius: 25px;
-            font-weight: 400;
-            color: $black;
+            font-weight: 300;
+            color: $blue;
             text-decoration: none;
-            margin-left: 10px;
           }
         }
       }
     }
     .page-content-3{
-      background-color: $bg-black;
-      background-image: image_url('Yoda/Yoda-profile-left-bike@2x.png');
+      background-image: image_url("Yoda/Yoda-back-comfortable-buy-3@2x.png");
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
@@ -97,11 +111,10 @@
       align-items: flex-start;
       .text-container{
         margin-left: 80px;
-        margin-top: 80px;
-        h2{
+        margin-top: 160px;
+        h1{
           font-size: 75px;
           font-weight: 500;
-          color: white;
           span{
             color: $green;
           }
@@ -109,14 +122,14 @@
         p{
           font-weight: 400;
           font-size: 18px;
-          color: $light-light-grey;
+          color: $font-text-black;
           margin-top: 22px;
           margin-bottom: 55px;
         }
-        a{//calendly pop-up
+        a{
           padding: 11px 30px;
-          border: 1px solid $blue;
-          background-color: $blue;
+          border: 1px solid $black;
+          background-color: $black;
           border-radius: 25px;
           font-weight: 400;
           color: white;
@@ -159,63 +172,20 @@
       }
     }
     .page-content-5{
-      display: flex;
-      height: 100vh;
-      .left-side{
-        flex-basis: 48%;
-        display: flex;
-        align-items: center;
-        .text-container{
-          margin-left: 80px;
-          .position{
-            display: flex;
-            align-items: center;
-            margin: 36px 0;
-            p{
-              font-weight: 400;
-              font-size: 18px;
-              color: $font-text-black;
-            }
-            img{
-              width: 60px;
-              height: 40px;
-            }
-          }
-        }
-      }
-      .right-side{
-        flex-basis: 52%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h2{
-          font-size: 75px;
-          font-weight: 500;
-          margin-bottom: 20px;
-          span{
-            color: $green;
-          }
-        }
-        img{
-          width: 88%;
-        }
-      }
-    }
-    .page-content-6{
-      background-color: $light-grey;
-      background-image: image_url('Yoda/Yoda-profile-black@2x.png');
+      background-image: image_url("Yoda/Yoda-battery-zoom-buy-4@2x.png");
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
       display: flex;
       align-items: flex-start;
+      justify-content: flex-end;
       .text-container{
-        margin-left: 80px;
-        margin-top: 80px;
+        margin-right: 120px;
+        margin-top: 100px;
+        text-align: right;
         h2{
           font-size: 75px;
           font-weight: 500;
-          color: $black;
           span{
             color: $green;
           }
@@ -226,20 +196,270 @@
           color: $font-text-black;
           margin-top: 22px;
           margin-bottom: 55px;
+          margin-right: 8px;
         }
         a{
           padding: 11px 30px;
           border: 1px solid $black;
           border-radius: 25px;
-          font-weight: 400;
-          color: white;
-          background-color: $black;
+          font-weight: 300;
+          color: $black;
           text-decoration: none;
           font-size: 16px;
+          margin-right: 8px;
+          i{
+            color: $black;
+          }
+        }
+      }
+    }
+    .page-content-6{
+       background-image: image_url("Yoda/Yoda-profile-left-buy-1@2x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .text-container{
+        margin-left: 80px;
+        margin-top: 100px;
+        text-align: left;
+        h2{
+          font-size: 75px;
+          font-weight: 500;
+          span{
+            color: $green;
+          }
+        }
+        p{
+          font-weight: 400;
+          font-size: 18px;
+          color: $font-text-black;
+          margin-top: 22px;
+          margin-bottom: 55px;
+          margin-right: 8px;
+        }
+        a{
+          padding: 11px 30px;
+          border: 1px solid $black;
+          border-radius: 25px;
+          font-weight: 300;
+          color: $black;
+          text-decoration: none;
+          font-size: 16px;
+          margin-right: 8px;
+          i{
+            color: $black;
+          }
+        }
+      }
+    }
+    #slideshow-wrapper{
+      background-color: #161616;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      #Slideshow{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        #Slider{
+          height: 100%;
+          overflow: hidden;
+          width: 100%;
+          border: 1px solid #161616;
+          #slide{
+            width: 100%;
+            height: 100%;
+          }
+          .first-second{
+            display: flex;
+            .left-side{
+              flex-basis: 60%;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              .text-container{
+                margin-left: 120px;
+                h3{
+                  font-size: 75px;
+                  font-weight: 500;
+                  color: white;
+                  span{
+                    color: $green;
+                  }
+                }
+                p{
+                  font-weight: 400;
+                  font-size: 18px;
+                  color: $light-light-grey;
+                  margin-top: 22px;
+                  margin-bottom: 55px;
+                }
+              }
+            }
+            .right-side{
+              flex-basis: 40%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img{
+                width: 63%;
+                margin-right: 150px;
+              }
+            }
+          }
+          .third{
+            display: flex;
+            align-items: center;
+            background-image: image_url('Yoda/Yoda-black-wheel-theft-lock@2x.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            .text-container{
+              margin-left: 120px;
+              h3{
+                font-size: 75px;
+                font-weight: 500;
+                color: white;
+                span{
+                  color: $green;
+                }
+              }
+              p{
+                font-weight: 400;
+                font-size: 18px;
+                color: $light-light-grey;
+                margin-top: 22px;
+                margin-bottom: 55px;
+              }
+            }
+          }
+        }
+        #Arrows{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 95%;
+          position: absolute;
+          width: 95%;
+          i{
+            color: white;
+            cursor: pointer;
+            height: 30px;
+            padding: 20px;
+
+            transition: background-color .5s, color .5s;
+          }
+        }
+        #Arrows i:first-of-type{
+          padding-right: 20px;
+        }
+
+        #Arrows i:last-of-type{
+          padding-left: 20px;
+        }
+
+        #Arrows i:hover{
+          background-color: rgba(28,29,33, .75);
+          color: #EEEFF7;
         }
       }
     }
     .page-content-7{
+      height: 100vh;
+      display: flex;
+      background-color: $light-grey;
+      .left{
+        flex-basis: 53%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .featurs-container{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .feature{
+              width: 180px;
+              text-align: center;
+              img{
+                width: 80px;
+              }
+              p{
+                margin-top: 5px;
+                font-size: 15px;
+                font-weight: 300;
+                text-align: center;
+              }
+              p.title{
+                font-weight: 400;
+              }
+            }
+          }
+          .row:first-child{
+            margin-bottom: 50px;
+          }
+          .text{
+            text-align: center;
+            h4{
+              font-size: 36px;
+              font-weight: 300;
+              margin: 40px 0 30px;
+            }
+            p{
+              font-size: 16px;
+              font-weight: 300;
+              margin-bottom: 3px;
+            }
+          }
+        }
+      }
+      .right{
+        flex-basis: 47%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text-container{
+          text-align: left;
+          h2{
+            font-size: 75px;
+            font-weight: 500;
+            span{
+              color: $green;
+            }
+          }
+          p{
+            font-weight: 400;
+            font-size: 18px;
+            color: $font-text-black;
+            margin-top: 22px;
+            margin-bottom: 55px;
+          }
+          a{
+            padding: 11px 30px;
+            border: 1px solid $blue;
+            border-radius: 25px;
+            font-weight: 300;
+            color: white;
+            background-color: $blue;
+            text-decoration: none;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .page-content-8{
       background-color: white;
       .text-container{
         margin-left: 80px;
