@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   root to: 'pages#main'
 
   get 'rent-a-yoda' => 'pages#rent'
-  get 'buy-a-yoda'  => 'pages#buy'
   get 'cart' => 'pages#cart'
   get 'warranty' => 'pages#warranty'
   get 'faq' => 'pages#faq'
