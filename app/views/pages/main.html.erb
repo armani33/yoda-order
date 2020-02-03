@@ -14,7 +14,7 @@
   </div>
 
   <div class="page-container">
-    <div id ="page-3" class="page-content-2">
+    <div id ="page-2" class="page-content-2">
       <div class="left-side">
         <%= image_tag('App/Iphone_X-eco-app-buy-2@2x.png') %>
       </div>
@@ -74,7 +74,7 @@
   </div>
 
   <div class="page-container">
-    <div id="page-5" class="page-content-6">
+    <div id="page-6" class="page-content-6">
       <div class="text-container">
         <h2>Go the distance<span>.</span></h2>
         <p>Ride uphill, downhill, on-road, off-road. Nothing stops a Yoda.</p>
@@ -202,7 +202,6 @@
   $("#Next").click(function(){
     $("html, body").animate({scrollTop: $("#Slider").offset().top})
     $("#Slider").append($("#Slider #slide:first-of-type"));
-
   });
 
   $("#Prev").click(function(){
@@ -213,7 +212,9 @@
 
 <script>
   var page_1_bottom = $('#page-1').offset().top + $('#page-1').height();
-  var page_3_bottom = $('#page-3').offset().top + $('#page-3').height();
+  var page_2_bottom = $('#page-2').offset().top + $('#page-2').height();
+  var page_6_bottom = $('#page-6').offset().top + $('#page-6').height();
+  var slideshow_bottom = $('#Slider').offset().top + $('#Slider').height();
   $('.nav-logo-white').css('display', 'none');
   $('.nav-logo-black').css('display', 'inline');
 
@@ -229,7 +230,17 @@
       // we round here to reduce a little workload
       var stop = Math.round($(window).scrollTop());
 
-      if (stop > page_1_bottom && stop < page_3_bottom) {
+      if (stop > page_1_bottom - 50 && stop < page_2_bottom - 50 ) {
+          $('.nav-logo-white').css('display', 'inline');
+          $('.nav-logo-black').css('display', 'none');
+
+          $('.rent').css('border-color', 'white');
+          $('.rent').css('background-color', 'black');
+          $('.rent').css('color', 'white');
+          $('.buy').css('border-color', 'white');
+          $('.buy').css('background-color', 'white');
+          $('.buy').css('color', 'black');
+      } else if (stop > page_6_bottom - 50  && stop < slideshow_bottom - 50){
           $('.nav-logo-white').css('display', 'inline');
           $('.nav-logo-black').css('display', 'none');
 

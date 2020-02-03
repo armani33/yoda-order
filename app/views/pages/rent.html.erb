@@ -121,7 +121,7 @@
       // we round here to reduce a little workload
       var stop = Math.round($(window).scrollTop());
 
-      if (stop > page_1_bottom && stop < page_map_bottom) {
+      if (stop > page_1_bottom - 50 && stop < page_map_bottom - 50) {
           $('.nav-logo-white').css('display', 'none');
           $('.nav-logo-black').css('display', 'inline');
 
@@ -143,7 +143,7 @@
           $('.buy').css('color', 'black');
       }
 
-      if (stop >= page_map_bottom - page_map_bottom*0.01) {
+      if (stop >= page_map_bottom - 50) {
         $('.nav-logo-white').css('display', 'inline');
         $('.nav-logo-black').css('display', 'none');
 
